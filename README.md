@@ -12,7 +12,7 @@
 
 ## Figma
 
-[DesignVerse 2026 Figma Design File](https://www.figma.com/design/vHqhvanoDdJhi3fmx8kUF9/DV--26-Sponsorship-Packet?node-id=0-1&p=f)
+[DesignVerse 2026 Figma Design File](https://www.figma.com/design/3xjBS6NYd2N2iFiTemjENR/UI-UX--Website-?node-id=2-3&t=XAgCnuKVar0obagL-0)
 
 ## Node.js
 
