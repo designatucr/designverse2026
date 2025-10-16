@@ -10,7 +10,7 @@ import grass2 from "@/public/landing/grass2.webp";
 
 const Landing = () => {
   return (
-    <div className="flex w-screen flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
+    <div className="flex flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
       <div className="relative z-20 flex w-full justify-center">
         <Image
           src={cloud1}
@@ -52,12 +52,12 @@ const Landing = () => {
       <Image
         src={grass2}
         alt="grass box"
-        className="absolute -bottom-[30%] left-48 z-30 w-1/5"
+        className="absolute -bottom-[26%] left-48 z-30 w-1/5"
       />
       <Image
         src={grass2}
         alt="grass box"
-        className="absolute -bottom-[30%] right-48 z-30 w-1/5"
+        className="absolute -bottom-[26%] right-48 z-30 w-1/5"
       />
     </div>
   );
