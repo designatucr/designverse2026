@@ -65,7 +65,7 @@
     "@tanstack/react-table": "^8.20.5",
     "@tanstack/react-virtual": "^3.10.9",
     "compressorjs": "^1.2.1",
-    "firebase": "^10.13.1",
+    "firebase": "^10.14.1",
     "firebase-admin": "^12.5.0",
     "input-otp": "^1.2.4",
     "jszip": "^3.10.1",
