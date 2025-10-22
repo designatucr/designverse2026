@@ -4,15 +4,6 @@ import admin from "firebase-admin";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// admin.initializeApp({
-//   credential: admin.credential.cert({
-//     projectId: process.env.PROJECT_ID,
-//     clientEmail: process.env.CLIENT_EMAIL,
-//     privateKey: process.env.PRIVATE_KEY,
-//   }),
-//   databaseURL: process.env.FIREBASE_DB_URL,
-// });
-
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
