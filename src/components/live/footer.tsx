@@ -17,39 +17,41 @@ const Footer = () => {
         height={80}
       />
       <div className="flex flex-row items-center">
-          <Link
-            className="pr-3"
-            href="mailto:designverseucr@gmail.com"
-            target="_blank"
-            aria-label="Email"
-          >
-            <MdEmail className="text-5xl text-white transition-transform hover:scale-110" />
-          </Link>
-          <Link
-            className="pr-3"
-            href="https://www.linkedin.com/company/designverseucr/"
-            target="_blank"
-            aria-label="Linkedin"
-          >
-            <FaLinkedin className="text-5xl text-white transition-transform hover:scale-110" />
-          </Link>
-          <Link
-            className="pr-3"
-            href="https://www.instagram.com/designverseucr"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <RiInstagramFill className="text-5xl text-white transition-transform hover:scale-110" />
-          </Link>
-          <Link
-            href="https://discord.com/invite/MmSvY3tu"
-            target="_blank"
-            aria-label="Discord"
-          >
-            <FaDiscord className="text-5xl text-white transition-transform hover:scale-110" />
-          </Link>
+        <Link
+          className="pr-3"
+          href="mailto:designverseucr@gmail.com"
+          target="_blank"
+          aria-label="Email"
+        >
+          <MdEmail className="text-5xl text-white transition-transform hover:scale-110" />
+        </Link>
+        <Link
+          className="pr-3"
+          href="https://www.linkedin.com/company/designverseucr/"
+          target="_blank"
+          aria-label="Linkedin"
+        >
+          <FaLinkedin className="text-5xl text-white transition-transform hover:scale-110" />
+        </Link>
+        <Link
+          className="pr-3"
+          href="https://www.instagram.com/designverseucr"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <RiInstagramFill className="text-5xl text-white transition-transform hover:scale-110" />
+        </Link>
+        <Link
+          href="https://discord.com/invite/MmSvY3tu"
+          target="_blank"
+          aria-label="Discord"
+        >
+          <FaDiscord className="text-5xl text-white transition-transform hover:scale-110" />
+        </Link>
       </div>
-      <p className="text-white p-5 font-inter">Made with &lt;3 by the 2026 DesignVerse team</p>
+      <p className="font-inter p-5 text-white">
+        Made with &lt;3 by the 2026 DesignVerse team
+      </p>
     </footer>
   );
 };
