@@ -1,17 +1,24 @@
 import React from "react";
 import LogoIcon from "@/public/engineering/hackathon/dvlogo2.svg";
 import Link from "next/link";
+import Image from "next/image";
 import { FaDiscord, FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="mt-10 flex w-full items-center justify-between gap-2 bg-[#705D3F] px-10 py-3">
-      <div className="flex flex-col items-center gap-3">
-        <LogoIcon />
-        <div>
+    <footer className="mt-10 flex w-full flex-col items-center justify-between gap-2 bg-[#705D3F] px-10 py-3">
+      <Image
+        className="pb-5 pt-8"
+        src={LogoIcon}
+        alt="DV Logo in footer"
+        width={118}
+        height={80}
+      />
+      <div className="flex flex-row items-center">
           <Link
+            className="pr-3"
             href="mailto:designverseucr@gmail.com"
             target="_blank"
             aria-label="Email"
@@ -19,6 +26,7 @@ const Footer = () => {
             <MdEmail className="text-5xl text-white transition-transform hover:scale-110" />
           </Link>
           <Link
+            className="pr-3"
             href="https://www.linkedin.com/company/designverseucr/"
             target="_blank"
             aria-label="Linkedin"
@@ -26,6 +34,7 @@ const Footer = () => {
             <FaLinkedin className="text-5xl text-white transition-transform hover:scale-110" />
           </Link>
           <Link
+            className="pr-3"
             href="https://www.instagram.com/designverseucr"
             target="_blank"
             aria-label="Instagram"
@@ -39,8 +48,8 @@ const Footer = () => {
           >
             <FaDiscord className="text-5xl text-white transition-transform hover:scale-110" />
           </Link>
-        </div>
       </div>
+      <p className="text-white p-5 font-inter">Made with &lt;3 by the 2026 DesignVerse team</p>
     </footer>
   );
 };
