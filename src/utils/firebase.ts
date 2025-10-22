@@ -1,6 +1,3 @@
-import admin from "firebase-admin";
-// import serviceAccount from "./designverse2026-475822-efc1bbfaeda9.json";
-
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
