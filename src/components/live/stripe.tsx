@@ -1,5 +1,5 @@
 const Stripe = () => {
-  return <div className="h-[90vh] w-[11vw] bg-landing-beige-200" />;
+  return <div className="bg-landing-beige-200 h-[90vh] w-[11vw]" />;
 };
 
 export default Stripe;
