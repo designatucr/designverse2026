@@ -77,14 +77,6 @@ module.exports = {
           "primary-foreground": "#F5F5F5",
           "accent-foreground": "#22577A",
         },
-        landing: {
-          "blue-100": "#9DE1FF",
-          "orange-100": "#FFE0D2",
-          "brown-100": "#603A18",
-          "brown-200": "#77512E",
-          "beige-100": "#FBE8D5",
-          "beige-200": "#F1D8BF",
-        },
       },
       keyframes: {
         "accordion-down": {
