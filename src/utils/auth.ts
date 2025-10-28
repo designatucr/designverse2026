@@ -5,7 +5,9 @@ import { cert } from "firebase-admin/app";
 import { NextAuthOptions, Session } from "next-auth";
 import type { Adapter } from "next-auth/adapters";
 
-const { privateKey } = JSON.parse(process.env.NEXT_PUBLIC_FIREBASE_PRIVATE_KEY ? "" : "");
+const { privateKey } = JSON.parse(
+  process.env.NEXT_PUBLIC_FIREBASE_PRIVATE_KEY ? "" : "",
+);
 
 export const options: NextAuthOptions = {
   // eslint-disable-next-line new-cap
