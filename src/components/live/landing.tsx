@@ -23,7 +23,7 @@ const Landing = () => {
           className="absolute right-0 top-56 w-[12%]"
         />
       </div>
-      <Image src={logo} alt="dv logo" className="w-1/4 pt-20" />
+      <Image src={logo} alt="dv logo sign" className="w-1/4 pt-20" />
 
       <div className="relative flex w-1/2 flex-col items-center justify-center">
         <p className="z-30 pt-2 text-xl font-bold text-landing-brown-200">
