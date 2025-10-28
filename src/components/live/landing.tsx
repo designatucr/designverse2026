@@ -14,12 +14,12 @@ const Landing = () => {
       <div className="relative z-20 flex w-full justify-center">
         <Image
           src={cloud1}
-          alt="cloud"
+          alt="left cloud"
           className="absolute left-0 top-24 w-1/6"
         />
         <Image
           src={cloud2}
-          alt="cloud"
+          alt="right cloud"
           className="absolute right-0 top-56 w-[12%]"
         />
       </div>
@@ -29,7 +29,7 @@ const Landing = () => {
         <p className="z-30 pt-2 text-xl font-bold text-landing-brown-200">
           University of California, Riverside | May 9-10, 2026
         </p>
-        <Image src={timer} alt="timer" className="absolute z-0 w-4/5" />
+        <Image src={timer} alt="timer bg" className="absolute z-0 w-4/5" />
         <div className="z-10">
           <Countdown
             classNames={{
@@ -51,12 +51,12 @@ const Landing = () => {
       </div>
       <Image
         src={grass2}
-        alt="grass box"
+        alt="left grass box"
         className="absolute -bottom-[29%] left-48 z-30 w-1/5"
       />
       <Image
         src={grass2}
-        alt="grass box"
+        alt="right grass box"
         className="absolute -bottom-[29%] right-48 z-30 w-1/5"
       />
     </div>
