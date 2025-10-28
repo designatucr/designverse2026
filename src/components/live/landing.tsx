@@ -6,7 +6,7 @@ import logo from "@/public/landing/dv_logo.webp";
 import timer from "@/public/landing/timer.webp";
 import sign from "@/public/landing/sign.webp";
 import bakery from "@/public/landing/bakery.webp";
-import grass2 from "@/public/landing/grass2.webp";
+import grass from "@/public/landing/grass.webp";
 
 const Landing = () => {
   return (
@@ -50,12 +50,12 @@ const Landing = () => {
         />
       </div>
       <Image
-        src={grass2}
+        src={grass}
         alt="left grass box"
         className="absolute -bottom-[29%] left-48 z-30 w-1/5"
       />
       <Image
-        src={grass2}
+        src={grass}
         alt="right grass box"
         className="absolute -bottom-[29%] right-48 z-30 w-1/5"
       />
