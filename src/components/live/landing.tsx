@@ -42,7 +42,7 @@ const Landing = () => {
       </div>
 
       <div className="relative z-20 flex w-full justify-center">
-        <Image src={bakery} alt="bakery" className="z-20 w-[52%]" />
+        <Image src={bakery} alt="bakery house" className="z-20 w-[52%]" />
         <Image
           src={sign}
           alt="wooden board sign"
