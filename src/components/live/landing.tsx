@@ -7,10 +7,24 @@ import timer from "@/public/landing/timer.webp";
 import sign from "@/public/landing/sign.webp";
 import bakery from "@/public/landing/bakery.webp";
 import grass from "@/public/landing/grass.webp";
+import Link from "next/link";
 
 const Landing = () => {
   return (
     <div className="flex flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
+      <Link
+        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
+        target="_blank"
+        rel="nopener noreferrer"
+        className="z-1 absolute right-3 top-0 z-50 w-12 cursor-pointer md:w-28 lg:right-10"
+      >
+        <Image
+          src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+          alt="Major League Hacking 2026 Hackathon Season"
+          width={100}
+          height={100}
+        />
+      </Link>
       <div className="relative z-20 flex w-full justify-center">
         <Image
           src={cloud1}
