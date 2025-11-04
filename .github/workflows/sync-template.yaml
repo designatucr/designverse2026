@@ -6,20 +6,20 @@ on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'Log level'
+        description: "Log level"
         required: true
-        default: 'warning'
+        default: "warning"
         type: choice
         options:
-        - info
-        - warning
-        - debug
+          - info
+          - warning
+          - debug
       tags:
-        description: 'Test scenario tags'
+        description: "Test scenario tags"
         required: false
         type: boolean
       environment:
-        description: 'Environment to run tests against'
+        description: "Environment to run tests against"
         type: environment
         required: true
 
@@ -54,8 +54,6 @@ jobs:
             gh pr create --base dev --head sync-template --title "Sync Template Changes" --body "Syncing template changes"
           else
             git checkout -b sync-template origin/sync-template
-            git config --global user.email "sweden.agunenye1@gmail.com"
-            git config --global user.name "swedenagu"
             git pull --no-rebase --allow-unrelated-histories template dev
             git push
           fi
