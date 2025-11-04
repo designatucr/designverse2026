@@ -54,7 +54,7 @@ jobs:
             gh pr create --base dev --head sync-template --title "Sync Template Changes" --body "Syncing template changes"
           else
             git checkout -b sync-template origin/sync-template
-            git pull --no-rebase template dev
+            git pull --no-rebase --allow-unrelated-histories template dev
             git push
           fi
         env:
