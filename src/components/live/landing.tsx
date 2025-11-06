@@ -1,13 +1,13 @@
 // import Countdown from "../ui/countdown";
 import Image from "next/image";
-import cloud1 from "@/public/landing/cloud1.webp";
-import cloud2 from "@/public/landing/cloud2.webp";
-import logo from "@/public/landing/dv_logo.webp";
-import timer from "@/public/landing/timer.webp";
-// import sign from "@/public/landing/sign.webp";
-// import bakery from "@/public/landing/bakery.webp";
-import grass from "@/public/landing/grass.webp";
+import cloud1 from "@/public/landing/cloud1.svg";
+import cloud2 from "@/public/landing/cloud2.svg";
+import logo from "@/public/landing/dv_logo.svg";
+import timer from "@/public/landing/timer.svg";
+// import sign from "@/public/landing/sign.svg";
+// import bakery from "@/public/landing/bakery.svg";
 import bakery2 from "@/public/landing/bakery2.svg";
+import grass from "@/public/landing/grass.svg";
 import Link from "next/link";
 
 const Landing = () => {
@@ -43,12 +43,12 @@ const Landing = () => {
           <Image
             src={logo}
             alt="dv logo sign"
-            className="w-1/4 -translate-y-[83%]"
+            className="w-1/3 -translate-y-[83%] md:w-1/3 lg:w-1/3"
           />
           <div className="absolute flex w-full items-center justify-center">
             <Image src={timer} alt="timer bg" className="z-0 w-[64%]" />
             <div className="absolute left-[17%] top-[5%] z-30 flex w-[65%] flex-col items-center gap-1 pt-2 text-landing-brown-200 sm:top-[5%] sm:gap-2 md:top-[12%] lg:top-[24%]">
-              <p className="text-wrap text-[0.45rem] font-bold sm:text-xs md:text-[0.6rem] lg:text-base xl:text-2xl">
+              <p className="lg-w-full w-3/4 text-wrap text-center text-xs font-bold sm:text-xs md:w-full md:text-[0.6rem] lg:text-base xl:text-2xl">
                 University of California, Riverside | May 9-10, 2026
               </p>
               <p className="text-[0.45rem] sm:text-xs md:text-[0.55rem] lg:text-xl">

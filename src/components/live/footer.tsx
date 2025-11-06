@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="mt-10 flex w-full flex-col items-center justify-between gap-2 bg-[#705D3F] px-10 py-3">
       <Image
-        className="pb-5 pt-8"
+        className="w-1/3 pb-5 pt-8 md:w-1/12"
         src={LogoIcon}
         alt="DV Logo in footer"
         width={118}
@@ -49,7 +49,7 @@ const Footer = () => {
           <FaDiscord className="text-5xl text-white transition-transform hover:scale-110" />
         </Link>
       </div>
-      <p className="font-inter p-5 text-white">
+      <p className="font-inter p-5 text-center text-white">
         Made with &lt;3 by the 2026 DesignVerse team
       </p>
     </footer>
