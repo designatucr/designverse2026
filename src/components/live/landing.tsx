@@ -1,12 +1,12 @@
 import Countdown from "../ui/countdown";
 import Image from "next/image";
-import cloud1 from "@/public/landing/cloud1.webp";
-import cloud2 from "@/public/landing/cloud2.webp";
-import logo from "@/public/landing/dv_logo.webp";
-import timer from "@/public/landing/timer.webp";
-import sign from "@/public/landing/sign.webp";
-import bakery from "@/public/landing/bakery.webp";
-import grass from "@/public/landing/grass.webp";
+import cloud1 from "@/public/landing/cloud1.svg";
+import cloud2 from "@/public/landing/cloud2.svg";
+import logo from "@/public/landing/dv_logo.svg";
+import timer from "@/public/landing/timer.svg";
+import sign from "@/public/landing/sign.svg";
+import bakery from "@/public/landing/bakery.svg";
+import grass from "@/public/landing/grass.svg";
 import Link from "next/link";
 
 const Landing = () => {
