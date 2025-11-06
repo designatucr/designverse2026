@@ -1,17 +1,18 @@
-import Countdown from "../ui/countdown";
+// import Countdown from "../ui/countdown";
 import Image from "next/image";
 import cloud1 from "@/public/landing/cloud1.webp";
 import cloud2 from "@/public/landing/cloud2.webp";
 import logo from "@/public/landing/dv_logo.webp";
 import timer from "@/public/landing/timer.webp";
-import sign from "@/public/landing/sign.webp";
-import bakery from "@/public/landing/bakery.webp";
+// import sign from "@/public/landing/sign.webp";
+// import bakery from "@/public/landing/bakery.webp";
 import grass from "@/public/landing/grass.webp";
+import bakery2 from "@/public/landing/bakery2.svg";
 import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="flex flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
+    <div className="flex w-full flex-col items-center overflow-hidden bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
       <Link
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
         target="_blank"
@@ -37,42 +38,52 @@ const Landing = () => {
           className="absolute right-0 top-56 w-[12%]"
         />
       </div>
-      <Image src={logo} alt="dv logo sign" className="w-1/4 pt-20" />
-
-      <div className="relative flex w-1/2 flex-col items-center justify-center">
-        <p className="z-30 pt-2 text-xl font-bold text-landing-brown-200">
-          University of California, Riverside | May 9-10, 2026
-        </p>
-        <Image src={timer} alt="timer bg" className="absolute z-0 w-4/5" />
-        <div className="z-10">
-          <Countdown
+      <div className="sm:mt-34 relative z-20 mt-20 flex flex-col items-center justify-center sm:w-[62%] md:mt-36 lg:mt-52">
+        <div className="relative flex w-full flex-col items-center">
+          <Image
+            src={logo}
+            alt="dv logo sign"
+            className="w-1/4 -translate-y-[83%]"
+          />
+          <div className="absolute flex w-full items-center justify-center">
+            <Image src={timer} alt="timer bg" className="z-0 w-[64%]" />
+            <div className="absolute left-[17%] top-[5%] z-30 flex w-[65%] flex-col items-center gap-1 pt-2 text-landing-brown-200 sm:top-[5%] sm:gap-2 md:top-[12%] lg:top-[24%]">
+              <p className="text-wrap text-[0.45rem] font-bold sm:text-xs md:text-[0.6rem] lg:text-base xl:text-2xl">
+                University of California, Riverside | May 9-10, 2026
+              </p>
+              <p className="text-[0.45rem] sm:text-xs md:text-[0.55rem] lg:text-xl">
+                A design-a-thon near you!
+              </p>
+            </div>
+          </div>
+          {/* <Countdown
             classNames={{
               unit: "text-landing-brown-200",
               background: "bg-landing-brown-100",
               digit: "text-white",
             }}
-          />
+          /> */}
+          <Image src={bakery2} alt="bakery shop" className="z-20 w-[85%]" />
+        </div>
+        <Image
+          src={grass}
+          alt="left grass box"
+          className="absolute bottom-0 left-0 z-30 w-[25%] -translate-x-[24%]"
+        />
+        <Image
+          src={grass}
+          alt="right grass box"
+          className="absolute bottom-0 right-0 z-30 w-[26%] translate-x-[21%] -scale-x-100"
+        />
+        <div className="absolute top-[60%] z-30 flex w-[70%] flex-col items-center justify-center gap-1 text-landing-brown-300 md:gap-5">
+          <div className="text-base font-bold sm:text-2xl md:text-3xl lg:text-6xl">
+            COMING SOON.
+          </div>
+          <div className="text-[0.50rem] md:text-lg lg:text-3xl">
+            Something new is brewing...
+          </div>
         </div>
       </div>
-
-      <div className="relative z-20 flex w-full justify-center">
-        <Image src={bakery} alt="bakery shop" className="z-20 w-[52%]" />
-        <Image
-          src={sign}
-          alt="wooden board sign"
-          className="absolute -bottom-20 right-[39%] z-30 w-[8%]"
-        />
-      </div>
-      <Image
-        src={grass}
-        alt="left grass box"
-        className="absolute -bottom-[29%] left-48 z-30 w-1/5"
-      />
-      <Image
-        src={grass}
-        alt="right grass box"
-        className="absolute -bottom-[29%] right-48 z-30 w-1/5"
-      />
     </div>
   );
 };
