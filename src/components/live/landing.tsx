@@ -6,13 +6,13 @@ import logo from "@/public/landing/dv_logo.svg";
 import timer from "@/public/landing/timer.svg";
 // import sign from "@/public/landing/sign.svg";
 // import bakery from "@/public/landing/bakery.svg";
-import bakery2 from "@/public/landing/bakery2.svg";
 import grass from "@/public/landing/grass.svg";
+import bakery2 from "@/public/landing/bakery2.svg";
 import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="flex w-full flex-col items-center overflow-hidden bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
+    <div className="flex min-h-screen w-full flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
       <Link
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
         target="_blank"
@@ -38,24 +38,18 @@ const Landing = () => {
           className="absolute right-0 top-56 w-[12%]"
         />
       </div>
-      <div className="sm:mt-34 relative z-20 mt-20 flex flex-col items-center justify-center sm:w-[62%] md:mt-36 lg:mt-52">
+      <div className="sm:mt-34 relative z-20 mt-20 flex w-[90%] flex-col items-center justify-center md:mt-36 lg:mt-52">
         <div className="relative flex w-full flex-col items-center">
           <Image
             src={logo}
             alt="dv logo sign"
-            className="w-1/3 -translate-y-[83%] md:w-1/3 lg:w-1/3"
+            className="w-1/4 -translate-y-[80%]"
           />
-          <div className="absolute flex w-full items-center justify-center">
-            <Image src={timer} alt="timer bg" className="z-0 w-[64%]" />
-            <div className="absolute left-[17%] top-[5%] z-30 flex w-[65%] flex-col items-center gap-1 pt-2 text-landing-brown-200 sm:top-[5%] sm:gap-2 md:top-[12%] lg:top-[24%]">
-              <p className="lg-w-full w-3/4 text-wrap text-center text-xs font-bold sm:text-xs md:w-full md:text-[0.6rem] lg:text-base xl:text-2xl">
-                University of California, Riverside | May 9-10, 2026
-              </p>
-              <p className="text-[0.45rem] sm:text-xs md:text-[0.55rem] lg:text-xl">
-                A design-a-thon near you!
-              </p>
-            </div>
-          </div>
+          <Image
+            src={timer}
+            alt="timer bg"
+            className="absolute bottom-[70%] z-0 size-[54%] pt-10 md:size-[45%] lg:size-[35%] lg:pt-2"
+          />
           {/* <Countdown
             classNames={{
               unit: "text-landing-brown-200",
@@ -63,7 +57,19 @@ const Landing = () => {
               digit: "text-white",
             }}
           /> */}
-          <Image src={bakery2} alt="bakery shop" className="z-20 w-[85%]" />
+          <div className="absolute top-[3%] z-30 flex flex-col items-center gap-1 pt-2 text-landing-brown-200 sm:top-[5%] sm:gap-2 md:top-[7%] lg:pt-3">
+            <p className="text-wrap text-[.33rem] font-bold lg:text-[1.1rem]">
+              University of California, Riverside | May 9-10, 2026
+            </p>
+            <p className="text-[0.45rem] sm:text-xs md:text-sm lg:pt-0 lg:text-[1.1rem]">
+              A design-a-thon near you!
+            </p>
+          </div>
+          <Image
+            src={bakery2}
+            alt="bakery shop"
+            className="z-20 h-[20%] md:h-[40%]"
+          />
         </div>
         <Image
           src={grass}
@@ -75,11 +81,11 @@ const Landing = () => {
           alt="right grass box"
           className="absolute bottom-0 right-0 z-30 w-[26%] translate-x-[21%] -scale-x-100"
         />
-        <div className="absolute top-[60%] z-30 flex w-[70%] flex-col items-center justify-center gap-1 text-landing-brown-300 md:gap-5">
-          <div className="text-base font-bold sm:text-2xl md:text-3xl lg:text-6xl">
+        <div className="absolute top-[60%] z-30 flex w-[90%] flex-col items-center justify-center gap-2 text-landing-brown-300 md:gap-5">
+          <div className="text-lg font-bold sm:text-3xl md:text-5xl lg:text-7xl">
             COMING SOON.
           </div>
-          <div className="text-[0.50rem] md:text-lg lg:text-3xl">
+          <div className="text-sm md:text-xl lg:text-3xl">
             Something new is brewing...
           </div>
         </div>
