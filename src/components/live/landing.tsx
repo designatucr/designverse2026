@@ -20,10 +20,11 @@ const Landing = () => {
         className="z-1 absolute right-3 top-0 z-50 w-12 cursor-pointer md:w-28 lg:right-10"
       >
         <Image
+          className="transition hover:scale-110"
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
           alt="Major League Hacking 2026 Hackathon Season"
-          width={100}
-          height={100}
+          width={125}
+          height={125}
         />
       </Link>
       <div className="relative z-20 flex w-full justify-center">
