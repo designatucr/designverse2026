@@ -1,9 +1,9 @@
-import Title from "@/components/ui/title";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import bunny from "@/public/landing/bunny.svg";
 import matcha from "@/public/landing/matcha.svg";
 import taiyaki from "@/public/landing/taiyaki.svg";
+
 const inter = Inter({ subsets: ["latin"] });
 
 const About = () => {

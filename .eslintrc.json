@@ -17,6 +17,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "new-cap": 0,
     "require-jsdoc": 0,
     "jsx-a11y/alt-text": 1,
     "no-unused-vars": "off",
