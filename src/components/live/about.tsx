@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 const About = () => {
   return (
     <div className={`relative ${inter.className}`}>
-      <div className="block sm:hidden h-64 bg-transparent"></div>
+      <div className="block h-64 bg-transparent sm:hidden"></div>
 
       {/* <section
         id="about"

@@ -50,7 +50,7 @@ const Landing = () => {
           <Image
             src={bakerySign}
             alt="sign on top bakery"
-            className="absolute bottom-[50%] md:bottom-[45%] lg:bottom-[45%] z-0 size-[70%] pt-10 md:size-[70%] lg:size-[58%] lg:pt-2"
+            className="absolute bottom-[50%] z-0 size-[70%] pt-10 md:bottom-[45%] md:size-[70%] lg:bottom-[45%] lg:size-[58%] lg:pt-2"
           />
           {/* <Image
             src={timer}
@@ -64,7 +64,7 @@ const Landing = () => {
               digit: "text-white",
             }}
           /> */}
-          <div className="absolute top-[3%] z-30 flex flex-col justify-center items-center lg:gap-1 pt-1 text-landing-brown-200 sm:top-[5%] sm:gap-2 lg:pt-6">
+          <div className="absolute top-[3%] z-30 flex flex-col items-center justify-center pt-1 text-landing-brown-200 sm:top-[5%] sm:gap-2 lg:gap-1 lg:pt-6">
             <p className="text-wrap text-[.58rem] font-bold md:text-xl lg:text-3xl">
               University of California, Riverside | May 9-10, 2026
             </p>
@@ -81,7 +81,7 @@ const Landing = () => {
         <Image
           src={grass}
           alt="left grass box"
-          className="absolute bottom-0 left-0 z-30 w-[25%] -translate-x-[24%]"
+          className="absolute bottom-0 left-0 z-30 w-[26%] -translate-x-[21%]"
         />
         <Image
           src={grass}
