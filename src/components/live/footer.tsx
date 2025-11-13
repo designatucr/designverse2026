@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="mt-10 flex h-[30vh] w-full flex-col items-center justify-between gap-2 bg-[#654831] px-10 md:h-1/3">
+    <footer className="mt-10 flex w-full flex-col items-center justify-between gap-2 bg-landing-brown-300 px-10">
       <Image
         className="w-1/4 pb-5 pt-8 md:w-1/12"
         src={LogoIcon}

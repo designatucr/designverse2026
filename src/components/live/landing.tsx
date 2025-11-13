@@ -3,7 +3,8 @@ import Image from "next/image";
 import cloud1 from "@/public/landing/cloud1.svg";
 import cloud2 from "@/public/landing/cloud2.svg";
 import logo from "@/public/landing/dv_logo.svg";
-import timer from "@/public/landing/timer.svg";
+import bakerySign from "@/public/landing/bakery_sign.svg";
+// import timer from "@/public/landing/timer.svg";
 // import sign from "@/public/landing/sign.svg";
 // import bakery from "@/public/landing/bakery.svg";
 import grass from "@/public/landing/grass.svg";
@@ -12,7 +13,7 @@ import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
+    <div className="flex min-h-0 w-full flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
       <Link
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
         target="_blank"
@@ -47,10 +48,15 @@ const Landing = () => {
             className="w-1/4 -translate-y-[80%]"
           />
           <Image
+            src={bakerySign}
+            alt="sign on top bakery"
+            className="absolute bottom-[50%] z-0 size-[70%] pt-10 md:bottom-[45%] md:size-[70%] lg:bottom-[45%] lg:size-[58%] lg:pt-2"
+          />
+          {/* <Image
             src={timer}
             alt="timer bg"
             className="absolute bottom-[70%] z-0 size-[54%] pt-10 md:size-[45%] lg:size-[35%] lg:pt-2"
-          />
+          /> */}
           {/* <Countdown
             classNames={{
               unit: "text-landing-brown-200",
@@ -58,11 +64,11 @@ const Landing = () => {
               digit: "text-white",
             }}
           /> */}
-          <div className="absolute top-[3%] z-30 flex flex-col items-center gap-1 pt-2 text-landing-brown-200 sm:top-[5%] sm:gap-2 md:top-[7%] lg:pt-3">
-            <p className="text-wrap text-[.33rem] font-bold lg:text-[1.1rem]">
+          <div className="absolute top-[3%] z-30 flex flex-col items-center justify-center pt-1 text-landing-brown-200 sm:top-[5%] sm:gap-2 lg:gap-1 lg:pt-6">
+            <p className="text-wrap text-[.58rem] font-bold md:text-xl lg:text-3xl">
               University of California, Riverside | May 9-10, 2026
             </p>
-            <p className="text-[0.45rem] sm:text-xs md:text-sm lg:pt-0 lg:text-[1.1rem]">
+            <p className="text-[0.48rem] md:text-lg lg:pt-0 lg:text-2xl">
               A design-a-thon near you!
             </p>
           </div>
@@ -75,7 +81,7 @@ const Landing = () => {
         <Image
           src={grass}
           alt="left grass box"
-          className="absolute bottom-0 left-0 z-30 w-[25%] -translate-x-[24%]"
+          className="absolute bottom-0 left-0 z-30 w-[26%] -translate-x-[21%]"
         />
         <Image
           src={grass}

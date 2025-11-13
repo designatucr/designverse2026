@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
-import Image from "next/image";
-import bunny from "@/public/landing/bunny.svg";
-import matcha from "@/public/landing/matcha.svg";
-import taiyaki from "@/public/landing/taiyaki.svg";
+// import Image from "next/image";
+// import bunny from "@/public/landing/bunny.svg";
+// import matcha from "@/public/landing/matcha.svg";
+// import taiyaki from "@/public/landing/taiyaki.svg";
 
 // eslint-disable-next-line
 const inter = Inter({ subsets: ["latin"] });
@@ -10,7 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 const About = () => {
   return (
     <div className={`relative ${inter.className}`}>
-      <section
+      <div className="block h-64 bg-transparent sm:hidden"></div>
+
+      {/* <section
         id="about"
         className="z-20 w-full items-start justify-center bg-[#fbe8d5] py-32 md:py-96"
       >
@@ -62,7 +64,7 @@ const About = () => {
         />
         <div className="relative z-30 h-32 w-full bg-[#C3A47E]" />
         <div className="relative z-30 h-48 w-full bg-[#A28561]" />
-      </div>
+      </div> */}
 
       {/* tried using below code to implement the (alleged) gradient from figma, but for whatever reason it disappears whenever i scroll, 
       might be because my monitor is ridiculously large ? idk i made it a solid color instead */}
