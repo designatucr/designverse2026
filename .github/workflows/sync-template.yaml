@@ -3,25 +3,6 @@ on:
   schedule:
     # Run at 6:00 AM every day
     - cron: "0 14 * * *"
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: "Log level"
-        required: true
-        default: "warning"
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
-      tags:
-        description: "Test scenario tags"
-        required: false
-        type: boolean
-      environment:
-        description: "Environment to run tests against"
-        type: environment
-        required: true
 
 jobs:
   sync-from-template:
@@ -37,12 +18,16 @@ jobs:
           path: ${{ github.repository }}
           token: ${{ secrets.WORKFLOW_TOKEN }}
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "Github Actions Bot"
+          git config --global user.email "actions@github.com"
+          git config --global pull.rebase false
       - name: Fetch all
         working-directory: ${{ github.repository }}
         run: |
           git remote add template https://github.com/acm-ucr/hackathon-website
           git fetch --all
-
       - name: Checkout and push Template Dev Branch
         working-directory: ${{ github.repository }}
         run: |
@@ -54,7 +39,7 @@ jobs:
             gh pr create --base dev --head sync-template --title "Sync Template Changes" --body "Syncing template changes"
           else
             git checkout -b sync-template origin/sync-template
-            git pull --no-rebase --allow-unrelated-histories template dev
+            git pull --allow-unrelated-histories template dev
             git push
           fi
         env:
