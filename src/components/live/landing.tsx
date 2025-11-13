@@ -48,7 +48,7 @@ const Landing = () => {
           <div className="absolute flex w-full items-center justify-center">
             <Image src={timer} alt="timer bg" className="z-0 w-[64%]" />
             <div className="absolute left-[17%] top-[5%] z-30 flex w-[65%] flex-col items-center gap-1 pt-2 text-landing-brown-200 sm:top-[5%] sm:gap-2 md:top-[12%] lg:top-[24%]">
-              <p className="lg-w-full w-3/4 text-wrap text-center text-xs font-bold sm:text-xs md:w-full md:text-[0.6rem] lg:text-base xl:text-2xl">
+              <p className="w-3/4 text-wrap text-center text-xs font-bold md:w-full md:text-base lg:text-xl">
                 University of California, Riverside | May 9-10, 2026
               </p>
               <p className="text-[0.45rem] sm:text-xs md:text-[0.55rem] lg:text-xl">
