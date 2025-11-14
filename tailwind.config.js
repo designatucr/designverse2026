@@ -12,6 +12,10 @@ module.exports = {
       },
     },
     extend: {
+      cursor: {
+        "default-taiyaki": "url(/taiyaki_cursor.svg), default",
+        "pointer-taiyaki": "url(/taiyaki_cursor.svg), pointer",
+      },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
       },

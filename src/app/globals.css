@@ -10,3 +10,14 @@
 body {
   font-family: var(--font-dv-inter);
 }
+
+*,
+*:before,
+*:after {
+  @apply cursor-default-taiyaki;
+}
+
+a,
+button {
+  @apply cursor-pointer-taiyaki;
+}
