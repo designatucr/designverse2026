@@ -14,7 +14,7 @@ const Live = () => {
   return (
     <>
       <Landing />
-      <About />
+      {/* <About /> */}
       {/* 
       <StripeWall /> */}
       {/* <Tracks />
