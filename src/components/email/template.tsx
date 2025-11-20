@@ -12,7 +12,6 @@ import {
   Text,
   Tailwind,
 } from "@react-email/components";
-import DVLOGO from "@/public/landing/dv_logo.svg";
 
 interface props {
   children: React.ReactNode;
