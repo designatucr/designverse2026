@@ -66,7 +66,7 @@ const Landing = () => {
           /> */}
           <div className="absolute top-[3%] z-30 flex flex-col items-center justify-center pt-1 text-landing-brown-200 sm:top-[5%] sm:gap-2 lg:gap-1 lg:pt-6">
             <p className="text-wrap text-[.58rem] font-bold md:text-xl lg:text-3xl">
-              University of California, Riverside | May 9-10, 2026
+              University of California, Riverside | May 2-3, 2026
             </p>
             <p className="text-[0.48rem] md:text-lg lg:pt-0 lg:text-2xl">
               A design-a-thon near you!
