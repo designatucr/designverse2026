@@ -29,10 +29,10 @@ const Template = ({ children, name, preview }: props) => {
           <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-solid border-[#eaeaea] p-[20px]">
             <Section className="mt-[32px]">
               <Img
-                src="https://www.bearhack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.473367c8.webp&w=3840&q=75"
-                width="40"
-                height="37"
-                alt="Vercel"
+                src="https://i.postimg.cc/hjqDMzH8/dv-logo.png"
+                width="212"
+                height="88"
+                alt="DesignVerse Logo"
                 className="mx-auto my-0"
               />
             </Section>
