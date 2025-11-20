@@ -61,11 +61,7 @@ const Landing = () => {
               <p className="text-[1.3vw]">A design-a-thon near you!</p>
             </div>
           </div>
-          <Image
-            src={bakery2}
-            alt="bakery shop"
-            className="z-20 h-[20%] md:h-[40%]"
-          />
+          <Image src={bakery2} alt="bakery shop" className="z-20 w-[60vw]" />
           <div className="absolute top-[60%] z-30 flex w-[90%] flex-col items-center justify-center gap-2 text-landing-brown-300 md:gap-5">
             <div className="text-[4vw] font-bold">COMING SOON.</div>
             <div className="text-[2vw]">Something new is brewing...</div>
