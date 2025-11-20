@@ -37,64 +37,51 @@ const Landing = () => {
         <Image
           src={cloud2}
           alt="right cloud"
-          className="absolute right-0 top-56 w-[12%]"
+          className="absolute right-0 top-32 w-[12%] md:top-56"
         />
       </div>
       <div className="sm:mt-34 relative z-20 mt-20 flex w-[90%] flex-col items-center justify-center md:mt-36 lg:mt-52">
-        <div className="relative flex w-full flex-col items-center">
-          <Image
-            src={logo}
-            alt="dv logo sign"
-            className="w-1/4 -translate-y-[80%]"
-          />
-          <Image
-            src={bakerySign}
-            alt="sign on top bakery"
-            className="absolute bottom-[50%] z-0 size-[70%] pt-10 md:bottom-[45%] md:size-[70%] lg:bottom-[45%] lg:size-[58%] lg:pt-2"
-          />
-          {/* <Image
-            src={timer}
-            alt="timer bg"
-            className="absolute bottom-[70%] z-0 size-[54%] pt-10 md:size-[45%] lg:size-[35%] lg:pt-2"
-          /> */}
-          {/* <Countdown
-            classNames={{
-              unit: "text-landing-brown-200",
-              background: "bg-landing-brown-100",
-              digit: "text-white",
-            }}
-          /> */}
-          <div className="absolute top-[3%] z-30 flex flex-col items-center justify-center pt-1 text-landing-brown-200 sm:top-[5%] sm:gap-2 lg:gap-1 lg:pt-6">
-            <p className="text-wrap text-[.58rem] font-bold md:text-xl lg:text-3xl">
-              University of California, Riverside | May 2-3, 2026
-            </p>
-            <p className="text-[0.48rem] md:text-lg lg:pt-0 lg:text-2xl">
-              A design-a-thon near you!
-            </p>
+        <Image
+          src={logo}
+          alt="dv logo sign"
+          className="w-1/4 -translate-y-[72%]"
+        />
+
+        <div className="flex w-[59%] flex-col items-center">
+          <div className="absolute top-[5%] flex w-[64%] flex-col items-center justify-center text-landing-brown-200">
+            <Image
+              src={bakerySign}
+              alt="sign on top bakery"
+              className="size-[70%]"
+            />
+            <div className="absolute top-[12%] z-30 flex max-w-[68%] flex-col items-center justify-center pt-1 text-center text-landing-brown-200 md:gap-1 xl:gap-2">
+              <p className="text-wrap text-[1.6vw] font-bold">
+                University of California, Riverside | May 2-3, 2026
+              </p>
+              <p className="text-[1.3vw]">A design-a-thon near you!</p>
+            </div>
           </div>
           <Image
             src={bakery2}
             alt="bakery shop"
             className="z-20 h-[20%] md:h-[40%]"
           />
+          <div className="absolute top-[60%] z-30 flex w-[90%] flex-col items-center justify-center gap-2 text-landing-brown-300 md:gap-5">
+            <div className="text-[4vw] font-bold">COMING SOON.</div>
+            <div className="text-[2vw]">Something new is brewing...</div>
+          </div>
         </div>
-        <Image
-          src={grass}
-          alt="left grass box"
-          className="absolute bottom-0 left-0 z-30 w-[26%] -translate-x-[21%]"
-        />
-        <Image
-          src={grass}
-          alt="right grass box"
-          className="absolute bottom-0 right-0 z-30 w-[26%] translate-x-[21%] -scale-x-100"
-        />
-        <div className="absolute top-[60%] z-30 flex w-[90%] flex-col items-center justify-center gap-2 text-landing-brown-300 md:gap-5">
-          <div className="text-lg font-bold sm:text-3xl md:text-5xl lg:text-7xl">
-            COMING SOON.
-          </div>
-          <div className="text-sm md:text-xl lg:text-3xl">
-            Something new is brewing...
-          </div>
+        <div className="relative flex w-full flex-col items-center">
+          <Image
+            src={grass}
+            alt="left grass box"
+            className="absolute bottom-0 left-[12%] z-30 w-[20%] -translate-x-[21%]"
+          />
+          <Image
+            src={grass}
+            alt="right grass box"
+            className="absolute bottom-0 right-[12%] z-30 w-[20%] translate-x-[21%] -scale-x-100"
+          />
         </div>
       </div>
     </div>
