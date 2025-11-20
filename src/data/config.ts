@@ -21,15 +21,15 @@ const data: config = {
   email: "designverseucr@gmail.com",
   description: "",
   length: 24,
-  date: new Date("2026-05-09T08:00:00"),
-  end: new Date("2026-05-10T16:00:00"),
+  date: new Date("2026-05-02T08:00:00"),
+  end: new Date("2026-05-3T16:00:00"),
   packet: "",
-  devpost: "https://devpost.com/",
+  devpost:
+    "https://designverse2026.devpost.com/?preview_token=CpXaJBoUj3c33diUTIpPHdCmjk2S5R%2F5tiRNxFNCuEc%3D",
   domain: "https://www.designverseucr.org/",
   instagram: "https://www.instagram.com/designverseucr/",
-  linkedin:
-    "https://www.linkedin.com/company/designverseucr/posts/?feedView=all",
-  discord: "https://www.discord.com",
+  linkedin: "https://www.linkedin.com/company/designverseucr/",
+  discord: "https://discord.com/invite/MmSvY3tu",
   heart: "🤎",
 };
 
