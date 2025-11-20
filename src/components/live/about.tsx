@@ -6,7 +6,7 @@ import taiyaki from "@/public/landing/taiyaki.svg";
 import Title from "../ui/title";
 // eslint-disable-next-line
 const inter = Inter({ subsets: ["latin"] });
-
+// for commit
 const About = () => {
   return (
     <div className={`relative ${inter.className}`}>
