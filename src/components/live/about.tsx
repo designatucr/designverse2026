@@ -12,7 +12,7 @@ const About = () => {
       <div className="block h-64 bg-transparent sm:hidden"></div>
       <section
         id="about"
-        className="z-20 w-full items-start justify-center bg-beige-100 py-32 md:py-64"
+        className="bg-beige-100 z-20 w-full items-start justify-center py-32 md:py-64"
       >
         <div className="md:w-7/8 pl-[8vw] pr-[8vw] font-semibold sm:w-full">
           <Title>ABOUT US</Title>
