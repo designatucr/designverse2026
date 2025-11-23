@@ -8,9 +8,9 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="mt-10 flex w-full flex-col items-center justify-between gap-2 bg-[#705D3F] px-10 py-3">
+    <footer className="mt-10 flex w-full flex-col items-center justify-between gap-2 bg-landing-brown-300 px-10">
       <Image
-        className="w-1/3 pb-5 pt-8 md:w-1/12"
+        className="w-1/4 pb-5 pt-8 md:w-1/12"
         src={LogoIcon}
         alt="DV Logo in footer"
         width={118}
@@ -23,7 +23,7 @@ const Footer = () => {
           target="_blank"
           aria-label="Email"
         >
-          <MdEmail className="text-5xl text-white transition-transform hover:scale-110" />
+          <MdEmail className="text-3xl text-white transition-transform hover:scale-110 md:text-5xl" />
         </Link>
         <Link
           className="pr-3"
@@ -31,7 +31,7 @@ const Footer = () => {
           target="_blank"
           aria-label="Linkedin"
         >
-          <FaLinkedin className="text-5xl text-white transition-transform hover:scale-110" />
+          <FaLinkedin className="text-3xl text-white transition-transform hover:scale-110 md:text-5xl" />
         </Link>
         <Link
           className="pr-3"
@@ -39,17 +39,17 @@ const Footer = () => {
           target="_blank"
           aria-label="Instagram"
         >
-          <RiInstagramFill className="text-5xl text-white transition-transform hover:scale-110" />
+          <RiInstagramFill className="text-3xl text-white transition-transform hover:scale-110 md:text-5xl" />
         </Link>
         <Link
           href="https://discord.com/invite/MmSvY3tu"
           target="_blank"
           aria-label="Discord"
         >
-          <FaDiscord className="text-5xl text-white transition-transform hover:scale-110" />
+          <FaDiscord className="text-3xl text-white transition-transform hover:scale-110 md:text-5xl" />
         </Link>
       </div>
-      <p className="font-inter p-5 text-center text-white">
+      <p className="font-inter p-5 text-center text-sm text-white md:text-lg">
         Made with &lt;3 by the 2026 DesignVerse team
       </p>
     </footer>
