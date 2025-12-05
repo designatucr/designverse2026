@@ -84,8 +84,11 @@ module.exports = {
           "brown-200": "#77512E",
           "brown-300": "#654831",
           "brown-400": "#5B3E26",
+          "brown-500": "#8C7054",
+          "brown-600": "#CFB397",
           "beige-100": "#FBE8D5",
           "beige-200": "#F1D8BF",
+          "beige-300": "#EED1B4",
         },
       },
       keyframes: {
