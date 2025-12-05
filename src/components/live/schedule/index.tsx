@@ -1,28 +1,28 @@
-import { api } from "@/utils/api";
-import Events from "./events";
-import Image from "next/image";
-import pin from "@/public/schedule/pin.svg";
-import string from "@/public/schedule/string.svg";
+// import { api } from "@/utils/api";
+// import Events from "./events";
+// import Image from "next/image";
+// import pin from "@/public/schedule/pin.svg";
+// import string from "@/public/schedule/string.svg";
 
 const Schedule = async () => {
-  const { items } = await api({
-    url: `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
-    method: "GET",
-  });
+  //   const { items } = await api({
+  //     url: `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
+  //     method: "GET",
+  //   });
 
-  const totalDays = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  //   const totalDays = [
+  //     "Monday",
+  //     "Tuesday",
+  //     "Wednesday",
+  //     "Thursday",
+  //     "Friday",
+  //     "Saturday",
+  //     "Sunday",
+  //   ];
 
   return (
     <div>
-      <div className="relative">
+      {/* <div className="relative">
         <Image
           src={pin}
           alt=""
@@ -45,7 +45,7 @@ const Schedule = async () => {
           SCHEDULE (PST)
         </p>
         <Events events={items} totalDays={totalDays} />
-      </div>
+      </div> */}
     </div>
   );
 };
