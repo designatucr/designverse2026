@@ -10,7 +10,7 @@ import bakerySign from "@/public/landing/bakery_sign.svg";
 import grass from "@/public/landing/grass.svg";
 import bakery2 from "@/public/landing/bakery2.svg";
 import Link from "next/link";
-
+// import { FiArrowUpRight } from "react-icons/fi";
 const Landing = () => {
   return (
     <div className="flex min-h-0 w-full flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
@@ -80,6 +80,57 @@ const Landing = () => {
           />
         </div>
       </div>
+      {/* 
+      <div className="mt-10 flex w-[59%] flex-col items-center">
+        <Image src={timer} alt="Sign on top of Bakery" className="size-[78%]" />
+        <div className="absolute mt-8 flex-col items-center justify-center text-center text-landing-brown-200">
+          <p className="mt-2 text-nowrap text-3xl font-bold">
+            University of California, Riverside | May 9-10, 2026
+          </p>
+          <Countdown
+            classNames={{
+              unit: "text-landing-brown-400 text-[0.7rem] font-bold",
+              digit: "font-bold text-white lg:text-[2.5rem]",
+              background: "w-12 h-16 bg-landing-brown-400 rounded-lg",
+            }}
+          />
+          <div className="mt-2 flex justify-center gap-12 text-white">
+            <Link
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold"
+            >
+              Mentor <FiArrowUpRight className="h-7 w-7" />
+            </Link>
+            <Link
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold"
+            >
+              Sponsor <FiArrowUpRight className="h-7 w-7" />
+            </Link>
+            <Link
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold"
+            >
+              Volunteer <FiArrowUpRight className="h-7 w-7" />
+            </Link>
+          </div>
+        </div>
+        <Link
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-20 flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold text-white"
+        >
+          Apply Now!
+        </Link>
+      </div>
+      */}
     </div>
   );
 };
