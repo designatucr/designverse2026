@@ -19,7 +19,7 @@ const RootLayout = async ({ children }: Props) => {
       <body
         className={`${poppins.variable} flex h-full flex-col overflow-x-hidden bg-landing-beige-100 lg:flex-row`}
       >
-        <div className="flex h-full min-w-fit">{children}</div>
+        <div className="flex h-full min-w-fit sm:w-full">{children}</div>
       </body>
     </html>
   );
