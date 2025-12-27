@@ -1,12 +1,12 @@
 /* eslint-disable new-cap */
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  variable: "--font-dv-inter",
 });
 
 type Props = {
@@ -17,9 +17,9 @@ const RootLayout = async ({ children }: Props) => {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${poppins.variable} flex h-full flex-col bg-landing-beige-100 lg:flex-row`}
+        className={`${inter.variable} flex h-full flex-col overflow-x-hidden bg-landing-beige-100 lg:flex-row`}
       >
-        <div className="flex h-full w-full">{children}</div>
+        <div className="flex h-full min-w-fit sm:w-full">{children}</div>
       </body>
     </html>
   );
