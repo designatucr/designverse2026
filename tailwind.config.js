@@ -14,6 +14,8 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        inter: ["Inter", "sans-serif"],
+        work_sans: ["Work Sans", "sans-serif"],
       },
       colors: {
         hackathon: {
