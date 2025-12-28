@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="mt-10 flex w-full flex-col justify-between gap-2 bg-landing-brown-300 px-4 py-6 md:text-nowrap md:px-16 md:py-14">
+    <footer className="mt-10 flex flex-col justify-between gap-2 bg-landing-brown-300 px-4 py-6 md:px-16 md:py-14">
       <Image
         className="w-1/4 pb-5 pl-5 pt-8 md:w-1/12"
         src={LogoIcon}
@@ -16,7 +16,7 @@ const Footer = () => {
         width={118}
         height={80}
       />
-      <div className="flex flex-row">
+      <div className="flex flex-row justify-between">
         <div>
           <div className="flex flex-row pl-5">
             <Link
@@ -55,15 +55,12 @@ const Footer = () => {
             Made with &lt;3 by the 2026 DesignVerse team
           </p>
         </div>
-        <div className="-mt-24 flex flex-col pl-[2vw] pr-4 text-right md:pl-[50vw] md:pr-0">
-          <p className="pr-5 font-inter text-sm font-bold text-white md:text-2xl">
+        <div className="-mt-24 flex flex-col pr-5 text-right">
+          <p className="font-inter text-sm font-bold text-white md:text-2xl">
             Previous Sites
           </p>
-          <p className="py-3 pr-5 font-inter text-sm text-white md:text-2xl">
-            2024
-          </p>
           <Link
-            className="pr-5 font-inter text-sm text-white hover:cursor-pointer hover:underline md:text-2xl"
+            className="py-3 font-inter text-sm text-white hover:cursor-pointer hover:underline md:text-2xl"
             href="https://designverse2025.vercel.app/"
             target="_blank"
             rel="noreferrer noopener"
