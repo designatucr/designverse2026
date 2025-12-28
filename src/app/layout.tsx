@@ -13,9 +13,7 @@ type Props = {
 const RootLayout = async ({ children }: Props) => {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className}bg-landing-beige-100 min-w-fit md:overflow-visible`}
-      >
+      <body className={`${inter.className}bg-landing-beige-100`}>
         <div>{children}</div>
       </body>
     </html>

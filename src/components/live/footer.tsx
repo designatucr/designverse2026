@@ -8,17 +8,17 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="mt-10 flex flex-col justify-between gap-2 bg-landing-brown-300 px-4 py-6 md:px-16 md:py-14">
-      <Image
-        className="w-1/4 pb-5 pl-5 pt-8 md:w-1/12"
-        src={LogoIcon}
-        alt="DV Logo in footer"
-        width={118}
-        height={80}
-      />
+    <footer className="flex flex-col justify-between gap-2 bg-landing-brown-300 p-6 md:p-16">
       <div className="flex flex-row justify-between">
         <div>
-          <div className="flex flex-row pl-5">
+          <Image
+            className="w-1/3 pb-5 md:pb-10 md:pl-5"
+            src={LogoIcon}
+            alt="DV Logo in footer"
+            width={118}
+            height={80}
+          />
+          <div className="flex flex-row md:pl-5">
             <Link
               className="pr-3"
               href="mailto:designverseucr@gmail.com"
@@ -51,11 +51,11 @@ const Footer = () => {
               <FaDiscord className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
             </Link>
           </div>
-          <p className="p-5 text-left font-inter text-xs text-white md:text-2xl">
+          <p className="py-5 text-left font-inter text-xs text-white md:pl-5 md:text-2xl">
             Made with &lt;3 by the 2026 DesignVerse team
           </p>
         </div>
-        <div className="-mt-24 flex flex-col pr-5 text-right">
+        <div className="flex flex-col text-right md:pr-5">
           <p className="font-inter text-sm font-bold text-white md:text-2xl">
             Previous Sites
           </p>
