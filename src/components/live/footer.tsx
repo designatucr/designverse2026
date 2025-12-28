@@ -15,8 +15,6 @@ const Footer = () => {
             className="w-1/3 pb-5 md:pb-10 md:pl-5"
             src={LogoIcon}
             alt="DV Logo in footer"
-            width={118}
-            height={80}
           />
           <div className="flex flex-row md:pl-5">
             <Link
