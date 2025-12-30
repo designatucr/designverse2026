@@ -8,18 +8,19 @@ import Landing from "./landing";
 // import Judges from "./judges";
 import FAQ from "./faq";
 import Footer from "./footer";
+import Sponsors from "./sponsors";
 // import StripeWall from "@/components/live/stripewall";
 
 const Live = () => {
   return (
     <>
       <Landing />
+      <Sponsors />
       {/* <About /> */}
       {/* 
       <StripeWall /> */}
       {/* <Tracks />
       <Schedule />
-      <Sponsors />
       <Team />
       <Committees />
       <Judges /> */}
