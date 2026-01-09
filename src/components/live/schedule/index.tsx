@@ -1,4 +1,4 @@
-import { api } from "@/utils/api";
+// import { api } from "@/utils/api";
 // import Events from "./events";
 import Title from "@/components/ui/title";
 
