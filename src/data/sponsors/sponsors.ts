@@ -10,6 +10,7 @@ export interface Sponsor {
   image: StaticImageData;
   name: string;
   translateY: boolean;
+  link: string;
 }
 
 export const sponsors: Sponsor[] = [
@@ -17,30 +18,36 @@ export const sponsors: Sponsor[] = [
     image: Sponsor1,
     name: "Sponsor 1",
     translateY: false,
+    link: "https://www.purebuttons.com/",
   },
   {
     image: Sponsor2,
     name: "Sponsor 2",
     translateY: true,
+    link: "https://www.notion.com/",
   },
   {
     image: Sponsor3,
     name: "Sponsor 3",
     translateY: false,
+    link: "/",
   },
   {
     image: Sponsor4,
     name: "Sponsor 4",
     translateY: false,
+    link: "/",
   },
   {
     image: Sponsor5,
     name: "Sponsor 5",
     translateY: true,
+    link: "/",
   },
   {
     image: Sponsor6,
     name: "Sponsor 6",
     translateY: false,
+    link: "/",
   },
 ];
