@@ -21,7 +21,7 @@ const Schedule = async () => {
   return (
     <>
       <Title>Schedule</Title>
-      <Events events={items} totalDays={totalDays} />
+      {/* <Events events={items} totalDays={totalDays} /> */}
     </>
   );
 };
