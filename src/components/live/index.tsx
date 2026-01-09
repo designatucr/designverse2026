@@ -16,7 +16,7 @@ const Live = () => {
     <>
       <Landing />
       {/* <About /> */}
-      <Resources />
+      {/* <Resources /> */}
       {/* 
       <StripeWall /> */}
       {/* <Tracks />
