@@ -1,11 +1,38 @@
 import { Inter } from "next/font/google";
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { Button } from "../ui/button";
 import Image from "next/image";
 import bunny from "@/public/landing/bunny.svg";
 import matcha from "@/public/landing/matcha.svg";
 import taiyaki from "@/public/landing/taiyaki.svg";
-import Title from "../ui/title";
 // eslint-disable-next-line
 const inter = Inter({ subsets: ["latin"] });
+
+const support = [
+  {
+    title: "Become a Mentor",
+    description:
+      "Have experience leading, using Figma, or coordinating groups? Share your knowledge and become a mentor!",
+    form: "Mentor",
+    link: "/apply/mentor",
+  },
+  {
+    title: "Sponsor Us",
+    description:
+      "Have a company or brand you want to bring attention to? Sponsor us to raise brand awareness and exposure through social media and giveaways!",
+    form: "Sponsor",
+    link: "/apply/sponsor",
+  },
+  {
+    title: "Volunteer Work",
+    description:
+      "Need experience or just want to help our organization come to life? Volunteer to help the Designathon happen!",
+    form: "Volunteer",
+    link: "/apply/volunteer",
+  },
+];
+
 const About = () => {
   return (
     <div className={`relative ${inter.className}`}>
@@ -14,8 +41,11 @@ const About = () => {
         id="about"
         className="bg-beige-100 z-20 w-full items-start justify-center py-32 md:py-64"
       >
-        <div className="md:w-7/8 pl-[8vw] pr-[8vw] font-semibold sm:w-full">
-          <Title>ABOUT US</Title>
+        <div className="md:w-7/8 bg-landing-beige-200 pl-[8vw] pr-[8vw] font-semibold sm:w-full">
+          <div className="py-16 text-left font-inter text-4xl font-bold text-landing-brown-300 md:text-7xl">
+            {" "}
+            ABOUT US{" "}
+          </div>
           <div className="flex flex-col items-start gap-8 md:flex-row md:gap-12">
             <div className="relative flex-1">
               <div className="relative bg-white p-6 py-24 text-landing-brown-400 shadow-[5px_5px_5px_rgba(0,0,0,0.3)] sm:p-12">
@@ -53,18 +83,42 @@ const About = () => {
         <Image
           src={matcha}
           alt="matcha"
-          className="absolute bottom-8 right-[33%] z-40 w-1/4 max-w-32 pb-52 sm:right-[30%] sm:w-1/6 md:right-[25%] md:max-w-32 lg:right-[20%] lg:max-w-36 xl:right-[25%] xl:max-w-40"
+          className="absolute bottom-[30%] right-[33%] z-40 hidden w-1/4 max-w-32 sm:right-[30%] sm:w-1/6 md:right-[25%] md:max-w-32 lg:right-[20%] lg:block lg:max-w-36 xl:right-[25%] xl:max-w-40"
         />
         <Image
           src={taiyaki}
           alt="taiyaki"
-          className="absolute bottom-20 right-[60%] z-40 w-1/4 max-w-28 pb-32 sm:right-[45%] sm:w-1/6 md:max-w-32 lg:max-w-36"
+          className="absolute bottom-[32%] right-[60%] z-40 hidden w-1/4 max-w-28 sm:right-[45%] sm:w-1/6 md:max-w-32 lg:block lg:max-w-36"
         />
       </section>
       <div className="relative">
-        <div className="bottom relative right-[40%] w-1/5 place-self-end"></div>
-        <div className="2xl:-mt- relative z-30 -mt-48 h-32 w-full bg-[#C3A47E] md:-mt-72 lg:-mt-72 xl:-mt-80" />
-        <div className="relative z-30 h-48 w-full bg-[#A28561]" />
+        <div className="z-30 -mt-48 flex h-32 w-full items-center bg-[#C3A47E] md:-mt-72 lg:-mt-72 xl:-mt-80" />
+        <div className="h-2/3 bg-[#A28561] p-20">
+          <p className="pb-20 text-center text-4xl font-bold text-white md:text-7xl">
+            SUPPORT US{" "}
+          </p>
+          <div className="flex flex-col gap-20 px-9 lg:flex-row">
+            {support.map(({ title, description, form, link }, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-evenly gap-12 text-white"
+              >
+                <p className="text-xl font-bold lg:text-3xl">{title}</p>
+                <div className="text-center text-sm lg:text-base">
+                  {description}
+                </div>
+                <Button
+                  asChild
+                  className="w-1/2 rounded-full bg-landing-brown-200 hover:bg-landing-brown-400"
+                >
+                  <Link href={link} className="flex gap-2">
+                    {form} <ExternalLink />
+                  </Link>
+                </Button>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
