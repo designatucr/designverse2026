@@ -92,8 +92,8 @@ const About = () => {
         />
       </section>
       <div className="relative">
-        <div className="z-30 -mt-48 flex h-32 w-full items-center bg-[#C3A47E] md:-mt-72 lg:-mt-72 xl:-mt-80" />
-        <div className="h-2/3 bg-[#A28561] p-20">
+        <div className="z-30 -mt-48 flex h-32 w-full items-center bg-landing-orange-200 md:-mt-72 lg:-mt-72 xl:-mt-80" />
+        <div className="h-2/3 bg-landing-orange-300 p-20">
           <p className="pb-20 text-center text-4xl font-bold text-white md:text-7xl">
             SUPPORT US{" "}
           </p>
@@ -109,9 +109,14 @@ const About = () => {
                 </div>
                 <Button
                   asChild
-                  className="w-1/2 rounded-full bg-landing-brown-200 hover:bg-landing-brown-400"
+                  className="w-1/2 rounded-full bg-landing-brown-200 hover:scale-105 hover:bg-landing-brown-400"
                 >
-                  <Link href={link} className="flex gap-2">
+                  <Link
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="flex gap-2"
+                  >
                     {form} <ExternalLink />
                   </Link>
                 </Button>
