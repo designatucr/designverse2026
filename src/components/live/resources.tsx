@@ -53,7 +53,7 @@ const bakeryItems = [
 const Resources = () => {
   return (
     <div className="flex flex-col items-center justify-center p-16">
-      <p className="w-3/4 bg-landing-brown-200 p-12 text-center font-inter text-2xl font-bold text-white md:text-7xl">
+      <p className="flex w-3/4 justify-center bg-landing-brown-200 p-12 font-inter text-2xl font-bold text-white md:text-7xl">
         RESOURCES
       </p>
       <div className="grid w-3/4 grid-cols-1 gap-0 border-8 border-x-landing-brown-400 lg:grid-cols-3">
