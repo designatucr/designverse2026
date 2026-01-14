@@ -14,6 +14,8 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        inter: ["Inter", "sans-serif"],
+        work_sans: ["Work Sans", "sans-serif"],
       },
       colors: {
         hackathon: {
@@ -80,6 +82,8 @@ module.exports = {
         landing: {
           "blue-100": "#9DE1FF",
           "orange-100": "#FFE0D2",
+          "orange-200": "#C3A47E",
+          "orange-300": "#A28561",
           "brown-100": "#603A18",
           "brown-200": "#77512E",
           "brown-300": "#654831",
