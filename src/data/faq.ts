@@ -16,7 +16,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   },
   {
     question: "When are applications due?",
-    answer: "April 26",
+    answer: "Applications are due April 26, 2026!",
   },
   {
     question: "Where will the designathon be?",
@@ -53,7 +53,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   },
   {
     question: "How many members can be in one team?",
-    answer: "1-4 members",
+    answer: "There can be between one and four members on a single team.",
   },
   {
     question:
@@ -68,6 +68,6 @@ export const QUESTIONS: QuestionAnswer[] = [
   },
   {
     question: "My question is not here.",
-    answer: "Feel free to email us at designverseucr@gmail.com",
+    answer: "Feel free to email us at designverseucr@gmail.com.",
   },
 ];
