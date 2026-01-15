@@ -87,6 +87,14 @@ module.exports = {
           "beige-100": "#FBE8D5",
           "beige-200": "#F1D8BF",
         },
+        forms: {
+          "brown-100": "#FFF1E4",
+          "brown-200": "#705D34",
+          "brown-300": "#8D785F",
+          "beige-100": "#BB9F85",
+          "beige-200": "#F0D9C1",
+          "olive-100": "#B0B492",
+        },
       },
       keyframes: {
         "accordion-down": {
