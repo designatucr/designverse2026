@@ -80,6 +80,7 @@ module.exports = {
           "accent-foreground": "#22577A",
         },
         landing: {
+          "black-100": "#535353",
           "blue-100": "#9DE1FF",
           "orange-100": "#FFE0D2",
           "orange-200": "#C3A47E",
