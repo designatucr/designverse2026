@@ -3,7 +3,6 @@ import Image from "next/image";
 import cloud1 from "@/public/landing/cloud1.svg";
 import cloud2 from "@/public/landing/cloud2.svg";
 import logo from "@/public/landing/dv_logo.svg";
-import bakerySign from "@/public/landing/bakery_sign.svg";
 import timer from "@/public/landing/timer.svg";
 // import sign from "@/public/landing/sign.svg";
 // import bakery from "@/public/landing/bakery.svg";
@@ -40,88 +39,56 @@ const Landing = () => {
           className="absolute right-0 top-32 w-[12%] md:top-56"
         />
       </div>
-      <div className="sm:mt-34 relative z-20 mt-20 flex w-[90%] flex-col items-center justify-center md:mt-36 lg:mt-52">
+      <div className="relative top-6 z-20 mt-44 flex w-[90%] flex-col items-center justify-center sm:mt-32 md:top-0 md:mt-36 lg:mt-52">
         <Image
           src={logo}
           alt="dv logo sign"
-          className="w-1/4 -translate-y-[72%]"
+          className="relative bottom-[108px] w-1/4 -translate-y-[50%] md:bottom-0 lg:bottom-[5vh]"
         />
 
-        <div className="flex w-[59%] flex-col items-center">
-          <div className="absolute top-[5%] flex w-[64%] flex-col items-center justify-center text-landing-brown-200">
-            <Image
-              src={bakerySign}
-              alt="sign on top bakery"
-              className="size-[70%]"
-            />
-            <div className="absolute top-[12%] z-30 flex max-w-[68%] flex-col items-center justify-center pt-1 text-center text-landing-brown-200 md:gap-1 xl:gap-2">
-              <p className="text-wrap text-[1.6vw] font-bold">
-                University of California, Riverside | May 2-3, 2026
-              </p>
-              <p className="text-[1.3vw]">A design-a-thon near you!</p>
-            </div>
-          </div>
-          <Image src={bakery2} alt="bakery shop" className="z-20 w-[60vw]" />
-          <div className="absolute top-[60%] z-30 flex w-[90%] flex-col items-center justify-center gap-2 text-landing-brown-300 md:gap-5">
-            <div className="text-[4vw] font-bold">COMING SOON.</div>
-            <div className="text-[2vw]">Something new is brewing...</div>
-          </div>
-        </div>
-        <div className="relative flex w-full flex-col items-center">
-          <Image
-            src={grass}
-            alt="left grass box"
-            className="absolute bottom-0 left-[12%] z-30 w-[20%] -translate-x-[21%]"
-          />
-          <Image
-            src={grass}
-            alt="right grass box"
-            className="absolute bottom-0 right-[12%] z-30 w-[20%] translate-x-[21%] -scale-x-100"
-          />
-        </div>
-      </div>
-      {
-        <div className="mt-10 flex w-[59%] flex-col items-center">
+        <div className="relative bottom-44 flex w-[91%] flex-col items-center md:w-[59%] lg:w-[85%]">
           <Image
             src={timer}
             alt="Sign on top of Bakery"
-            className="size-[78%]"
+            className="relative top-8 size-[78%] lg:size-[65%]"
           />
-          <div className="absolute mt-8 flex-col items-center justify-center text-center text-landing-brown-200">
-            <p className="text-nowrap text-[1.4vw] font-bold">
+          <div className="absolute mt-8 flex-col items-center justify-center py-2 text-center text-landing-brown-200 md:mt-16 md:py-6 lg:mt-12 lg:py-4">
+            <p className="mt-5 text-nowrap text-[2.3vw] font-bold md:text-[1.4vw]">
               University of California, Riverside | May 9-10, 2026
             </p>
             <Countdown
               classNames={{
-                unit: "text-landing-brown-400 text-[0.9rem] font-bold",
-                digit: "font-bold text-white lg:text-[2.5rem]",
-                background: "w-11 h-14 bg-landing-brown-400 rounded-lg",
+                unit: "text-landing-brown-400 text-[0.5rem] md:text-[0.9rem] font-bold",
+                digit:
+                  "font-bold text-white text-sm md:text-lg lg:text-[2.5rem] mt-0 md:mt-5 lg:mt-2",
+                background:
+                  "w-2 h-8 md:w-11 md:h-14 lg:w-10 lg:h-16 bg-landing-brown-400 rounded-lg",
               }}
             />
-            <div className="mt-2 flex justify-center gap-16 text-white">
+            <div className="relative z-30 mt-0 flex justify-center gap-6 text-white md:mt-5 md:gap-10">
               <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold"
+                className="flex h-5 w-16 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem]"
               >
-                Mentor <PiArrowUpRightBold className="h-6 w-6" />
+                Mentor <PiArrowUpRightBold className="size-3 md:size-6" />
               </Link>
               <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold"
+                className="flex h-5 w-16 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem]"
               >
-                Sponsor <PiArrowUpRightBold className="h-6 w-6" />
+                Sponsor <PiArrowUpRightBold className="size-3 md:size-6" />
               </Link>
               <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold"
+                className="flex h-5 w-16 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem]"
               >
-                Volunteer <PiArrowUpRightBold className="h-6 w-6" />
+                Volunteer <PiArrowUpRightBold className="size-3 md:size-6" />
               </Link>
             </div>
           </div>
@@ -129,12 +96,29 @@ const Landing = () => {
             href="/"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-20 flex h-10 w-40 items-center justify-center rounded-lg bg-landing-brown-100 font-semibold text-white"
+            className="absolute top-44 z-30 mt-0 flex h-5 w-20 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold text-white md:top-96 md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem] lg:mt-16"
           >
             Apply Now!
           </Link>
+          <Image
+            src={bakery2}
+            alt="bakery shop"
+            className="relative z-20 flex"
+          />
         </div>
-      }
+        <div className="relative flex w-full flex-col items-center">
+          <Image
+            src={grass}
+            alt="left grass box"
+            className="absolute bottom-44 left-[12%] z-30 w-[20%] -translate-x-[21%]"
+          />
+          <Image
+            src={grass}
+            alt="right grass box"
+            className="absolute bottom-44 right-[12%] z-30 w-[20%] translate-x-[21%] -scale-x-100"
+          />
+        </div>
+      </div>
     </div>
   );
 };
