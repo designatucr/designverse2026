@@ -55,7 +55,6 @@ const Schedule = async () => {
           className="h-auto w-8 md:w-14 lg:w-auto"
         />
       </div>
-      <Events events={items} totalDays={totalDays} />
     </div>
     */}
     </>
