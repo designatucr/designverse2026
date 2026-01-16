@@ -73,9 +73,9 @@ const Form = ({
             alt="Right Bunny"
             className="absolute right-0 top-[12%] hidden w-[3vw] md:block"
           />
-          <div className="text-3xl font-semibold text-landing-brown-300 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+          <p className="text-3xl font-semibold text-landing-brown-300 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
             DESIGNVERSE 2026
-          </div>
+          </p>
           <p className="m-0 rounded-lg bg-forms-olive-100 px-5 py-3 text-center text-base font-semibold text-white sm:text-lg md:px-8 md:py-4 md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
             {header}
           </p>
