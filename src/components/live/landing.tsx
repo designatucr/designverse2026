@@ -6,6 +6,8 @@ import logo from "@/public/landing/dv_logo.svg";
 import timer from "@/public/landing/timer.svg";
 // import sign from "@/public/landing/sign.svg";
 // import bakery from "@/public/landing/bakery.svg";
+// import leftLampost from "@/public/landing/leftLampost.svg";
+// import rightLampost from "@/public/landing/rightLampost.svg";
 import grass from "@/public/landing/grass.svg";
 import bakery2 from "@/public/landing/bakery2.svg";
 import Link from "next/link";
@@ -107,6 +109,17 @@ const Landing = () => {
           />
         </div>
         <div className="relative flex w-full flex-col items-center">
+          {/* <Image
+            src={leftLampost}
+            alt="left lampost"
+            className="absolute -bottom-5 -left-[9%] z-40 w-[45%] -translate-x-[21%] md:-bottom-10"
+          />
+          <Image
+            src={rightLampost}
+            alt="right lampost"
+            className="absolute -bottom-5 -right-[29%] z-40 w-[45%] -translate-x-[21%] md:-bottom-10"
+          />
+          <div className="absolute z-30 flex h-10 w-screen bg-landing-black-100 md:h-20" /> */}
           <Image
             src={grass}
             alt="left grass box"
