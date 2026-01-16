@@ -14,6 +14,8 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        inter: ["Inter", "sans-serif"],
+        work_sans: ["Work Sans", "sans-serif"],
       },
       colors: {
         hackathon: {
@@ -78,17 +80,22 @@ module.exports = {
           "accent-foreground": "#22577A",
         },
         landing: {
+          "black-100": "#535353",
           "blue-100": "#9DE1FF",
           "orange-100": "#FFE0D2",
+          "orange-200": "#C3A47E",
+          "orange-300": "#A28561",
           "brown-100": "#603A18",
           "brown-200": "#77512E",
           "brown-300": "#654831",
           "brown-400": "#5B3E26",
           "brown-500": "#8C7054",
           "brown-600": "#CFB397",
+          "brown-700": "#B3825B",
           "beige-100": "#FBE8D5",
           "beige-200": "#F1D8BF",
           "beige-300": "#EED1B4",
+          "grey-100": "#555555",
         },
       },
       keyframes: {
