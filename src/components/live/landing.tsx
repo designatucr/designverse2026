@@ -54,43 +54,46 @@ const Landing = () => {
             alt="Sign on top of Bakery"
             className="relative top-8 size-[78%] lg:size-[65%]"
           />
-          <div className="absolute mt-8 flex-col items-center justify-center py-2 text-center text-landing-brown-200 md:mt-16 md:py-6 lg:mt-12 lg:py-4">
-            <p className="mt-5 text-nowrap text-[2.3vw] font-bold md:text-[1.4vw]">
+          <div className="absolute mt-8 flex-col items-center justify-center py-2 text-center text-landing-brown-200 sm:py-6 md:mt-4 lg:mt-2 lg:py-2 xl:mt-8">
+            <p className="mt-4 text-nowrap text-[2.3vw] font-bold md:text-[1.4vw] lg:mt-16">
               University of California, Riverside | May 9-10, 2026
             </p>
             <Countdown
               classNames={{
-                unit: "text-landing-brown-400 text-[0.5rem] md:text-[0.9rem] font-bold",
+                unit: "text-landing-brown-400 text-[0.2rem] sm:text-[0.3rem] lg:text-[0.6rem] font-bold",
                 digit:
-                  "font-bold text-white text-sm md:text-lg lg:text-[2.5rem] mt-0 md:mt-5 lg:mt-2",
+                  "font-bold text-white text-[0.7rem] sm:text-lg lg:text-[2rem] mt-0 mb-1 lg:mt-2",
                 background:
-                  "w-2 h-8 md:w-11 md:h-14 lg:w-10 lg:h-16 bg-landing-brown-400 rounded-lg",
+                  " w-2 h-5 sm:w-6 sm:h-9 md:w-3 md:h-6 lg:w-8 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
               }}
             />
-            <div className="relative z-30 mt-0 flex justify-center gap-6 text-white md:mt-5 md:gap-10">
+            <div className="relative z-30 mt-0 flex justify-center gap-6 text-white sm:mt-2 sm:gap-10 md:gap-5">
               <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-5 w-16 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem]"
+                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-[9px] xl:text-lg"
               >
-                Mentor <PiArrowUpRightBold className="size-3 md:size-6" />
+                Mentor{" "}
+                <PiArrowUpRightBold className="h-1 w-1 sm:h-3 sm:w-3 xl:h-6 xl:w-6" />
               </Link>
               <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-5 w-16 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem]"
+                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-[9px] xl:text-lg"
               >
-                Sponsor <PiArrowUpRightBold className="size-3 md:size-6" />
+                Sponsor{" "}
+                <PiArrowUpRightBold className="h-1 w-1 sm:h-3 sm:w-3 xl:h-6 xl:w-6" />
               </Link>
               <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-5 w-16 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem]"
+                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-[9px] xl:text-lg"
               >
-                Volunteer <PiArrowUpRightBold className="size-3 md:size-6" />
+                Volunteer{" "}
+                <PiArrowUpRightBold className="h-1 w-1 sm:h-3 sm:w-3 xl:h-6 xl:w-6" />
               </Link>
             </div>
           </div>
@@ -98,7 +101,7 @@ const Landing = () => {
             href="/"
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute top-44 z-30 mt-0 flex h-5 w-20 items-center justify-center rounded-md bg-landing-brown-100 text-[0.6rem] font-semibold text-white md:top-96 md:h-10 md:w-40 md:rounded-lg md:text-[1.0rem] lg:mt-16"
+            className="xs:rounded-lg absolute top-44 z-30 flex h-3 w-9 items-center justify-center rounded-md bg-landing-brown-100 text-[3.5px] font-semibold text-white sm:mt-36 sm:h-7 sm:w-24 sm:text-[0.7rem] lg:top-96 lg:mt-16 xl:mt-20 xl:h-10 xl:w-40 xl:rounded-lg xl:text-[9px] xl:text-lg"
           >
             Apply Now!
           </Link>

@@ -14,22 +14,24 @@ interface digitProps {
 
 const Digits = ({ value, unit, classNames }: digitProps) => {
   return (
-    <div className="relative z-50 flex flex-col items-center gap-1 last:hidden sm:last:flex md:gap-4">
-      <div className="m-[0.3rem] mb-0 flex gap-1 md:m-3 lg:m-2 lg:!gap-1">
+    <div className="relative z-50 flex flex-col items-center last:hidden sm:last:flex md:gap-1">
+      <div className="m-[0.3rem] mb-0 flex gap-1 lg:m-2 lg:!gap-1">
         {value
           .toString()
           .padStart(2, "0")
           .split("")
           .map((digit, index) => (
             <div
-              className={`flex items-center justify-center rounded ${classNames.background} bg-opacity-40 p-[0.7rem] font-bold md:p-3 ${classNames.digit}`}
+              className={`flex items-center justify-center rounded ${classNames.background} bg-opacity-40 p-[0.6rem] font-bold md:p-3 ${classNames.digit} `}
               key={index}
             >
               {digit}
             </div>
           ))}
       </div>
-      <div className={`mx-4 my-2 mt-0 text-xs ${classNames.unit}`}>{unit}</div>
+      <div className={`mx-4 my-2 mb-2 mt-0 lg:text-xs ${classNames.unit}`}>
+        {unit}
+      </div>
     </div>
   );
 };
