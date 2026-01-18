@@ -83,6 +83,7 @@ const Select = ({
   field,
   disabled = false,
   searchable = false,
+  className = "",
   userFn = (value) => setUser({ ...user, [field]: value }),
 }) => {
   const [selected, setSelected] = useState(null);
@@ -96,7 +97,7 @@ const Select = ({
         </p>
       )}
       <DropdownMenu className="max-w-full">
-        <DropdownMenuTrigger className="w-full" asChild>
+        <DropdownMenuTrigger className={`w-full ${className}`} asChild>
           <Button
             className="w-full justify-between whitespace-normal break-words text-left capitalize"
             variant="outline"
@@ -105,7 +106,7 @@ const Select = ({
             {selected ? (
               selected
             ) : (
-              <p className="font-normal text-hackathon-gray-200">
+              <p className="font-normal uppercase text-forms-beige-100">
                 {placeholder}
               </p>
             )}
