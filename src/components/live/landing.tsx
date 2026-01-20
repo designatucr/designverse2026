@@ -41,7 +41,7 @@ const Landing = () => {
           className="absolute right-0 top-32 w-[12%] md:top-56"
         />
       </div>
-      <div className="relative top-6 z-20 mt-44 flex w-[90%] flex-col items-center justify-center sm:mt-32 md:top-0 md:mt-36 lg:mt-52">
+      <div className="relative top-6 z-20 mt-36 flex w-[90%] flex-col items-center justify-center sm:mt-32 md:top-0 md:mt-36 lg:mt-52">
         <Image
           src={logo}
           alt="dv logo sign"
@@ -52,27 +52,27 @@ const Landing = () => {
           <Image
             src={timer}
             alt="Sign on top of Bakery"
-            className="relative top-8 size-[78%] lg:size-[65%]"
+            className="relative top-8 size-[79%] lg:size-[65%]"
           />
           <div className="absolute mt-8 flex-col items-center justify-center py-2 text-center text-landing-brown-200 sm:py-6 md:mt-4 lg:mt-2 lg:py-2 xl:mt-8">
-            <p className="mt-4 text-nowrap text-[2.3vw] font-bold md:text-[1.4vw] lg:mt-16">
+            <p className="mt-4 text-nowrap text-[2.3vw] font-bold md:text-[1.4vw] lg:mt-16 xl:mt-20 2xl:text-[1.6vw]">
               University of California, Riverside | May 9-10, 2026
             </p>
             <Countdown
               classNames={{
-                unit: "text-landing-brown-400 text-[0.2rem] sm:text-[0.3rem] lg:text-[0.6rem] font-bold",
+                unit: "text-landing-brown-400 text-[0.4rem] sm:text-[0.7rem] lg:text-[0.9rem] font-bold",
                 digit:
-                  "font-bold text-white text-[0.7rem] sm:text-lg lg:text-[2rem] mt-0 mb-1 lg:mt-2",
+                  "font-bold text-white text-[0.7rem] sm:text-lg lg:text-[2rem] 2xl:text-[2.5rem] mt-0 mb-1 lg:mt-2",
                 background:
-                  " w-2 h-5 sm:w-6 sm:h-9 md:w-3 md:h-6 lg:w-8 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
+                  " w-2 h-5  sm:w-6 sm:h-9 md:w-3 md:h-6 lg:w-8 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
               }}
             />
-            <div className="relative z-30 mt-0 flex justify-center gap-6 text-white sm:mt-2 sm:gap-10 md:gap-5">
+            <div className="relative z-30 mt-0 flex justify-center gap-6 text-white sm:mt-2 sm:gap-10 md:gap-5 2xl:gap-12">
               <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-[9px] xl:text-lg"
+                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-lg 2xl:h-14 2xl:w-48 2xl:text-2xl"
               >
                 Mentor{" "}
                 <PiArrowUpRightBold className="h-1 w-1 sm:h-3 sm:w-3 xl:h-6 xl:w-6" />
@@ -81,7 +81,7 @@ const Landing = () => {
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-[9px] xl:text-lg"
+                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-lg 2xl:h-14 2xl:w-48 2xl:text-2xl"
               >
                 Sponsor{" "}
                 <PiArrowUpRightBold className="h-1 w-1 sm:h-3 sm:w-3 xl:h-6 xl:w-6" />
@@ -90,7 +90,7 @@ const Landing = () => {
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-[9px] xl:text-lg"
+                className="xs:rounded-lg flex h-3 w-9 items-center justify-center rounded-lg bg-landing-brown-100 text-[3.5px] font-semibold sm:h-7 sm:w-24 sm:text-[0.7rem] xl:h-10 xl:w-40 xl:text-lg 2xl:h-14 2xl:w-48 2xl:text-2xl"
               >
                 Volunteer{" "}
                 <PiArrowUpRightBold className="h-1 w-1 sm:h-3 sm:w-3 xl:h-6 xl:w-6" />
@@ -101,7 +101,7 @@ const Landing = () => {
             href="/"
             target="_blank"
             rel="noopener noreferrer"
-            className="xs:rounded-lg absolute top-44 z-30 flex h-3 w-9 items-center justify-center rounded-md bg-landing-brown-100 text-[3.5px] font-semibold text-white sm:mt-36 sm:h-7 sm:w-24 sm:text-[0.7rem] lg:top-96 lg:mt-16 xl:mt-20 xl:h-10 xl:w-40 xl:rounded-lg xl:text-[9px] xl:text-lg"
+            className="xs:rounded-lg xl:rounded-lgxl:h-10 absolute top-44 z-30 flex h-3 w-9 items-center justify-center rounded-md bg-landing-brown-100 text-[3.5px] font-semibold text-white sm:mt-36 sm:h-7 sm:w-24 sm:text-[0.7rem] lg:top-96 lg:mt-16 xl:mt-20 xl:w-40 xl:text-lg 2xl:h-14 2xl:w-48 2xl:text-2xl"
           >
             Apply Now!
           </Link>
