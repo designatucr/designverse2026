@@ -85,6 +85,7 @@ module.exports = {
           "orange-100": "#FFE0D2",
           "orange-200": "#C3A47E",
           "orange-300": "#A28561",
+          "brown-50": "#B3825B",
           "brown-100": "#603A18",
           "brown-200": "#77512E",
           "brown-300": "#654831",
