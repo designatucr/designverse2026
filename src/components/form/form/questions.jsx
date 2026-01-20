@@ -48,7 +48,7 @@ const Questions = ({
           {field.input === "input" && (
             <>
               <div className="pb-1">
-                <Label htmlFor={field.name} className="font-semibold">
+                <Label htmlFor={field.name} className="font-semibold uppercase">
                   {field.title}
                   {field.required && <span className="text-red-500">*</span>}
                 </Label>
@@ -60,6 +60,7 @@ const Questions = ({
                 value={object[field.name]}
                 maxLength={field.maxLength}
                 disabled={!field.editable}
+                className="border-0 border-b-2 border-white bg-forms-beige-200 placeholder:uppercase placeholder:text-forms-beige-100 focus:outline-none focus:ring-0 focus-visible:border-none focus-visible:outline-none focus-visible:ring-0"
                 onChange={(e) =>
                   setObject({ ...object, [field.name]: e.target.value })
                 }
@@ -76,6 +77,7 @@ const Questions = ({
               setUser={setObject}
               required={field.required}
               searchable={field.searchable}
+              className="border-0 border-b-2 border-white bg-forms-beige-200 hover:bg-forms-brown-100 focus:outline-none focus:ring-0 focus-visible:border-none focus-visible:outline-none focus-visible:ring-0"
             />
           )}
           {field.input === "checkboxes" && (
@@ -87,6 +89,7 @@ const Questions = ({
               <div className="grid gap-2 md:grid-cols-2">
                 {field.options.map((option, i) => (
                   <Checkbox
+                    className="border-2 border-white data-[state=checked]:border-landing-brown-300 data-[state=checked]:bg-landing-brown-300 data-[state=checked]:text-white"
                     id={option.id}
                     checked={object[field.field].includes(option)}
                     onClick={() => {
@@ -109,6 +112,7 @@ const Questions = ({
           )}
           {field.input === "terms" && (
             <Terms
+              className="border-2 border-white data-[state=checked]:border-landing-brown-300 data-[state=checked]:bg-landing-brown-300 data-[state=checked]:text-white"
               options={field.options}
               onClick={() => {
                 setObject({
@@ -144,7 +148,11 @@ const Questions = ({
                       className="mb-2 flex items-center space-x-2"
                       key={index}
                     >
-                      <RadioGroupItem value={option} id={option} />
+                      <RadioGroupItem
+                        value={option}
+                        id={option}
+                        className="border-2 border-white data-[state=checked]:text-white"
+                      />
                       <Label htmlFor={option}>{option}</Label>
                     </div>
                   ))}
@@ -161,7 +169,7 @@ const Questions = ({
                 </Label>
               </div>
               <Textarea
-                className="border-1 w-full resize-none border border-black pl-3 placeholder:text-hackathon-gray-200 focus:outline-none"
+                className="border-1 w-full resize-none border border-landing-brown-300 bg-forms-brown-100 pl-3 placeholder:text-forms-beige-100 focus:outline-none"
                 maxLength={500}
                 value={object[field.name]}
                 onChange={(e) =>
@@ -191,7 +199,7 @@ const Questions = ({
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
-          className="mt-1 flex items-center text-hackathon-green-300 no-underline hover:text-opacity-65"
+          className="mt-1 flex items-center text-forms-olive-100 no-underline hover:text-opacity-65"
         >
           MLH Code of Conduct
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -199,7 +207,7 @@ const Questions = ({
         <Link
           href="https://mlh.io/privacy"
           target="_blank"
-          className="mt-3 flex items-center text-hackathon-green-300 no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-forms-olive-100 no-underline hover:text-opacity-65"
         >
           MLH Privacy Policy
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -207,7 +215,7 @@ const Questions = ({
         <Link
           href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
           target="_blank"
-          className="mt-3 flex items-center text-hackathon-green-300 no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-forms-olive-100 no-underline hover:text-opacity-65"
         >
           MLH Contest Terms and Conditions
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -228,8 +236,9 @@ const Questions = ({
         <Button
           onClick={() => onSubmit(setLoading, setState)}
           disabled={loading}
+          className="bg-forms-olive-100 p-8 text-3xl hover:bg-opacity-80"
         >
-          Submit
+          SUBMIT
         </Button>
       </div>
     </div>
