@@ -1,4 +1,3 @@
-import Title from "@/components/ui/title";
 import Cake from "@/public/landing/track1.svg";
 import Bear from "@/public/landing/track2.svg";
 import StrawberryCake from "@/public/landing/track3.svg";
