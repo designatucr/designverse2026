@@ -30,7 +30,7 @@ const Digits = ({ value, unit, classNames }: digitProps) => {
           ))}
       </div>
       <div
-        className={`mx-4 my-2 mb-2 mt-0 lg:text-xs 2xl:mb-7 ${classNames.unit}`}
+        className={`mx-4 my-2 mb-1 mt-0 lg:text-xs 2xl:mb-7 ${classNames.unit}`}
       >
         {unit}
       </div>
