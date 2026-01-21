@@ -25,35 +25,38 @@ const Schedule = async () => {
   return (
     <>
       <Title>Schedule</Title>
-      {/*
-    <div className="space-y-4 py-6 lg:space-y-10 lg:py-20">
-      <div className="mx-auto flex w-5/6 flex-row items-center justify-center gap-2 rounded-xl border-8 border-landing-brown-700 bg-landing-grey-100 p-4 text-center text-white lg:border-[16px] lg:p-10 xl:gap-10">
-        <Image
-          src={coffeeCup}
-          alt="coffee"
-          className="h-auto w-8 md:w-14 lg:w-auto"
-        />
-        <Image
-          src={coffeeBeans}
-          alt="coffee"
-          className="h-auto w-8 pt-16 md:w-14 lg:w-auto"
-        />
-        <div className="space-y-2 md:px-10 lg:space-y-9 lg:px-20">
-          <p className="text-xl font-bold md:text-3xl lg:text-6xl">SCHEDULE</p>
-          <p className="text-sm md:text-lg lg:text-2xl">
-            Pacific Standard Time (PST)
-          </p>
+    {/* <div className="mx-auto w-5/6 space-y-4 py-6 lg:space-y-10 lg:py-20">
+      <div className="rounded-xl bg-landing-brown-700 p-4">
+        <div className="mx-auto flex flex-row items-center justify-center gap-2 bg-landing-grey-100 p-4 text-center text-white lg:p-10 xl:gap-10">
+          <Image
+            src={coffeeCup}
+            alt="coffee"
+            className="h-auto w-8 md:w-14 lg:w-auto"
+          />
+          <Image
+            src={coffeeBeans}
+            alt="coffee"
+            className="h-auto w-8 pt-16 md:w-14 lg:w-auto"
+          />
+          <div className="space-y-2 md:px-10 lg:space-y-9 lg:px-20">
+            <p className="text-xl font-bold md:text-3xl lg:text-6xl">
+              SCHEDULE
+            </p>
+            <p className="text-sm md:text-lg lg:text-2xl">
+              Pacific Standard Time (PST)
+            </p>
+          </div>
+          <Image
+            src={coffeeBeans}
+            alt="coffee"
+            className="h-auto w-8 scale-x-[-1] pb-20 md:w-14 lg:w-auto"
+          />
+          <Image
+            src={mokaPot}
+            alt="coffee"
+            className="h-auto w-8 md:w-14 lg:w-auto"
+          />
         </div>
-        <Image
-          src={coffeeBeans}
-          alt="coffee"
-          className="h-auto w-8 scale-x-[-1] pb-20 md:w-14 lg:w-auto"
-        />
-        <Image
-          src={mokaPot}
-          alt="coffee"
-          className="h-auto w-8 md:w-14 lg:w-auto"
-        />
       </div>
       <Events events={items} totalDays={totalDays} />
     </div>
