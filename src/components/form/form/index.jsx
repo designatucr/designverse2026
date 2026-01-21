@@ -6,9 +6,13 @@ import Questions from "./questions";
 import Confirmation from "./confirmation";
 import { signOut } from "next-auth/react";
 import Image from "next/image";
-import LOGO from "@/app/favicon.ico";
+import LOGO from "@/public/forms/formdvlogo.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Bushes from "@/public/forms/formbushes.svg";
+import icons from "@/data/form/icons";
+import LeftBunny from "@/public/forms/formbunnyleft.svg";
+import RightBunny from "@/public/forms/formbunnyright.svg";
 
 const Form = ({
   object,
@@ -27,22 +31,57 @@ const Form = ({
   );
 
   return (
-    <div className="overflow-scroll-y flex h-full w-full flex-col items-center font-poppins">
+    <div className="overflow-scroll-y flex h-full w-full flex-col items-center gap-5 font-poppins">
       <div className="mt-4 flex w-full flex-row justify-end space-x-4">
         <Button asChild>
-          <Link href="/">Back to Home</Link>
+          <Link
+            href="/"
+            className="bg-landing-brown-300 px-8 hover:bg-forms-brown-300"
+          >
+            HOME
+          </Link>
         </Button>
-        <Button onClick={() => signOut({ callbackUrl: "/", redirect: true })}>
-          Sign Out
+        <Button
+          className="bg-landing-brown-300 px-5 hover:bg-forms-brown-300"
+          onClick={() => signOut({ callbackUrl: "/", redirect: true })}
+        >
+          SIGN OUT
         </Button>
       </div>
-      <div className="flex w-10/12 flex-col items-center pb-12 pt-5 md:w-1/2 xl:w-1/3">
-        <Image src={LOGO} className="m-4 w-1/4" alt="Logo" />
-        <p className="m-0 w-full rounded-t bg-hackathon-green-300 px-4 py-4 text-xl font-semibold">
-          {header}
-        </p>
-        <div className="rounded-b bg-white p-8">
-          <div className="grid grid-cols-1 gap-3">
+      <div className="z-20 flex w-full flex-col">
+        <div className="z-10 min-h-[7vh] bg-forms-brown-300 shadow-2xl" />
+        <Image
+          src={Bushes}
+          alt="Bushes"
+          className="w-full -translate-y-[25%]"
+        />
+      </div>
+      <div className="xl:min-w-1/2 -mt-6 flex w-10/12 -translate-y-[2%] flex-col items-center gap-7 bg-forms-beige-200 pb-12 pt-5 sm:-mt-10 md:-mt-16 md:w-1/2">
+        <div className="flex-between mt-12 flex w-full items-center justify-center p-8">
+          <div className="h-[1vh] w-1/4 bg-forms-brown-200 sm:w-1/2" />
+          <Image src={LOGO} className="m-4 w-1/2 sm:w-1/3" alt="Logo" />
+          <div className="h-[1vh] w-1/4 bg-forms-brown-200 sm:w-1/2" />
+        </div>
+        <div className="relative flex w-full flex-col items-center gap-6">
+          <Image
+            src={LeftBunny}
+            alt="Left Bunny"
+            className="absolute left-0 top-[80%] hidden w-[3vw] md:block"
+          />
+          <Image
+            src={RightBunny}
+            alt="Right Bunny"
+            className="absolute right-0 top-[12%] hidden w-[3vw] md:block"
+          />
+          <p className="text-3xl font-semibold text-landing-brown-300 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+            DESIGNVERSE 2026
+          </p>
+          <p className="m-0 rounded-lg bg-forms-olive-100 px-5 py-3 text-center text-base font-semibold text-white sm:text-lg md:px-8 md:py-4 md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+            {header}
+          </p>
+        </div>
+        <div className="rounded-b p-8">
+          <div className="grid grid-cols-1 gap-3 font-medium text-landing-brown-300">
             {state === 0 ? (
               <Status object={object} statuses={statuses} setState={setState} />
             ) : state === 1 ? (
@@ -61,6 +100,11 @@ const Form = ({
             )}
           </div>
         </div>
+      </div>
+      <div className="mt-8 flex items-center justify-center gap-10 p-8">
+        {icons.map(({ image, alt }, index) => (
+          <Image key={index} src={image} alt={alt} className="w-[8vw]" />
+        ))}
       </div>
     </div>
   );

@@ -2,11 +2,12 @@ import Checkbox from "@/components/checkbox";
 import { useState } from "react";
 type props = {
   options: string[];
+  className?: string;
   onClick: () => void;
   onMLHClick: () => void;
 };
 
-const Terms = ({ options, onClick, onMLHClick }: props) => {
+const Terms = ({ options, className, onClick, onMLHClick }: props) => {
   const [checked, setChecked] = useState(false);
   const [mlh, setMLH] = useState(false);
 
@@ -33,11 +34,21 @@ const Terms = ({ options, onClick, onMLHClick }: props) => {
       </ul>
 
       <div className="flex flex-col gap-4">
-        <Checkbox id="terms" checked={checked} onClick={onClickWithCheckBox}>
+        <Checkbox
+          id="terms"
+          checked={checked}
+          onClick={onClickWithCheckBox}
+          className={className}
+        >
           By selecting this I agree to all of the above terms
         </Checkbox>
 
-        <Checkbox id="mlh" checked={mlh} onClick={onClickWithCheckBoxMLH}>
+        <Checkbox
+          id="mlh"
+          checked={mlh}
+          onClick={onClickWithCheckBoxMLH}
+          className={className}
+        >
           I authorize MLH to send me occasional emails about relevant events,
           career opportunities, and community announcements.
         </Checkbox>

@@ -1,5 +1,4 @@
 // import { api } from "@/utils/api";
-// import Image from "next/image";
 // import Events from "./events";
 import Title from "@/components/ui/title";
 // import coffeeBeans from "@/public/schedule/coffeeBeans.svg";

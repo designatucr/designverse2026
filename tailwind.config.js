@@ -85,6 +85,7 @@ module.exports = {
           "orange-100": "#FFE0D2",
           "orange-200": "#C3A47E",
           "orange-300": "#A28561",
+          "brown-50": "#B3825B",
           "brown-100": "#603A18",
           "brown-200": "#77512E",
           "brown-300": "#654831",
@@ -96,6 +97,14 @@ module.exports = {
           "beige-200": "#F1D8BF",
           "beige-300": "#EED1B4",
           "grey-100": "#555555",
+        },
+        forms: {
+          "brown-100": "#FFF1E4",
+          "brown-200": "#705D34",
+          "brown-300": "#8D785F",
+          "beige-100": "#BB9F85",
+          "beige-200": "#F0D9C1",
+          "olive-100": "#B0B492",
         },
       },
       keyframes: {

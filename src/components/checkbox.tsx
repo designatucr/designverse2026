@@ -5,13 +5,14 @@ type checkbox = {
   id: string;
   checked: boolean;
   children?: string;
+  className?: string;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 };
 
-const Checkbox = ({ id, checked, onClick, children }: checkbox) => {
+const Checkbox = ({ id, checked, onClick, children, className }: checkbox) => {
   return (
     <div className="flex items-start gap-2" onClick={onClick}>
-      <Check id={id} checked={checked} />
+      <Check id={id} checked={checked} className={className} />
       <Label
         htmlFor={id}
         onClick={(e) => e.stopPropagation()}
