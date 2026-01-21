@@ -25,7 +25,7 @@ const Schedule = async () => {
   return (
     <>
       <Title>Schedule</Title>
-    {/* <div className="mx-auto w-5/6 space-y-4 py-6 lg:space-y-10 lg:py-20">
+      {/* <div className="mx-auto w-5/6 space-y-4 py-6 lg:space-y-10 lg:py-20">
       <div className="rounded-xl bg-landing-brown-700 p-4">
         <div className="mx-auto flex flex-row items-center justify-center gap-2 bg-landing-grey-100 p-4 text-center text-white lg:p-10 xl:gap-10">
           <Image
