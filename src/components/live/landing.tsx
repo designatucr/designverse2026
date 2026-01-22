@@ -92,8 +92,7 @@ const Landing = () => {
             src={rightBush}
             alt="right grass box"
             className="absolute bottom-0 right-[12%] z-30 w-[20%] translate-x-[21%] -scale-x-100"
-          /> */
-          }
+          /> */}
           <Image
             src={grass}
             alt="left grass box"
