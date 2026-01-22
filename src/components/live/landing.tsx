@@ -9,6 +9,7 @@ import bakerySign from "@/public/landing/bakery_sign.svg";
 // import bakery from "@/public/landing/bakery.svg";
 // import leftLampost from "@/public/landing/leftLampost.svg";
 // import rightLampost from "@/public/landing/rightLampost.svg";
+import grass from "@/public/landing/grass.svg";
 // import leftBush from "@/public/landing/leftFlowerBush.svg";
 // import rightBush from "@/public/landing/rightFlowerBush.svg";
 import bakery2 from "@/public/landing/bakery2.svg";
@@ -91,7 +92,18 @@ const Landing = () => {
             src={rightBush}
             alt="right grass box"
             className="absolute bottom-0 right-[12%] z-30 w-[20%] translate-x-[21%] -scale-x-100"
-          /> */}
+          /> */
+          }
+          <Image
+            src={grass}
+            alt="left grass box"
+            className="absolute bottom-0 left-[12%] z-30 w-[20%] -translate-x-[21%]"
+          />
+          <Image
+            src={grass}
+            alt="right grass box"
+            className="absolute bottom-0 right-[12%] z-30 w-[20%] translate-x-[21%] -scale-x-100"
+          />
         </div>
       </div>
     </div>
