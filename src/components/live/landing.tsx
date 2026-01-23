@@ -5,16 +5,16 @@ import cloud2 from "@/public/landing/cloud2.svg";
 import logo from "@/public/landing/dv_logo.svg";
 import timer from "@/public/landing/timer.svg";
 // import sign from "@/public/landing/sign.svg";
-// import bakery from "@/public/landing/bakery.svg";
-// import leftLampost from "@/public/landing/leftLampost.svg";
-// import rightLampost from "@/public/landing/rightLampost.svg";
+import bakery from "@/public/landing/bakery.svg";
+import leftLampost from "@/public/landing/leftLampost.svg";
+import rightLampost from "@/public/landing/rightLampost.svg";
 import grass from "@/public/landing/grass.svg";
-import bakery2 from "@/public/landing/bakery2.svg";
+// import bakery2 from "@/public/landing/bakery2.svg";
 import Link from "next/link";
 import { PiArrowUpRightBold } from "react-icons/pi";
 const Landing = () => {
   return (
-    <div className="flex min-h-0 w-full flex-col items-center bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
+    <div className="flex min-h-0 w-full flex-col items-center overflow-x-hidden bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
       <Link
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
         target="_blank"
@@ -56,11 +56,11 @@ const Landing = () => {
           />
           <div className="absolute mt-8 flex flex-col items-center justify-end py-2 text-center text-landing-brown-200 sm:py-6 md:mt-6 lg:mt-20 lg:w-[60%] lg:py-2 xl:mt-8 xl:h-[30vh] xl:w-[50%] 2xl:mt-20">
             <p className="mt-4 text-nowrap text-[2.3vw] font-bold md:text-[1.8vw] lg:text-xl 2xl:text-[1.5vw]">
-              University of California, Riverside | May 9-10, 2026
+              University of California, Riverside | May 2-3, 2026
             </p>
             <Countdown
               classNames={{
-                unit: "text-landing-brown-400 text-[0.4rem] sm:text-[0.7rem] lg:text-[0.9rem] font-bold",
+                unit: "text-landing-brown-400 text-[0.4rem] sm:text-[0.7rem] lg:text-[0.9rem] xl:text-[1.2rem] font-bold",
                 digit:
                   "font-bold text-white text-[0.7rem] sm:text-lg lg:text-[2rem] 2xl:text-[2.5rem] mt-0 mb-1 lg:mt-2",
                 background:
@@ -106,10 +106,21 @@ const Landing = () => {
             Apply Now!
           </Link>
           <Image
-            src={bakery2}
+            src={bakery}
             alt="bakery shop"
             className="relative z-20 flex w-full md:w-full lg:w-[70vw] xl:w-[56vw]"
           />
+          <Image
+            src={leftLampost}
+            alt="left lampost"
+            className="absolute -bottom-5 -left-[9%] z-40 w-[45%] -translate-x-[21%] overflow-hidden md:-bottom-10"
+          />
+          <Image
+            src={rightLampost}
+            alt="right lampost"
+            className="absolute -bottom-5 -right-20 z-40 w-[45%] md:-bottom-10"
+          />
+          <div className="absolute bottom-0 z-30 flex h-10 w-screen translate-y-[98%] bg-landing-black-100 md:h-20" />
         </div>
         <div className="relative flex w-full flex-col items-center">
           {/* <Image
