@@ -45,17 +45,17 @@ const Landing = () => {
         <Image
           src={logo}
           alt="dv logo sign"
-          className="relative bottom-[108px] w-1/4 -translate-y-[50%] md:bottom-0 lg:bottom-[5vh]"
+          className="relative bottom-[17vh] w-1/4 translate-y-[17%] sm:bottom-[10vh] sm:-translate-y-[50%] md:bottom-[8vh] md:-translate-y-[50%] lg:bottom-[6vh] xl:bottom-[4vh] 2xl:bottom-[2vh]"
         />
 
-        <div className="relative bottom-44 flex w-[91%] flex-col items-center md:w-[59%] lg:w-[85%]">
+        <div className="relative bottom-44 flex w-[91%] flex-col items-center md:w-[80%] lg:w-[85%]">
           <Image
             src={timer}
             alt="Sign on top of Bakery"
-            className="relative top-8 size-[79%] lg:size-[65%]"
+            className="relative top-10 w-[64vw] md:w-[53vw] lg:w-[54vw] xl:w-[43vw]"
           />
-          <div className="absolute mt-8 flex-col items-center justify-center py-2 text-center text-landing-brown-200 sm:py-6 md:mt-4 lg:mt-2 lg:py-2 xl:mt-8">
-            <p className="mt-4 text-nowrap text-[2.3vw] font-bold md:text-[1.4vw] lg:mt-16 xl:mt-20 2xl:text-[1.6vw]">
+          <div className="absolute mt-8 flex flex-col items-center justify-end py-2 text-center text-landing-brown-200 sm:py-6 md:mt-6 lg:mt-20 lg:w-[60%] lg:py-2 xl:mt-8 xl:h-[30vh] xl:w-[50%] 2xl:mt-20">
+            <p className="mt-4 text-nowrap text-[2.3vw] font-bold md:text-[1.8vw] lg:text-xl 2xl:text-[1.5vw]">
               University of California, Riverside | May 9-10, 2026
             </p>
             <Countdown
@@ -64,7 +64,7 @@ const Landing = () => {
                 digit:
                   "font-bold text-white text-[0.7rem] sm:text-lg lg:text-[2rem] 2xl:text-[2.5rem] mt-0 mb-1 lg:mt-2",
                 background:
-                  " w-2 h-5  sm:w-6 sm:h-9 md:w-3 md:h-6 lg:w-8 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
+                  " w-2 h-5 sm:w-6 sm:h-9 md:w-3 md:h-6 lg:w-8 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
               }}
             />
             <div className="relative z-30 mt-0 flex justify-center gap-6 text-white sm:mt-2 sm:gap-10 md:gap-5 2xl:gap-12">
@@ -108,7 +108,7 @@ const Landing = () => {
           <Image
             src={bakery2}
             alt="bakery shop"
-            className="relative z-20 flex"
+            className="relative z-20 flex w-full md:w-full lg:w-[70vw] xl:w-[56vw]"
           />
         </div>
         <div className="relative flex w-full flex-col items-center">
