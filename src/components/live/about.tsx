@@ -11,13 +11,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 const support = [
   {
-    title: "Become a Mentor",
-    description:
-      "Have experience leading, using Figma, or coordinating groups? Share your knowledge and become a mentor!",
-    form: "Mentor",
-    link: "/apply/mentor",
-  },
-  {
     title: "Sponsor Us",
     description:
       "Have a company or brand you want to bring attention to? Sponsor us to raise brand awareness and exposure through social media and giveaways!",
@@ -27,9 +20,9 @@ const support = [
   {
     title: "Volunteer Work",
     description:
-      "Need experience or just want to help our organization come to life? Volunteer to help the Designathon happen!",
+      "Would you like to help our organization come to life? Volunteer to help the Designathon happen!",
     form: "Volunteer",
-    link: "/apply/volunteer",
+    link: "https://minerva-sage.vercel.app/designverse/forms/volunteer",
   },
 ];
 
@@ -93,23 +86,25 @@ const About = () => {
       </section>
       <div className="relative">
         <div className="z-30 -mt-48 flex h-32 w-full items-center bg-landing-orange-200 md:-mt-72 lg:-mt-72 xl:-mt-80" />
-        <div className="h-2/3 bg-landing-orange-300 p-20">
+        <div className="h-2/3 place-items-center bg-landing-orange-300 p-20">
           <p className="pb-20 text-center text-4xl font-bold text-white md:text-7xl">
-            SUPPORT US{" "}
+            BECOME A VOLUNTEER{" "}
           </p>
-          <div className="flex flex-col gap-20 px-9 lg:flex-row">
+          <div className="flex w-2/3 flex-col gap-20 px-9 lg:flex-row">
             {support.map(({ title, description, form, link }, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-evenly gap-12 text-white"
+                className="flex flex-col items-center gap-12 text-white"
               >
-                <p className="text-xl font-bold lg:text-3xl">{title}</p>
-                <div className="text-center text-sm lg:text-base">
+                <p className="text-center text-xl font-bold lg:text-3xl">
+                  {title}
+                </p>
+                <div className="w-1/2 text-center text-sm lg:text-base">
                   {description}
                 </div>
                 <Button
                   asChild
-                  className="w-1/2 rounded-full bg-landing-brown-200 hover:scale-105 hover:bg-landing-brown-400"
+                  className="w-44 rounded-full bg-landing-brown-200 hover:scale-105 hover:bg-landing-brown-400"
                 >
                   <Link
                     href={link}
