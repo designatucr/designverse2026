@@ -99,7 +99,7 @@ const Landing = () => {
             </Link>
           </div>
           <Link
-            href="/"
+            href="https://minerva-sage.vercel.app/designverse/forms/participant"
             target="_blank"
             rel="noopener noreferrer"
             className="absolute top-[46%] z-30 flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold text-white md:text-lg lg:px-5 xl:rounded-2xl xl:px-9 xl:py-4 xl:text-2xl"
