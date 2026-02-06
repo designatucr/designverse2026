@@ -47,62 +47,62 @@ const Landing = () => {
         <Image
           src={logo}
           alt="dv logo sign"
-          className="relative bottom-[20%] w-1/4 translate-y-[15%] md:bottom-[20%] md:-translate-y-[60%] lg:-translate-y-[60%] xl:-translate-y-[60%]"
+          className="relative bottom-40 w-[40%] translate-y-[25%] lg:translate-y-[25%] xl:w-[30%] xl:translate-y-[40%]"
         />
 
-        <div className="relative bottom-44 flex w-[95%] flex-col items-center md:w-[80%] lg:w-[85%]">
+        <div className="relative bottom-44 flex w-[90%] flex-col items-center">
           <Image
             src={timer}
             alt="Sign on top of Bakery"
-            className="relative top-7 w-[79%] md:top-10 md:w-1/2 lg:w-[54vw] xl:w-[43vw]"
+            className="relative top-7 w-[79%] translate-y-[5%] md:translate-y-[7%] lg:w-[67%] lg:translate-y-[12%] xl:w-[55%] xl:translate-y-[20%]"
           />
-          <div className="absolute mt-7 flex flex-col items-center py-2 text-center text-landing-brown-200 md:mt-16">
-            <p className="md:text-2x1 mt-3 text-nowrap text-[2.4vw] font-bold md:mb-5 lg:text-xl">
+          <div className="absolute top-[10%] flex flex-col items-center py-2 text-center text-landing-brown-200 xl:translate-y-[15%]">
+            <p className="mb-1 mt-3 text-nowrap text-center text-[55%] font-bold md:text-[100%] lg:mt-4 lg:text-[125%] xl:text-[150%]">
               University of California, Riverside | May 2-3, 2026
             </p>
             <Countdown
               classNames={{
-                unit: "text-center text-landing-brown-400 text-[0.5rem] md:text-xs lg:text-[0.9rem] xl:text-[1.2rem] font-bold",
-                digit: "font-bold text-white lg:text-[2rem] 2xl:text-[2.5rem]",
+                unit: "text-center text-landing-brown-400 text-[0.5rem] md:text-xs lg:text-[0.rem] xl:text-[1.2rem] font-bold",
+                digit: "font-bold text-white lg:text-4xl xl:text-[2.5rem]",
                 background:
-                  "w-5/12 lg:w-8 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
+                  "w-5 h-7 md:w-7 md:9 lg:w-9 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
               }}
             />
           </div>
-          <div className="absolute top-28 z-30 flex justify-center gap-2 text-white md:top-64 md:gap-10">
+          <div className="relative bottom-1 z-30 flex justify-center gap-2 text-white md:translate-y-[15%] md:gap-10 lg:-translate-y-[30%] lg:gap-5 xl:-translate-y-[35%] xl:gap-2">
             <Link
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center rounded-lg bg-landing-brown-100 px-4 py-1 text-[0.6rem] font-semibold md:text-lg xl:h-10 xl:w-40 xl:text-lg"
+              className="flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold md:text-lg lg:px-5 xl:w-[50%] xl:rounded-2xl xl:px-9 xl:py-4 xl:text-2xl"
             >
               Mentor{" "}
-              <PiArrowUpRightBold className="text-[0.6rem] md:text-2xl" />
+              <PiArrowUpRightBold className="text-[0.6rem] md:text-2xl xl:text-2xl" />
             </Link>
             <Link
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center rounded-lg bg-landing-brown-100 px-4 py-1 text-[0.6rem] font-semibold md:text-lg xl:h-10 xl:w-40 xl:text-lg"
+              className="flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold md:text-lg lg:px-5 xl:rounded-2xl xl:px-9 xl:py-4 xl:text-2xl"
             >
               Sponsor{" "}
-              <PiArrowUpRightBold className="text-[0.6rem] md:text-2xl" />
+              <PiArrowUpRightBold className="text-[0.6rem] md:text-2xl xl:text-2xl" />
             </Link>
             <Link
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold md:text-lg xl:h-10 xl:w-40 xl:text-lg"
+              className="flex items-center justify-center rounded-lg bg-landing-brown-100 px-2 py-1 text-[0.6rem] font-semibold md:text-lg lg:px-4 xl:rounded-2xl xl:px-7 xl:py-4 xl:text-2xl"
             >
               Volunteer{" "}
-              <PiArrowUpRightBold className="text-[0.6rem] md:text-2xl" />
+              <PiArrowUpRightBold className="text-[0.6rem] md:text-2xl xl:text-2xl" />
             </Link>
           </div>
           <Link
             href="/"
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute top-[43%] z-30 flex items-center justify-center rounded-lg bg-landing-brown-100 px-4 py-1 text-[0.6rem] font-semibold text-white md:text-lg xl:h-10 xl:w-40 xl:text-lg"
+            className="absolute top-[46%] z-30 flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold text-white md:text-lg lg:px-5 xl:rounded-2xl xl:px-9 xl:py-4 xl:text-2xl"
           >
             Apply Now!
           </Link>
