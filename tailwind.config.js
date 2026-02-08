@@ -4,11 +4,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   prefix: "",
   theme: {
+    screens: {
+      "2xl": "1536px",
+      "3xl": "1800px",
+    },
     container: {
       center: "true",
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1200px",
+        "3xl": "1000px",
       },
     },
     extend: {
@@ -97,6 +102,8 @@ module.exports = {
           "beige-200": "#F1D8BF",
           "beige-300": "#EED1B4",
           "grey-100": "#555555",
+          "brown-67": "#AF9370",
+          "brown-678": "#AF937099",
         },
         forms: {
           "brown-100": "#FFF1E4",

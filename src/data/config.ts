@@ -22,7 +22,7 @@ const data: config = {
   description: "",
   length: 24,
   date: new Date("2026-05-02T08:00:00"),
-  end: new Date("2026-05-3T16:00:00"),
+  end: new Date("2026-05-03T16:00:00"),
   packet: "",
   devpost:
     "https://designverse2026.devpost.com/?preview_token=CpXaJBoUj3c33diUTIpPHdCmjk2S5R%2F5tiRNxFNCuEc%3D",

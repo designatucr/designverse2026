@@ -8,22 +8,22 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-between gap-2 bg-landing-brown-300 p-6 md:p-16">
+    <footer className="md:p-16 flex flex-col justify-between gap-2 bg-landing-brown-300 p-6">
       <div className="flex flex-row justify-between">
         <div>
           <Image
-            className="w-1/3 pb-5 md:pb-10 md:pl-5"
+            className="md:pb-10 md:pl-5 w-1/3 pb-5"
             src={LogoIcon}
             alt="DV Logo in footer"
           />
-          <div className="flex flex-row md:pl-5">
+          <div className="md:pl-5 flex flex-row">
             <Link
               className="pr-3"
               href="mailto:designverseucr@gmail.com"
               target="_blank"
               aria-label="Email"
             >
-              <MdEmail className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
+              <MdEmail className="md:text-5xl text-2xl text-white transition-transform hover:scale-110" />
             </Link>
             <Link
               className="pr-3"
@@ -31,7 +31,7 @@ const Footer = () => {
               target="_blank"
               aria-label="Linkedin"
             >
-              <FaLinkedin className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
+              <FaLinkedin className="md:text-5xl text-2xl text-white transition-transform hover:scale-110" />
             </Link>
             <Link
               className="pr-3"
@@ -39,26 +39,26 @@ const Footer = () => {
               target="_blank"
               aria-label="Instagram"
             >
-              <RiInstagramFill className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
+              <RiInstagramFill className="md:text-5xl text-2xl text-white transition-transform hover:scale-110" />
             </Link>
             <Link
               href="https://discord.com/invite/MmSvY3tu"
               target="_blank"
               aria-label="Discord"
             >
-              <FaDiscord className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
+              <FaDiscord className="md:text-5xl text-2xl text-white transition-transform hover:scale-110" />
             </Link>
           </div>
-          <p className="py-5 text-left font-inter text-xs text-white md:pl-5 md:text-2xl">
+          <p className="md:pl-5 md:text-2xl py-5 text-left font-inter text-xs text-white">
             Made with &lt;3 by the 2026 DesignVerse team
           </p>
         </div>
-        <div className="flex flex-col text-right md:pr-5">
-          <p className="font-inter text-sm font-bold text-white md:text-2xl">
+        <div className="md:pr-5 flex flex-col text-right">
+          <p className="md:text-2xl font-inter text-sm font-bold text-white">
             Previous Sites
           </p>
           <Link
-            className="py-3 font-inter text-sm text-white hover:cursor-pointer hover:underline md:text-2xl"
+            className="md:text-2xl py-3 font-inter text-sm text-white hover:cursor-pointer hover:underline"
             href="https://designverse2025.vercel.app/"
             target="_blank"
             rel="noreferrer noopener"

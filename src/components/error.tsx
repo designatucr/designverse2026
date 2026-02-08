@@ -6,14 +6,14 @@ const Error = ({ code, name, message, dev }: Fault) => {
       <p className="m-0 text-center text-6xl font-extrabold text-hackathon-blue-100">
         {code}
       </p>
-      <p className="m-0 text-center text-lg font-bold text-black md:text-2xl">
+      <p className="md:text-2xl m-0 text-center text-lg font-bold text-black">
         {name}
       </p>
-      <p className="m-0 text-center text-sm text-hackathon-primary md:text-lg">
+      <p className="md:text-lg m-0 text-center text-sm text-hackathon-primary">
         {message}
       </p>
       {dev && (
-        <p className="m-0 text-center text-sm text-hackathon-primary md:text-lg">
+        <p className="md:text-lg m-0 text-center text-sm text-hackathon-primary">
           Developer Notes: {dev}
         </p>
       )}

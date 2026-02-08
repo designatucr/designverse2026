@@ -24,10 +24,10 @@ const tracks = [
 const Tracks = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10">
-      <p className="py-8 text-center font-inter text-4xl font-bold text-landing-brown-300 md:text-7xl">
+      <p className="md:text-7xl py-8 text-center font-inter text-4xl font-bold text-landing-brown-300">
         TRACKS
       </p>
-      <div className="flex flex-col gap-12 py-12 md:flex-row">
+      <div className="md:flex-row flex flex-col gap-12 py-12">
         {tracks.map(({ image, title, customStyles }, index) => (
           <div
             key={index}

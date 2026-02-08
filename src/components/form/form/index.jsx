@@ -56,27 +56,27 @@ const Form = ({
           className="w-full -translate-y-[25%]"
         />
       </div>
-      <div className="xl:min-w-1/2 -mt-6 flex w-10/12 -translate-y-[2%] flex-col items-center gap-7 bg-forms-beige-200 pb-12 pt-5 sm:-mt-10 md:-mt-16 md:w-1/2">
+      <div className="xl:min-w-1/2 sm:-mt-10 md:-mt-16 md:w-1/2 -mt-6 flex w-10/12 -translate-y-[2%] flex-col items-center gap-7 bg-forms-beige-200 pb-12 pt-5">
         <div className="flex-between mt-12 flex w-full items-center justify-center p-8">
-          <div className="h-[1vh] w-1/4 bg-forms-brown-200 sm:w-1/2" />
-          <Image src={LOGO} className="m-4 w-1/2 sm:w-1/3" alt="Logo" />
-          <div className="h-[1vh] w-1/4 bg-forms-brown-200 sm:w-1/2" />
+          <div className="sm:w-1/2 h-[1vh] w-1/4 bg-forms-brown-200" />
+          <Image src={LOGO} className="sm:w-1/3 m-4 w-1/2" alt="Logo" />
+          <div className="sm:w-1/2 h-[1vh] w-1/4 bg-forms-brown-200" />
         </div>
         <div className="relative flex w-full flex-col items-center gap-6">
           <Image
             src={LeftBunny}
             alt="Left Bunny"
-            className="absolute left-0 top-[80%] hidden w-[3vw] md:block"
+            className="md:block absolute left-0 top-[80%] hidden w-[3vw]"
           />
           <Image
             src={RightBunny}
             alt="Right Bunny"
-            className="absolute right-0 top-[12%] hidden w-[3vw] md:block"
+            className="md:block absolute right-0 top-[12%] hidden w-[3vw]"
           />
-          <p className="text-3xl font-semibold text-landing-brown-300 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+          <p className="sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl text-3xl font-semibold text-landing-brown-300 2xl:text-7xl">
             DESIGNVERSE 2026
           </p>
-          <p className="m-0 rounded-lg bg-forms-olive-100 px-5 py-3 text-center text-base font-semibold text-white sm:text-lg md:px-8 md:py-4 md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+          <p className="sm:text-lg md:px-8 md:py-4 md:text-xl lg:text-2xl xl:text-3xl m-0 rounded-lg bg-forms-olive-100 px-5 py-3 text-center text-base font-semibold text-white 2xl:text-4xl">
             {header}
           </p>
         </div>

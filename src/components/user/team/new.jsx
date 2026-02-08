@@ -93,13 +93,13 @@ const NewTeam = () => {
       <Tabs defaultValue="join" className="w-full">
         <TabsList className="mb-8 grid w-full grid-cols-2 space-x-4 bg-transparent">
           <TabsTrigger
-            className="rounded bg-gray-200 py-2 text-xl font-bold text-gray-500 data-[state=active]:text-hackathon-primary md:text-2xl"
+            className="md:text-2xl rounded bg-gray-200 py-2 text-xl font-bold text-gray-500 data-[state=active]:text-hackathon-primary"
             value="join"
           >
             Join a Team
           </TabsTrigger>
           <TabsTrigger
-            className="rounded bg-gray-200 py-2 text-xl font-bold text-gray-500 data-[state=active]:text-hackathon-primary md:text-2xl"
+            className="md:text-2xl rounded bg-gray-200 py-2 text-xl font-bold text-gray-500 data-[state=active]:text-hackathon-primary"
             value="create"
           >
             Create a Team

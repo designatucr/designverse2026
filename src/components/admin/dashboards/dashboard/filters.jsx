@@ -30,7 +30,7 @@ const Filters = ({ statuses, filters, setFilters }) => {
   };
 
   return (
-    <div className="flex w-full gap-2 lg:w-4/12">
+    <div className="lg:w-4/12 flex w-full gap-2">
       <ToggleGroup type="multiple">
         {Object.entries(statuses).map(([key, value]) => (
           <ToggleGroupItem

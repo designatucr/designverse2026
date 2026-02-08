@@ -86,7 +86,7 @@ const Questions = ({
                 {field.text}
                 {field.required && <span className="text-red-500">*</span>}
               </p>
-              <div className="grid gap-2 md:grid-cols-2">
+              <div className="md:grid-cols-2 grid gap-2">
                 {field.options.map((option, i) => (
                   <Checkbox
                     className="border-2 border-white data-[state=checked]:border-landing-brown-300 data-[state=checked]:bg-landing-brown-300 data-[state=checked]:text-white"

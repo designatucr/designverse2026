@@ -33,7 +33,7 @@ const Toolbar = ({ onView, onNavigate, date, setTag }: props) => {
   }, [handleShortcuts]);
 
   return (
-    <div className="mb-2 flex flex-col items-center justify-between md:flex-row">
+    <div className="md:flex-row mb-2 flex flex-col items-center justify-between">
       <div className="flex flex-col items-center">
         <div className="flex items-center justify-center">
           <ChevronLeft
@@ -58,11 +58,11 @@ const Toolbar = ({ onView, onNavigate, date, setTag }: props) => {
           </Badge>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-2 md:items-end">
+      <div className="md:items-end flex flex-col items-center gap-2">
         <Badge onClick={() => setTag("all")} type={"gray"}>
           All Events
         </Badge>
-        <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
+        <div className="md:justify-end flex flex-wrap items-center justify-center gap-x-2">
           {Object.entries(LABELS)
             .filter(([_, { type }]) => type === "leads")
             .map(([key], index) => (
@@ -77,7 +77,7 @@ const Toolbar = ({ onView, onNavigate, date, setTag }: props) => {
             ))}
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-2 md:justify-end">
+        <div className="md:justify-end flex flex-wrap items-center justify-center gap-x-2">
           {Object.entries(LABELS)
             .filter(([_, { type }]) => type !== "leads")
             .map(([key], index) => (
