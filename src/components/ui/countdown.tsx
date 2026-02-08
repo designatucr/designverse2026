@@ -14,15 +14,15 @@ interface digitProps {
 
 const Digits = ({ value, unit, classNames }: digitProps) => {
   return (
-    <div className="relative z-50 flex flex-col items-center last:hidden sm:last:flex md:gap-1">
-      <div className="mt-1 flex gap-1 md:gap-5 lg:m-2 lg:!gap-1">
+    <div className="md:gap-1 relative z-50 flex flex-col items-center">
+      <div className="md:gap-5 lg:m-2 lg:!gap-1 mt-1 flex gap-1">
         {value
           .toString()
           .padStart(2, "0")
           .split("")
           .map((digit, index) => (
             <div
-              className={`flex items-center justify-center rounded ${classNames.background} bg-opacity-40 px-[0.3rem] py-[0.2rem] font-bold md:p-[0.4rem] ${classNames.digit} `}
+              className={`flex items-center justify-center rounded ${classNames.background} md:p-[0.4rem] bg-opacity-40 px-[0.3rem] py-[0.2rem] font-bold ${classNames.digit} `}
               key={index}
             >
               {digit}

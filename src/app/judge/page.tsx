@@ -12,14 +12,14 @@ const Page = () => {
 
   return (
     <div className="flex w-full flex-col items-center justify-between bg-gradient-to-t from-hackathon-primary to-hackathon-primary/70">
-      <Image src={image1} className="w-full md:w-1/3" alt="" />
+      <Image src={image1} className="md:w-1/3 w-full" alt="" />
       <div className="flex flex-col items-center justify-center">
         <p className="mb-2 font-poppins text-4xl font-bold text-white">
           Judging Portal
         </p>
         <p className="font-poppins text-2xl text-white">Welcome {name}</p>
 
-        <div className="mt-10 flex flex-col gap-2 md:flex-row">
+        <div className="md:flex-row mt-10 flex flex-col gap-2">
           <Button className="text-md bg-gradient-to-r from-hackathon-tags-green-bg to-hackathon-green-300 text-black">
             <Link href="/judge/register">Register</Link>
           </Button>
@@ -34,7 +34,7 @@ const Page = () => {
         </div>
       </div>
 
-      <Image src={image2} className="w-full md:w-1/3" alt="" />
+      <Image src={image2} className="md:w-1/3 w-full" alt="" />
     </div>
   );
 };

@@ -4,7 +4,7 @@ type props = {
 
 const Title = ({ children }: props) => {
   return (
-    <div className="text-center font-inter text-4xl font-bold text-landing-brown-300 md:text-7xl">
+    <div className="md:text-7xl text-center font-inter text-4xl font-bold text-landing-brown-300">
       {children}
     </div>
   );

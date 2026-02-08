@@ -46,7 +46,7 @@ const ProtectedPage = async ({ children, restrictions, session }: props) => {
   return (
     <>
       {navigation && <Navigation />}
-      <div className="relative z-0 flex h-screen w-full items-start overflow-x-hidden bg-forms-brown-100 md:px-6">
+      <div className="md:px-6 relative z-0 flex h-screen w-full items-start overflow-x-hidden bg-forms-brown-100">
         <div className="h-full w-full">{children}</div>
       </div>
     </>

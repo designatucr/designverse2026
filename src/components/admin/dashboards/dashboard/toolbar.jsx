@@ -164,7 +164,7 @@ const Toolbar = ({
     );
 
   return (
-    <div className="my-2 flex w-full flex-col items-center gap-3 lg:flex-row">
+    <div className="lg:flex-row my-2 flex w-full flex-col items-center gap-3">
       <div className="flex gap-3">
         {tags.map((tag, index) => (
           <Button
@@ -182,7 +182,7 @@ const Toolbar = ({
         ))}
       </div>
 
-      <div className="flex w-full items-center gap-2 lg:flex-row">
+      <div className="lg:flex-row flex w-full items-center gap-2">
         <div className="z-10 w-2/12">
           <Select
             items={searchableItems}

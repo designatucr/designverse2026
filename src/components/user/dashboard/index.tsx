@@ -12,10 +12,10 @@ const DashboardWrapper = async () => {
   return (
     <div className="flex h-full flex-col gap-3 py-4 font-poppins">
       <Header />
-      <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
-        <div className="col-span-1 flex flex-col gap-3 md:col-span-2">
+      <div className="lg:grid-cols-3 grid grid-cols-1 gap-3">
+        <div className="md:col-span-2 col-span-1 flex flex-col gap-3">
           <Countdown />
-          <div className="flex flex-col gap-4 md:flex-row">
+          <div className="md:flex-row flex flex-col gap-4">
             <Tile
               icon={<QrCode size={40} />}
               text="Check In"

@@ -20,11 +20,11 @@ const Events = ({ events, totalDays }: props) => {
   return (
     <div className="mx-auto rounded-xl bg-landing-brown-700 p-4">
       <div className="mx-auto flex flex-col items-center justify-center bg-landing-grey-100 p-6">
-        <div className="mx-auto flex w-full items-center justify-between gap-2 overflow-x-scroll lg:w-11/12">
+        <div className="lg:w-11/12 mx-auto flex w-full items-center justify-between gap-2 overflow-x-scroll">
           {totalDays.map((day) => (
             <button
               key={day}
-              className={`flex w-40 min-w-20 justify-center rounded-md p-2 text-xs font-bold focus:outline-none sm:text-sm lg:mb-8 lg:mt-2 lg:rounded-lg lg:text-lg ${
+              className={`sm:text-sm lg:mb-8 lg:mt-2 lg:rounded-lg lg:text-lg flex w-40 min-w-20 justify-center rounded-md p-2 text-xs font-bold focus:outline-none ${
                 selectedDay === day
                   ? "bg-white text-landing-brown-500"
                   : "bg-landing-brown-600 text-landing-brown-500"
@@ -43,7 +43,7 @@ const Events = ({ events, totalDays }: props) => {
                 weekday: "long",
               }) === selectedDay,
           ).length == 0 ? (
-            <div className="flex flex-row justify-center text-sm font-semibold lg:text-lg">
+            <div className="lg:text-lg flex flex-row justify-center text-sm font-semibold">
               No events Available
             </div>
           ) : (
@@ -59,7 +59,7 @@ const Events = ({ events, totalDays }: props) => {
                 .map(({ start, summary, description, location }, index) => (
                   <div
                     key={index}
-                    className="font-workSans mb-2 grid items-center justify-between rounded-md px-4 py-3 text-sm font-semibold text-white sm:mb-2 lg:mb-4 lg:grid-cols-3 lg:rounded-xl lg:p-8 lg:text-lg"
+                    className="font-workSans sm:mb-2 lg:mb-4 lg:grid-cols-3 lg:rounded-xl lg:p-8 lg:text-lg mb-2 grid items-center justify-between rounded-md px-4 py-3 text-sm font-semibold text-white"
                   >
                     <p className="flex">{summary}</p>
                     <p className="flex">

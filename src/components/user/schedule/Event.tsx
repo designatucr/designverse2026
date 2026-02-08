@@ -20,7 +20,7 @@ const Event = ({ event }: props) => {
           <div className="text-left text-sm font-extrabold">
             {event.summary}
           </div>
-          <div className="w-full text-left text-xs font-semibold md:text-sm">
+          <div className="md:text-sm w-full text-left text-xs font-semibold">
             {event.location}
           </div>
           <div
@@ -32,7 +32,7 @@ const Event = ({ event }: props) => {
                 : "bg-white/20"
             } flex w-full py-0`}
           >
-            <div className={`text-center text-xs md:text-sm`}>
+            <div className={`md:text-sm text-center text-xs`}>
               {new Date(event.start.dateTime).getHours() === 12
                 ? 12
                 : new Date(event.start.dateTime).getHours() % 12}
