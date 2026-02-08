@@ -6,10 +6,8 @@ import logo from "@/public/landing/dv_logo.svg";
 // import timer from "@/public/landing/timer.svg";
 // import sign from "@/public/landing/sign.svg";
 import bakery from "@/public/landing/bakery.svg";
-// import grass from "@/public/landing/grass.svg";
 import leftBush from "@/public/landing/leftFlowerBush.svg";
 import rightBush from "@/public/landing/rightFlowerBush.svg";
-// import bakery2 from "@/public/landing/bakery2.svg";
 
 import lampost from "@/public/landing/lampost.svg";
 import lights from "@/public/landing/lights.svg";
@@ -49,17 +47,16 @@ const Landing = () => {
         <Image src={logo} alt="dv logo sign" className="relative w-1/4" />
 
         <div className="flex w-3/4 flex-col items-center">
-          <div className="md:border-8 md:p-8 w-full rounded-lg border-4 border-landing-brown-67 bg-landing-beige-100 p-2">
+          <div className="md:border-8 md:p-8 w-3/4 rounded-lg border-4 border-landing-brown-67 bg-landing-beige-100 p-2">
             <div className="md:p-4 rounded-lg border-4 border-landing-brown-678 bg-landing-beige-100 p-2">
               <p className="text-md md:text-2xl lg:text-3xl mb-1 mt-3 text-center font-bold">
                 University of California, Riverside | May 2-3, 2026
               </p>
               <Countdown
                 classNames={{
-                  unit: "text-center text-landing-brown-400 text-[0.5rem] md:text-xs lg:text-[0.rem] xl:text-[1.2rem] font-bold",
-                  digit: "font-bold text-white lg:text-4xl xl:text-[2.5rem]",
-                  background:
-                    "w-5 h-7 md:w-7 md:9 lg:w-9 lg:h-12 xl:w-10 xl:h-16 bg-landing-brown-400 lg:rounded-lg",
+                  unit: "text-brown-200 md:text-lg text-xs",
+                  background: "bg-[#603A18]",
+                  digit: "text-white",
                 }}
               />
               <div className="lg:gap-5 xl:gap-2 bottom-1 z-30 flex justify-center gap-2 text-white">
@@ -67,7 +64,7 @@ const Landing = () => {
                   href="/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="md:text-lg lg:px-5 xl:w-[50%] xl:rounded-2xl xl:px-9 xl:py-4 xl:text-2xl flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold"
+                  className="lg:text-xl md:text-lg sm:text-md md:px-6 md:py-4 flex items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110"
                 >
                   Sponsor{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -76,7 +73,7 @@ const Landing = () => {
                   href="https://minerva-sage.vercel.app/designverse/forms/participant"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="md:text-lg lg:px-5 xl:w-[50%] xl:rounded-2xl xl:px-9 xl:py-4 xl:text-2xl flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold"
+                  className="lg:text-2xl md:text-lg sm:text-md md:px-3 md:py-2 flex items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white"
                 >
                   Apply Now!{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -85,7 +82,7 @@ const Landing = () => {
                   href="/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="md:text-lg lg:px-5 xl:w-[50%] xl:rounded-2xl xl:px-9 xl:py-4 xl:text-2xl flex items-center justify-center rounded-lg bg-landing-brown-100 px-3 py-1 text-[0.6rem] font-semibold"
+                  className="lg:text-xl md:text-lg sm:text-md md:px-3 md:py-2 flex items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white"
                 >
                   Volunteer{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -98,7 +95,7 @@ const Landing = () => {
             <Image
               src={lights}
               alt="lights"
-              className="sm:flex lg:top-8 absolute -top-16 left-10 hidden -translate-x-full 2xl:hidden"
+              className="lg:left-14 md:left-6 lg:top-8 absolute -top-0 left-8 -translate-x-full 3xl:hidden"
             />
             <Image
               src={lampost}
@@ -120,32 +117,21 @@ const Landing = () => {
             <Image
               src={lights}
               alt="lights"
-              className="sm:visible absolute -top-0 right-16 hidden translate-x-full 2xl:hidden"
+              className="lg:right-2 md:right-2 lg:top-2 absolute right-8 top-8 translate-x-full 3xl:hidden"
+            />
+
+            <Image
+              src={leftBush}
+              alt="left grass box"
+              className="md:left-[12%] md:w-1/5 absolute bottom-0 left-0 z-30 w-1/3 -translate-x-[21%] translate-y-[1%]"
+            />
+            <Image
+              src={rightBush}
+              alt="right grass box"
+              className="md:right-[12%] md:w-1/5 absolute bottom-0 right-0 z-30 w-1/3 translate-x-[21%]"
             />
           </div>
           <div className="md:-mt-3 md:h-20 z-30 -mt-1 flex h-10 w-screen bg-landing-black-100" />
-        </div>
-        <div className="relative flex w-full flex-col items-center">
-          {/* <Image
-            src={leftBush}
-            alt="left grass box"
-            className="absolute bottom-44 left-0 z-30 w-[30%] -translate-x-[21%] translate-y-[1%] md:left-[12%] md:w-[20%]"
-          />
-          <Image
-            src={rightBush}
-            alt="right grass box"
-            className="absolute bottom-44 right-0 z-30 w-[30%] translate-x-[21%] -scale-x-100 md:right-[12%] md:w-[20%]"
-          /> */}
-          {/* <Image
-            src={grass}
-            alt="left grass box"
-            className="absolute bottom-44 left-[12%] z-30 w-[20%] -translate-x-[21%]"
-          />
-          <Image
-            src={grass}
-            alt="right grass box"
-            className="absolute bottom-44 right-[12%] z-30 w-[20%] translate-x-[21%] -scale-x-100"
-          /> */}
         </div>
       </div>
     </div>
