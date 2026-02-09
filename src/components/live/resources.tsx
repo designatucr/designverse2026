@@ -65,7 +65,7 @@ const Resources = () => {
             <Link
               href={link}
               target="_blank"
-              className="md:h-2/12 flex w-2/5 flex-col items-center hover:scale-105 hover:cursor-pointer md:w-2/12 lg:w-1/2"
+              className="md:h-2/12 flex w-2/5 flex-col items-center transition duration-150 ease-in-out hover:scale-105 hover:cursor-pointer md:w-2/12 lg:w-1/2"
             >
               <Image src={image} className="rounded-full" alt="Resource" />
             </Link>

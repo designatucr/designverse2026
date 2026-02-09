@@ -13,7 +13,7 @@ const Sponsors = () => {
             key={index}
             href={link}
             target="_blank"
-            className={`flex w-1/4 items-center justify-center transition-transform hover:scale-110 ${translateY ? "-translate-y-[6%]" : ""}`}
+            className={`flex w-1/4 items-center justify-center transition duration-150 ease-in-out hover:scale-110 ${translateY ? "-translate-y-[6%]" : ""}`}
           >
             <Image src={image} alt={name} className="w-2/3 sm:w-3/4" />
           </Link>
