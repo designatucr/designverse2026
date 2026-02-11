@@ -55,7 +55,7 @@ const Landing = () => {
         <div className="flex w-3/4 flex-col items-center">
           <div className="w-5/6 rounded-lg border-4 border-landing-brown-67 bg-landing-beige-100 p-2 md:w-3/4 md:border-8 md:p-8">
             <div className="rounded-lg border-4 border-landing-brown-678 bg-landing-beige-100 p-2 md:p-4">
-              <p className="text-md mb-1 mt-3 text-center font-bold md:text-2xl lg:text-3xl">
+              <p className="text-md mb-1 text-center font-bold text-landing-brown-100 md:mt-3 md:text-2xl lg:text-3xl">
                 University of California, Riverside | May 16-17, 2026
               </p>
               <Countdown
@@ -113,7 +113,7 @@ const Landing = () => {
             <Image
               src={bakery}
               alt="bakery shop"
-              className="xl:10/12 w-3/4 md:w-8/12 lg:w-9/12"
+              className="xl:10/12 w-full md:w-8/12 lg:w-9/12"
             />
 
             <Image

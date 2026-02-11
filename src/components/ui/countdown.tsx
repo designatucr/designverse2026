@@ -14,7 +14,7 @@ interface digitProps {
 
 const Digits = ({ value, unit, classNames }: digitProps) => {
   return (
-    <div className="min:w-24 mx-2 flex flex-col items-center gap-1 md:gap-2">
+    <div className="min:w-24 mx-2 flex flex-col items-center gap-1 md:gap-0">
       <div className="m-1 mb-0 flex gap-1 md:m-3 lg:!gap-1">
         {value
           .toString()
