@@ -97,6 +97,8 @@ module.exports = {
           "beige-200": "#F1D8BF",
           "beige-300": "#EED1B4",
           "grey-100": "#555555",
+          "brown-67": "#AF9370",
+          "brown-678": "#AF937099",
         },
         forms: {
           "brown-100": "#FFF1E4",
