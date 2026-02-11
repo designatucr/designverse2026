@@ -6,10 +6,17 @@ import { FaDiscord, FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
+import tableChairs from "@/public/landing/tableChairs.svg";
+
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-between gap-2 bg-landing-brown-300 p-6 md:p-16">
-      <div className="flex flex-row justify-between">
+    <footer className="relative mt-[30vw] flex flex-col justify-between gap-2 bg-landing-brown-300 p-6 md:mt-[20vw] md:p-16">
+      <Image
+        src={tableChairs}
+        alt="Table and Chairs"
+        className="absolute left-1/2 top-4 w-3/4 -translate-x-1/2 -translate-y-full md:top-10 md:w-1/3"
+      />
+      <div className="flex flex-row justify-between pt-6">
         <div>
           <Image
             className="w-1/3 pb-5 md:pb-10 md:pl-5"
