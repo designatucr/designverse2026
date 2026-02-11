@@ -36,10 +36,9 @@ const support = [
 const About = () => {
   return (
     <div className={`relative ${inter.className}`}>
-      <div className="block h-64 bg-transparent sm:hidden"></div>
       <section
         id="about"
-        className="bg-beige-100 z-20 w-full items-start justify-center py-32 md:py-64"
+        className="bg-beige-100 z-20 w-full items-start justify-center"
       >
         <div className="md:w-7/8 bg-landing-beige-200 pl-[8vw] pr-[8vw] font-semibold sm:w-full">
           <div className="py-16 text-left font-inter text-4xl font-bold text-landing-brown-300 md:text-7xl">

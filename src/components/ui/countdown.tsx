@@ -14,22 +14,22 @@ interface digitProps {
 
 const Digits = ({ value, unit, classNames }: digitProps) => {
   return (
-    <div className="flex flex-col items-center gap-4 last:hidden sm:last:flex">
-      <div className="m-3 mb-0 flex gap-1 lg:!gap-1">
+    <div className="min:w-24 mx-2 flex flex-col items-center gap-1 md:gap-0">
+      <div className="m-1 mb-0 flex gap-1 md:m-3 lg:!gap-1">
         {value
           .toString()
           .padStart(2, "0")
           .split("")
           .map((digit, index) => (
             <div
-              className={`flex items-center justify-center rounded ${classNames.background} bg-opacity-40 p-3 text-lg font-bold ${classNames.digit} lg:min-w-11 lg:p-3 lg:text-3xl`}
+              className={`flex items-center justify-center rounded ${classNames.background} bg-opacity-40 p-1 text-lg font-bold ${classNames.digit} lg:min-w-11 lg:p-3 lg:text-3xl`}
               key={index}
             >
               {digit}
             </div>
           ))}
       </div>
-      <div className={`m-2 mt-0 text-xs ${classNames.unit}`}>{unit}</div>
+      <div className={`mx-auto mt-0 text-base ${classNames.unit}`}>{unit}</div>
     </div>
   );
 };
@@ -50,6 +50,18 @@ const Countdown = ({ classNames }: countdownProps) => {
     seconds: 0,
   });
 
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
       const timeLeft = data.end.getTime() - new Date().getTime();
@@ -69,10 +81,13 @@ const Countdown = ({ classNames }: countdownProps) => {
     return () => clearInterval(interval);
   }, []);
 
+  const entries = Object.entries(countdown);
+  const displayEntries = isMobile ? entries.slice(0, 3) : entries;
+
   return (
     <div className="flex items-center justify-center font-bold">
-      {Object.entries(countdown).map(([unit, value], index) => (
-        <Digits key={index} unit={unit} value={value} classNames={classNames} />
+      {displayEntries.map(([unit, value]) => (
+        <Digits key={unit} unit={unit} value={value} classNames={classNames} />
       ))}
     </div>
   );
