@@ -2,7 +2,8 @@ import React from "react";
 import LogoIcon from "@/public/engineering/hackathon/dvlogo2.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { FaDiscord, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+// import { FaDiscord } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
@@ -48,13 +49,13 @@ const Footer = () => {
             >
               <RiInstagramFill className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
             </Link>
-            <Link
+            {/* <Link
               href="https://discord.com/invite/MmSvY3tu"
               target="_blank"
               aria-label="Discord"
             >
               <FaDiscord className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
-            </Link>
+            </Link> */}
           </div>
           <p className="py-5 text-left font-inter text-xs text-white md:pl-5 md:text-2xl">
             Made with &lt;3 by the 2026 DesignVerse team
