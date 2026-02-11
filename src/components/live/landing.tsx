@@ -53,7 +53,7 @@ const Landing = () => {
         />
 
         <div className="flex w-3/4 flex-col items-center">
-          <div className="w-5/6 rounded-lg border-4 border-landing-brown-67 bg-landing-beige-100 p-2 md:w-3/4 md:border-8 md:p-8">
+          <div className="w-5/6 rounded-lg border-4 border-landing-brown-67 bg-landing-beige-100 p-2 md:w-3/4 md:border-8 md:p-8 xl:w-2/3">
             <div className="rounded-lg border-4 border-landing-brown-678 bg-landing-beige-100 p-2 md:p-4">
               <p className="text-md mb-1 text-center font-bold text-landing-brown-100 md:mt-3 md:text-2xl lg:text-3xl">
                 University of California, Riverside | May 16-17, 2026
@@ -101,13 +101,13 @@ const Landing = () => {
             <Image
               src={lampWithLight}
               alt="lamp with bulbs"
-              className="md:-translate-x-5/6 absolute bottom-0 left-0 z-40 -translate-x-full translate-y-16 scale-y-90 lg:-translate-x-2/3"
+              className="md:-translate-x-5/6 absolute bottom-0 left-0 z-40 -translate-x-full translate-y-8 md:translate-y-16 md:scale-y-90 lg:-translate-x-2/3"
             />
 
             <Image
               src={lampWithLight}
               alt="lamp with bulbs"
-              className="md:translate-x-5/6 absolute bottom-0 right-0 z-40 translate-x-full translate-y-16 -scale-x-100 scale-y-90 lg:translate-x-2/3"
+              className="md:translate-x-5/6 absolute bottom-0 right-0 z-40 translate-x-full translate-y-8 -scale-x-100 md:translate-y-16 md:scale-y-90 lg:translate-x-2/3"
             />
 
             <Image
