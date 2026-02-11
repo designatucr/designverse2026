@@ -39,9 +39,9 @@ const About = () => {
             ABOUT US
           </div>
 
-          <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
-            <div className="relative mb-8 w-2/3 flex-1">
-              <div className="relative w-2/3 bg-white p-6 text-landing-brown-400 shadow-[5px_5px_5px_rgba(0,0,0,0.3)]">
+          <div className="flex flex-col items-center md:flex-row md:gap-12">
+            <div className="relative mb-8 md:w-2/3 w-5/6 flex-1">
+              <div className="relative md:w-2/3 w-full bg-white p-6 text-landing-brown-400 shadow-[5px_5px_5px_rgba(0,0,0,0.3)]">
                 <div className="absolute left-0 top-0 h-8 w-28 translate-x-[-25%] translate-y-[15%] rotate-[-38deg] bg-blue-200/60" />
                 <div className="absolute right-0 top-0 h-8 w-28 translate-x-[25%] translate-y-[-20%] rotate-[38deg] bg-blue-200/60" />
                 <div className="absolute bottom-0 left-0 h-8 w-28 translate-x-[-30%] translate-y-[-20%] rotate-[38deg] bg-blue-200/60" />
@@ -88,10 +88,10 @@ const About = () => {
         <Image
           src={taiyaki}
           alt="taiyaki"
-          className="absolute top-12 z-40 w-1/4 rotate-6 md:right-96 md:w-[6vw] md:-translate-x-full"
+          className="absolute top-12 z-40 w-1/4 rotate-6 md:left-0 left-8 md:right-96 md:w-[6vw] md:-translate-x-full"
         />
 
-        <div className="relative z-20 h-48 w-full bg-landing-orange-200" />
+        <div className="relative z-20 md:h-48 h-40 w-full bg-landing-orange-200" />
 
         <div className="relative z-30 overflow-hidden">
           <div className="z-40 mx-auto bg-landing-orange-300 py-8">
