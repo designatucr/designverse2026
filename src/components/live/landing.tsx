@@ -70,7 +70,7 @@ const Landing = () => {
                   href="/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-4 md:py-2 md:text-lg lg:w-1/3 lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-4 md:py-2 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Sponsor{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -79,16 +79,16 @@ const Landing = () => {
                   href="https://minerva-sage.vercel.app/designverse/forms/participant"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Apply Now!{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://minerva-sage.vercel.app/designverse/forms/volunteer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Volunteer{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
