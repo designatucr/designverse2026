@@ -65,12 +65,12 @@ const Landing = () => {
                   digit: "text-white",
                 }}
               />
-              <div className="bottom-1 z-30 flex flex-col justify-center gap-2 text-white lg:flex-row lg:gap-5 xl:gap-2">
+              <div className="bottom-1 z-30 flex flex-col justify-center gap-2 text-white lg:flex-row lg:gap-2 xl:gap-2">
                 <Link
                   href="/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-4 md:py-2 md:text-lg lg:w-1/4 lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-4 md:py-2 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Sponsor{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -79,7 +79,7 @@ const Landing = () => {
                   href="https://minerva-sage.vercel.app/designverse/forms/participant"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-6 md:py-4 md:text-lg lg:w-1/4 lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Apply Now!{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -88,7 +88,7 @@ const Landing = () => {
                   href="/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-6 md:py-4 md:text-lg lg:w-1/4 lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Volunteer{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -101,13 +101,13 @@ const Landing = () => {
             <Image
               src={lampWithLight}
               alt="lamp with bulbs"
-              className="lg:-translate-x-5/6 absolute bottom-0 left-0 z-40 -translate-x-full translate-y-8 md:translate-y-16 md:scale-y-90 lg:-translate-x-2/3"
+              className="lg:-translate-x-5/6 absolute bottom-0 left-0 z-40 -translate-x-full translate-y-8 md:translate-y-16 md:scale-y-90 xl:-translate-x-2/3"
             />
 
             <Image
               src={lampWithLight}
               alt="lamp with bulbs"
-              className="md:translate-x-5/6 absolute bottom-0 right-0 z-40 translate-x-full translate-y-8 -scale-x-100 md:translate-y-16 md:scale-y-90 lg:translate-x-2/3"
+              className="lg:translate-x-5/6 absolute bottom-0 right-0 z-40 translate-x-full translate-y-8 -scale-x-100 md:translate-y-16 md:scale-y-90 xl:translate-x-2/3"
             />
 
             <Image

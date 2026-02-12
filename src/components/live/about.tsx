@@ -98,7 +98,7 @@ const About = () => {
             <p className="py-8 text-center text-4xl font-bold text-white md:text-5xl lg:text-7xl">
               SUPPORT US{" "}
             </p>
-            <div className="mx-auto mb-8 flex w-3/4 flex-col justify-center lg:flex-row">
+            <div className="mx-auto mb-8 flex w-3/4 flex-col justify-center md:gap-4 lg:flex-row">
               {support.map(({ title, description, form, link }, index) => (
                 <div
                   key={index}
