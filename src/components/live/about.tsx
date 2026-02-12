@@ -108,7 +108,7 @@ const About = () => {
                 </div>
                 <Button
                   asChild
-                  className="w-1/2 rounded-full bg-landing-brown-200 hover:scale-105 hover:bg-landing-brown-400"
+                  className="w-1/2 rounded-full bg-landing-brown-200 transition duration-150 ease-in-out hover:scale-105 hover:bg-landing-brown-400"
                 >
                   <Link
                     href={link}
