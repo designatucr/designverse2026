@@ -16,6 +16,15 @@ import lampWithLight from "@/public/landing/lightwithlight.svg";
 
 import Link from "next/link";
 import { PiArrowUpRightBold } from "react-icons/pi";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 const Landing = () => {
   return (
     <div className="flex w-full flex-col items-center overflow-x-hidden bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
@@ -66,15 +75,24 @@ const Landing = () => {
                 }}
               />
               <div className="bottom-1 z-30 flex flex-col justify-center gap-2 text-white lg:flex-row lg:gap-2 xl:gap-2">
-                <Link
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-4 md:py-2 md:text-lg lg:w-1/3 lg:text-xl"
-                >
-                  Sponsor{" "}
-                  <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
-                </Link>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-4 md:py-2 md:text-lg lg:w-1/3 lg:text-xl">
+                      Sponsor{" "}
+                      <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Sponsor DesignVerse 2026</DialogTitle>
+                      <DialogDescription>
+                        Please reach out to us at{" "}
+                        <b>designverseucr@gmail.com</b> if you are interested in
+                        helping to sponsor our event!
+                      </DialogDescription>
+                    </DialogHeader>
+                  </DialogContent>
+                </Dialog>
                 <Link
                   href="https://minerva-sage.vercel.app/designverse/forms/participant"
                   target="_blank"
