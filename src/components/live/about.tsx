@@ -6,14 +6,16 @@ import bunny from "@/public/landing/bunny.svg";
 import matcha from "@/public/landing/matcha.svg";
 import taiyaki from "@/public/landing/taiyaki.svg";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 const support = [
-  {
-    title: "Become a Mentor",
-    description:
-      "Have experience leading, using Figma, or coordinating groups? Share your knowledge and become a mentor!",
-    form: "Mentor",
-    link: "/apply/mentor",
-  },
   {
     title: "Sponsor Us",
     description:
@@ -24,9 +26,9 @@ const support = [
   {
     title: "Volunteer Work",
     description:
-      "Need experience or just want to help our organization come to life? Volunteer to help the Designathon happen!",
+      "Have experience leading, using Figma, or coordinating groups? Share your knowledge and volunteer to help the Designathon happen! We would love to have you!",
     form: "Volunteer",
-    link: "/apply/volunteer",
+    link: "https://minerva-sage.vercel.app/designverse/forms/volunteer",
   },
 ];
 
@@ -98,7 +100,7 @@ const About = () => {
             <p className="py-8 text-center text-4xl font-bold text-white md:text-5xl lg:text-7xl">
               SUPPORT US{" "}
             </p>
-            <div className="mx-auto mb-8 flex w-3/4 flex-col justify-center md:gap-4 lg:flex-row">
+            <div className="mx-auto mb-8 flex w-2/3 flex-col justify-center md:gap-20 lg:flex-row">
               {support.map(({ title, description, form, link }, index) => (
                 <div
                   key={index}
@@ -110,19 +112,41 @@ const About = () => {
                   <div className="max-w-md text-center text-sm md:text-lg lg:max-w-lg lg:text-base">
                     {description}
                   </div>
-                  <Button
-                    asChild
-                    className="w-44 rounded-full bg-landing-brown-200 transition hover:scale-110 hover:bg-landing-brown-400"
-                  >
-                    <Link
-                      href={link}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="flex gap-2"
+                  {title !== "Sponsor Us" ? (
+                    <Button
+                      asChild
+                      className="w-44 rounded-full bg-landing-brown-200 transition hover:scale-110 hover:bg-landing-brown-400"
                     >
-                      {form} <ExternalLink />
-                    </Link>
-                  </Button>
+                      <Link
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="flex gap-2"
+                      >
+                        {form} <ExternalLink />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button className="w-44 rounded-full bg-landing-brown-200 transition hover:scale-110 hover:bg-landing-brown-400">
+                          <div className="flex gap-2">
+                            {form} <ExternalLink />
+                          </div>
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>Sponsor DesignVerse 2026</DialogTitle>
+                          <DialogDescription>
+                            Please reach out to us at{" "}
+                            <b>designverseucr@gmail.com</b> if you are
+                            interested in helping to sponsor our event!
+                          </DialogDescription>
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+                  )}
                 </div>
               ))}
             </div>
