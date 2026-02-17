@@ -8,13 +8,6 @@ import taiyaki from "@/public/landing/taiyaki.svg";
 
 const support = [
   {
-    title: "Become a Mentor",
-    description:
-      "Have experience leading, using Figma, or coordinating groups? Share your knowledge and become a mentor!",
-    form: "Mentor",
-    link: "/apply/mentor",
-  },
-  {
     title: "Sponsor Us",
     description:
       "Have a company or brand you want to bring attention to? Sponsor us to raise brand awareness and exposure through social media and giveaways!",
@@ -98,7 +91,7 @@ const About = () => {
             <p className="py-8 text-center text-4xl font-bold text-white md:text-5xl lg:text-7xl">
               SUPPORT US{" "}
             </p>
-            <div className="mx-auto mb-8 flex w-3/4 flex-col justify-center md:gap-4 lg:flex-row">
+            <div className="mx-auto mb-8 flex w-2/3 flex-col justify-center md:gap-20 lg:flex-row">
               {support.map(({ title, description, form, link }, index) => (
                 <div
                   key={index}
