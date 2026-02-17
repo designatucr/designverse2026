@@ -9,8 +9,10 @@ import Title from "@/components/ui/title";
 
 const FAQ = () => {
   return (
-    <div className="flex w-full flex-col items-center pt-24">
-      <Title>FREQUENTLY ASKED QUESTIONS</Title>
+    <div className="flex w-full flex-col items-center pt-16">
+      <div className="px-4">
+        <Title>FREQUENTLY ASKED QUESTIONS</Title>
+      </div>
       <div className="w-9/12 pb-12 pt-10">
         <Accordion type="single" collapsible className="w-full">
           {QUESTIONS.map(({ question, answer }, index) => (
