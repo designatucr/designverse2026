@@ -6,6 +6,15 @@ import bunny from "@/public/landing/bunny.svg";
 import matcha from "@/public/landing/matcha.svg";
 import taiyaki from "@/public/landing/taiyaki.svg";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 const support = [
   {
     title: "Sponsor Us",
@@ -17,9 +26,9 @@ const support = [
   {
     title: "Volunteer Work",
     description:
-      "Need experience or just want to help our organization come to life? Volunteer to help the Designathon happen!",
+      "Have experience leading, using Figma, or coordinating groups? Share your knowledge and volunteer to help the Designathon happen! We would love to have you!",
     form: "Volunteer",
-    link: "/apply/volunteer",
+    link: "https://minerva-sage.vercel.app/designverse/forms/volunteer",
   },
 ];
 
@@ -103,19 +112,41 @@ const About = () => {
                   <div className="max-w-md text-center text-sm md:text-lg lg:max-w-lg lg:text-base">
                     {description}
                   </div>
-                  <Button
-                    asChild
-                    className="w-44 rounded-full bg-landing-brown-200 transition hover:scale-110 hover:bg-landing-brown-400"
-                  >
-                    <Link
-                      href={link}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="flex gap-2"
+                  {title !== "Sponsor Us" ? (
+                    <Button
+                      asChild
+                      className="w-44 rounded-full bg-landing-brown-200 transition hover:scale-110 hover:bg-landing-brown-400"
                     >
-                      {form} <ExternalLink />
-                    </Link>
-                  </Button>
+                      <Link
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="flex gap-2"
+                      >
+                        {form} <ExternalLink />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button className="w-44 rounded-full bg-landing-brown-200 transition hover:scale-110 hover:bg-landing-brown-400">
+                          <div className="flex gap-2">
+                            {form} <ExternalLink />
+                          </div>
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>Sponsor DesignVerse 2026</DialogTitle>
+                          <DialogDescription>
+                            Please reach out to us at{" "}
+                            <b>designverseucr@gmail.com</b> if you are
+                            interested in helping to sponsor our event!
+                          </DialogDescription>
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+                  )}
                 </div>
               ))}
             </div>
