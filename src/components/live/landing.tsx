@@ -62,7 +62,7 @@ const Landing = () => {
         />
 
         <div className="flex w-3/4 flex-col items-center">
-          <div className="w-5/6 rounded-lg border-4 border-landing-brown-67 bg-landing-beige-100 p-2 md:w-3/4 md:border-8 md:p-8 xl:w-2/3">
+          <div className="w-5/6 rounded-2xl border-4 border-landing-brown-67 bg-landing-beige-100 p-2 md:w-3/4 md:border-8 md:p-8 xl:w-2/3">
             <div className="rounded-lg border-4 border-landing-brown-678 bg-landing-beige-100 p-2 md:p-4">
               <p className="text-md mb-1 text-center font-bold text-landing-brown-100 md:mt-3 md:text-2xl lg:text-3xl">
                 University of California, Riverside | May 16-17, 2026
