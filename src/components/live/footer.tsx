@@ -2,14 +2,22 @@ import React from "react";
 import LogoIcon from "@/public/engineering/hackathon/dvlogo2.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { FaDiscord, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+// import { FaDiscord } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
+import tableChairs from "@/public/landing/tableChairs.svg";
+
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-between gap-2 bg-landing-brown-300 p-6 md:p-16">
-      <div className="flex flex-row justify-between">
+    <footer className="relative mt-[30vw] flex flex-col justify-between gap-2 bg-landing-brown-300 p-6 md:mt-[20vw] md:p-16">
+      <Image
+        src={tableChairs}
+        alt="Table and Chairs"
+        className="absolute left-1/2 top-4 w-3/4 -translate-x-1/2 -translate-y-full md:top-10 md:w-1/3"
+      />
+      <div className="flex flex-row justify-between pt-6">
         <div>
           <Image
             className="w-1/3 pb-5 md:pb-10 md:pl-5"
@@ -41,13 +49,13 @@ const Footer = () => {
             >
               <RiInstagramFill className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
             </Link>
-            <Link
+            {/* <Link
               href="https://discord.com/invite/MmSvY3tu"
               target="_blank"
               aria-label="Discord"
             >
               <FaDiscord className="text-2xl text-white transition-transform hover:scale-110 md:text-5xl" />
-            </Link>
+            </Link> */}
           </div>
           <p className="py-5 text-left font-inter text-xs text-white md:pl-5 md:text-2xl">
             Made with &lt;3 by the 2026 DesignVerse team

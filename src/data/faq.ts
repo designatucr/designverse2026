@@ -12,11 +12,11 @@ export const QUESTIONS: QuestionAnswer[] = [
   {
     question: "How can I apply for the designathon?",
     answer:
-      "Please be on the lookout for the release of our official registration form! For now, you may fill out our interest form.",
+      "Registration is open now! Please sign-up with the link at the top of this page!",
   },
   {
     question: "When are applications due?",
-    answer: "Applications are due April 26, 2026!",
+    answer: "Applications are due May 9, 2026!",
   },
   {
     question: "Where will the designathon be?",

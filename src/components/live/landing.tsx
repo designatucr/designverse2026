@@ -16,6 +16,15 @@ import lampWithLight from "@/public/landing/lightwithlight.svg";
 
 import Link from "next/link";
 import { PiArrowUpRightBold } from "react-icons/pi";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 const Landing = () => {
   return (
     <div className="flex w-full flex-col items-center overflow-x-hidden bg-gradient-to-b from-landing-blue-100 to-landing-orange-100">
@@ -60,35 +69,44 @@ const Landing = () => {
               </p>
               <Countdown
                 classNames={{
-                  unit: "text-brown-200 md:text-lg text-xs",
+                  unit: "text-brown-200 md:text-lg text-xs text-landing-brown-100",
                   background: "bg-[#603A18]",
                   digit: "text-white",
                 }}
               />
-              <div className="bottom-1 z-30 flex flex-col justify-center gap-2 text-white md:flex-row lg:gap-5 xl:gap-2">
-                <Link
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:w-1/4 md:px-4 md:py-2 md:text-lg lg:text-xl"
-                >
-                  Sponsor{" "}
-                  <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
-                </Link>
+              <div className="bottom-1 z-30 flex flex-col justify-center gap-2 text-white lg:flex-row lg:gap-2 xl:gap-2">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-4 md:py-2 md:text-lg lg:w-1/3 lg:text-xl">
+                      Sponsor{" "}
+                      <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Sponsor DesignVerse 2026</DialogTitle>
+                      <DialogDescription>
+                        Please reach out to us at{" "}
+                        <b>designverseucr@gmail.com</b> if you are interested in
+                        helping to sponsor our event!
+                      </DialogDescription>
+                    </DialogHeader>
+                  </DialogContent>
+                </Dialog>
                 <Link
                   href="https://minerva-sage.vercel.app/designverse/forms/participant"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:w-1/4 md:px-6 md:py-4 md:text-lg lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Apply Now!{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://minerva-sage.vercel.app/designverse/forms/volunteer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-110 md:w-1/4 md:px-6 md:py-4 md:text-lg lg:text-xl"
+                  className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-0 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
                 >
                   Volunteer{" "}
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
@@ -101,13 +119,13 @@ const Landing = () => {
             <Image
               src={lampWithLight}
               alt="lamp with bulbs"
-              className="md:-translate-x-5/6 absolute bottom-0 left-0 z-40 -translate-x-full translate-y-8 md:translate-y-16 md:scale-y-90 lg:-translate-x-2/3"
+              className="lg:-translate-x-5/6 absolute bottom-0 left-0 z-40 -translate-x-full translate-y-8 md:translate-y-16 md:scale-y-90 xl:-translate-x-2/3"
             />
 
             <Image
               src={lampWithLight}
               alt="lamp with bulbs"
-              className="md:translate-x-5/6 absolute bottom-0 right-0 z-40 translate-x-full translate-y-8 -scale-x-100 md:translate-y-16 md:scale-y-90 lg:translate-x-2/3"
+              className="lg:translate-x-5/6 absolute bottom-0 right-0 z-40 translate-x-full translate-y-8 -scale-x-100 md:translate-y-16 md:scale-y-90 xl:translate-x-2/3"
             />
 
             <Image
