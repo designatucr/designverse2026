@@ -13,3 +13,8 @@ body {
   font-family: var(--font-dv-inter);
   font-family: var(--font-dv-worksans);
 }
+
+html body[data-scroll-locked] {
+  overflow: visible !important;
+  margin-right: 0 !important;
+}
