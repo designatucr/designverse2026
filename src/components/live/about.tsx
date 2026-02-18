@@ -41,7 +41,7 @@ const About = () => {
             ABOUT US
           </div>
 
-          <div className="flex flex-col items-center md:flex-row md:gap-12">
+          <div className="flex flex-col items-center py-4 md:flex-row md:gap-12">
             <div className="relative mb-8 w-5/6 flex-1 md:w-2/3">
               <div className="relative w-full bg-white p-6 text-landing-brown-400 shadow-[5px_5px_5px_rgba(0,0,0,0.3)] md:w-2/3">
                 <div className="absolute left-0 top-0 h-8 w-28 translate-x-[-25%] translate-y-[15%] rotate-[-38deg] bg-blue-200/60" />
