@@ -84,7 +84,7 @@ const Landing = () => {
                   </DialogTrigger>
                   <DialogContent>
                     <DialogHeader>
-                      <DialogTitle>Sponsor DesignVerse 2026</DialogTitle>
+                      <DialogTitle>Sponsor DesignVerse 2026!</DialogTitle>
                       <DialogDescription>
                         Please reach out to us at{" "}
                         <b>designverseucr@gmail.com</b> if you are interested in
