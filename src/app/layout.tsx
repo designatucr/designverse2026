@@ -12,6 +12,11 @@ type Props = {
 
 export const metadata = {
   title: "DesignVerse 2026",
+  icons: {
+    icon: [
+      { url: "/dv.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 const RootLayout = async ({ children }: Props) => {
