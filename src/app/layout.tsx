@@ -14,7 +14,7 @@ export const metadata = {
   title: "DesignVerse 2026",
   icons: {
     icon: [
-      { url: "/dv.svg", type: "image/svg+xml" },
+      { url: "/icon.svg", type: "image/svg+xml" },
     ],
   },
 };
