@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+// import Shelf from "@/public/landing/resources/shelf.svg";
 
 import Figma from "@/public/landing/resources/figma.svg";
-import Dribble from "@/public/landing/resources/dribble.svg";
+import Dribble from "@/public/landing/resources/dribble-logo.svg";
 import Miro from "@/public/landing/resources/miro.svg";
 import Turtle from "@/public/landing/resources/turtle.svg";
 import Pie from "@/public/landing/resources/pie.svg";
@@ -53,15 +54,20 @@ const bakeryItems = [
 const Resources = () => {
   return (
     <div className="flex flex-col items-center justify-center p-16">
-      <p className="flex w-3/4 justify-center bg-landing-brown-200 p-12 font-inter text-2xl font-bold text-white md:text-7xl">
+      <p className="flex w-3/4 justify-center rounded-t-2xl bg-landing-brown-300 p-12 font-inter text-2xl font-bold text-white md:text-7xl">
         RESOURCES
       </p>
-      <div className="grid w-3/4 grid-cols-1 gap-0 border-8 border-x-landing-brown-400 lg:grid-cols-3">
+      <div className="relative grid w-3/4 grid-cols-1 gap-0 border-2 border-x-white lg:grid-cols-3">
         {resources.map(({ link, title, description, image }, index) => (
           <div
-            className="flex flex-col items-center justify-center gap-8 bg-gray-100 pt-10"
+            className="relative flex flex-col items-center justify-center gap-8 bg-landing-glass-100/15 pt-10"
             key={index}
           >
+            <div className="absolute bottom-[43%] -z-10 block w-[60vw] px-5 [perspective:800px] sm:bottom-[36%] md:bottom-[39%] lg:hidden">
+              <div className="origin-top [transform-style:preserve-3d] [transform:rotateX(45deg)]">
+                <div className="h-20 bg-landing-brown-400" />
+              </div>
+            </div>
             <Link
               href={link}
               target="_blank"
@@ -69,23 +75,26 @@ const Resources = () => {
             >
               <Image src={image} className="rounded-full" alt="Resource" />
             </Link>
-            <div className="bg-gray-100 p-12 text-center text-landing-brown-400 lg:bg-landing-brown-400 lg:text-white">
+            <div className="h-2/3 w-full bg-landing-brown-300 p-8 text-center text-white lg:p-12">
               <div className="mb-6 text-xl font-bold md:text-3xl">{title}</div>
               <div className="text-center lg:text-lg">{description}</div>
             </div>
           </div>
         ))}
-        <div className="w-full bg-landing-brown-400 p-16 md:hidden lg:bg-gray-100"></div>
+        <div className="w-full bg-landing-brown-300 p-16 md:hidden lg:bg-gray-100" />
+        <div className="flex items-center justify-center lg:hidden">
+          <Image src={Turtle} alt="Turtle Bread" className="scale-[0.7]" />
+        </div>
         {bakeryItems.map(({ image, alternative, sizing }, index) => (
           <div
-            className="flex flex-col items-center justify-center gap-8 bg-gray-100 p-3 lg:pt-10"
+            className="hidden flex-col items-center justify-center gap-8 bg-landing-glass-100/15 p-3 lg:flex lg:pt-10"
             key={index}
           >
             <Image src={image} alt={alternative} className={sizing} />
           </div>
         ))}
       </div>
-      <div className="w-3/4 bg-landing-brown-400 p-16 text-landing-brown-400 lg:bg-landing-brown-400 lg:text-white"></div>
+      <div className="w-3/4 bg-landing-brown-300 p-16 text-landing-brown-400 lg:bg-landing-brown-300 lg:text-white" />
     </div>
   );
 };
