@@ -9,7 +9,7 @@ import Title from "@/components/ui/title";
 
 const FAQ = () => {
   return (
-    <div className="flex w-full flex-col items-center pt-16">
+    <div className="flex w-full flex-col items-center pt-8 md:pt-16">
       <div className="px-4">
         <Title>FREQUENTLY ASKED QUESTIONS</Title>
       </div>
