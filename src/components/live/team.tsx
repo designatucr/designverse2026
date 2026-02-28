@@ -31,7 +31,7 @@ const Team = () => {
       <div className="flex justify-center">
         <Title>Meet The Team</Title>
       </div>
-      <div className="z-20 mx-8 flex flex-row flex-wrap justify-center md:place-items-center md:items-center">
+      <div className="z-20 mx-8 flex flex-row flex-wrap justify-center pt-8 md:place-items-center md:items-center">
         {Teams.map(({ name, image, role }, index) => (
           <div
             key={index}
