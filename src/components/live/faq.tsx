@@ -21,7 +21,7 @@ const FAQ = () => {
               key={index}
               className="border-landing-brown-300"
             >
-              <AccordionTrigger className="py-4 text-left font-work_sans text-sm font-medium text-landing-brown-300 md:text-nowrap md:py-6 md:text-xl">
+              <AccordionTrigger className="py-4 text-left font-work_sans text-sm font-medium text-landing-brown-300 md:py-6 md:text-xl lg:text-nowrap">
                 {question}
               </AccordionTrigger>
               <AccordionContent className="pb-3 font-work_sans text-xs text-landing-brown-300 md:pb-5 md:text-base">
