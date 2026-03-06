@@ -60,6 +60,14 @@ const Footer = () => {
           <p className="py-5 text-left font-inter text-xs text-white md:pl-5 md:text-2xl">
             Made with &lt;3 by the 2026 DesignVerse team
           </p>
+          <p className="text-left font-inter text-xs text-white md:pl-5 md:pt-2 md:text-lg">
+            <Link
+              href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+              className="inline-block transition-transform hover:scale-105"
+            >
+              MLH Code of Conduct
+            </Link>
+          </p>
         </div>
         <div className="flex flex-col text-right md:pr-5">
           <p className="font-inter text-sm font-bold text-white md:text-2xl">
