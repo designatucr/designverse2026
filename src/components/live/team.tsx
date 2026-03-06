@@ -1,6 +1,6 @@
 import Image from "next/image";
 import aboveTeam from "@/public/landing/aboveTeam.svg";
-// import hangingPlant from "@/public/landing/hangingPlant.svg"
+import hangingPlant from "@/public/landing/hangingPlant.svg";
 import Title from "@/components/ui/title";
 import Member from "./member";
 import Teams from "@/data/team";
@@ -8,7 +8,12 @@ const Team = () => {
   const repeats = 7;
 
   return (
-    <div className="py-2 md:py-6">
+    <div className="relative py-2 md:py-6">
+      <Image
+        src={hangingPlant}
+        alt="hanging plant"
+        className="absolute hidden pt-8 md:right-2 md:block md:w-1/6 lg:right-10 lg:w-[12%]"
+      />
       <div className="w-full overflow-hidden">
         <div className="flex w-max">
           {Array.from({ length: repeats }).map((_, i) => (
