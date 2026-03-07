@@ -47,7 +47,7 @@ const Team = () => {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition hover:scale-105"
+              className=""
             >
               <Member name={name} role={role} image={image} />
             </Link>
