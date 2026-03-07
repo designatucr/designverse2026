@@ -23,27 +23,28 @@ export interface Team {
   name: string;
   image: StaticImageData;
   role: string;
+  link: string;
 }
 
 const Teams: Team[] = [
-  { name: "Arielle", image: Arielle, role: "Co-Director" },
-  { name: "Kaitlin", image: Kaitlin, role: "Co-Director" },
-  { name: "Anisha", image: Anisha, role: "Operations" },
-  { name: "Ashna", image: Ashna, role: "Operations" },
-  { name: "John", image: John, role: "Sponsorship" },
-  { name: "Saanvi", image: Saanvi, role: "Sponsorship" },
-  { name: "Jasmine", image: Jasmine, role: "PR" },
-  { name: "Suki", image: Suki, role: "PR" },
-  { name: "Kaegan", image: Kaegan, role: "Marketing" },
-  { name: "Kaylie", image: Kaylie, role: "Marketing" },
-  { name: "Charleen", image: Charleen, role: "UI/UX" },
-  { name: "Sweden", image: Sweden, role: "SWE" },
-  { name: "Jane", image: Jane, role: "SWE" },
-  { name: "Jimmy", image: Jimmy, role: "SWE" },
-  { name: "Adi", image: Adi, role: "SWE" },
-  { name: "Hannah", image: Hannah, role: "SWE" },
-  { name: "Kevin", image: Kevin, role: "SWE" },
-  { name: "Charlene", image: Charlene, role: "Intern" },
+  { name: "Arielle Haryanto", image: Arielle, role: "Co-Director", link:"https://www.linkedin.com/in/arielle-haryanto/" },
+  { name: "Kaitlin Ching", image: Kaitlin, role: "Co-Director", link:"https://www.linkedin.com/in/kaitlinching/" },
+  { name: "Anisha Nawar", image: Anisha, role: "Operations", link:"https://www.linkedin.com/in/anisha-nawar/" },
+  { name: "Ashna Pradhan", image: Ashna, role: "Operations", link:"https://www.linkedin.com/in/ashna-pradhan/" },
+  { name: "John Zhou", image: John, role: "Sponsorship", link:"https://www.linkedin.com/in/john-shiqi-zhou/" },
+  { name: "Saanvi Dalal", image: Saanvi, role: "Sponsorship", link:"https://www.linkedin.com/in/saanvi-dalal/" },
+  { name: "Jasmine Trinh", image: Jasmine, role: "Public Relations", link:"https://www.linkedin.com/in/jasminetrinh/" },
+  { name: "Suki Huang", image: Suki, role: "Public Relations", link:"https://www.linkedin.com/in/suki-huang-b84929391/" },
+  { name: "Kaegan Chee", image: Kaegan, role: "Marketing", link:"https://www.linkedin.com/in/kaegan-chee/" },
+  { name: "Kaylie Zhao", image: Kaylie, role: "Marketing", link:"https://www.linkedin.com/in/kaylie-zhao/" },
+  { name: "Charleen Chen", image: Charleen, role: "UI/UX", link:"https://www.linkedin.com/in/charleenschen/" },
+  { name: "Sweden Agunenye", image: Sweden, role: "Software Engineering", link:"https://www.linkedin.com/in/swedenagu/" },
+  { name: "Jane Lee", image: Jane, role: "Software Engineering", link:"https://www.linkedin.com/in/janeyunlee/" },
+  { name: "Jimmy Munoz", image: Jimmy, role: "Software Engineering", link:"https://www.linkedin.com/in/jimmy-munoz-8a7a47290/" },
+  { name: "Adi Chander", image: Adi, role: "Software Engineering", link:"https://www.linkedin.com/in/adi-chander/" },
+  { name: "Hannah Hwang", image: Hannah, role: "Software Engineering", link:"https://www.linkedin.com/in/hhannahwang/" },
+  { name: "Kevin Loritsch", image: Kevin, role: "Software Engineering", link:"https://www.linkedin.com/in/kevin-loritsch/" },
+  { name: "Charlene Wan", image: Charlene, role: "Intern", link:"https://www.linkedin.com/in/charlene-wan-683bb126b/" },
 ];
 
 export default Teams;
