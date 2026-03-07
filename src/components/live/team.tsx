@@ -20,7 +20,7 @@ const Team = () => {
           {Array.from({ length: repeats }).map((_, i) => (
             <div
               key={i}
-              className={`relative h-24 w-[300px] md:h-24 md:w-[400px] ${
+              className={`relative h-24 w-[300px] md:h-24 md:w-[700px] ${
                 i % 2 === 1 ? "scale-x-[-1]" : ""
               }`}
             >
@@ -43,7 +43,12 @@ const Team = () => {
             key={index}
             className="z-20 m-2 flex w-5/12 flex-col px-4 md:justify-center lg:w-1/4"
           >
-            <Link href={link} target="_blank" rel="noopener noreferrer" className="transition hover:scale-105">
+            <Link
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:scale-105"
+            >
               <Member name={name} role={role} image={image} />
             </Link>
           </div>
