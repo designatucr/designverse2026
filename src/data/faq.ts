@@ -16,7 +16,7 @@ export const QUESTIONS: QuestionAnswer[] = [
   },
   {
     question: "When are applications due?",
-    answer: "Applications are due May 9, 2026!",
+    answer: "Applications are due May 15, 2026!",
   },
   {
     question: "Where will the designathon be?",
