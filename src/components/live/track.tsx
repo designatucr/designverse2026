@@ -52,7 +52,7 @@ const Track = ({
           }}
         >
           <p
-            className={`absolute top-28 z-10 w-48 break-words text-center font-inter text-base font-semibold ${descColor}`}
+            className={`absolute top-52 z-10 w-48 break-words text-center font-inter text-base font-semibold ${descColor}`}
           >
             {description}
           </p>

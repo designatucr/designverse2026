@@ -17,7 +17,7 @@ const tracks = [
     title: "Slice of Insight",
     customStyles: "text-landing-brown-50",
     description:
-      "This track focuses on understanding users and their real needs. You will showcase how to plan and run user interviews, create surveys, analyze feedback, and translate insights into clear problem statements that guide better design decisions.",
+      "Uncover real user needs and translate insights into a clear, evidence-driven problem statement.",
     descColor: "text-black",
   },
   {
@@ -26,7 +26,7 @@ const tracks = [
     title: "Cookie Cutter Challenge",
     customStyles: "text-white",
     description:
-      "This track involves implementing how to move from sketches and wireframes to functional prototypes. You will use rapid prototyping techniques and feedback to iterate quickly before investing time in full development.",
+      "Bring concepts to life through rapid, testable, and iterative prototypes.",
     descColor: "text-black",
   },
   {
@@ -35,7 +35,7 @@ const tracks = [
     title: "Sustainable Sweets",
     customStyles: "text-landing-brown-50",
     description:
-      "This track explores how designers can create more responsible and sustainable products. You will showcase how to think about environmental impact, accessibility, and ethical design while building solutions that benefit both users and the world around them.",
+      "Design a solution that prioritizes sustainability, ethics, and long-term social impact.",
     descColor: "text-black",
   },
   {
@@ -44,7 +44,7 @@ const tracks = [
     title: "Framaccino",
     customStyles: "text-white",
     description:
-      "This track introduces Framer as a tool for creating high-fidelity and interactive prototypes. You will showcase how to design layouts, add interactions, and present your ideas in a realistic, shareable format.",
+      "Create polished, high-fidelity interactive experiences using Framer.",
     descColor: "text-black",
   },
   {
@@ -53,7 +53,7 @@ const tracks = [
     title: "The Perfect Blend",
     customStyles: "text-landing-brown-50",
     description:
-      "This track focuses on core UI design skills such as layout, typography, color, and visual hierarchy. You will showcase how to design interfaces that are both visually appealing and easy to use across different devices and screen sizes.",
+      "Design visually refined, accessible, and consistent interfaces alongside cafe theme.",
     descColor: "text-black",
   },
 ];
