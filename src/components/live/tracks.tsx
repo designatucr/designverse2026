@@ -1,3 +1,5 @@
+import Title from "@/components/ui/title";
+
 import Cake from "@/public/landing/track1.svg";
 import CakeBack from "@/public/landing/track1back.svg";
 import Bear from "@/public/landing/track2.svg";
@@ -61,9 +63,7 @@ const tracks = [
 const Tracks = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10">
-      <p className="py-8 text-center font-inter text-4xl font-bold text-landing-brown-300 md:text-7xl">
-        TRACKS
-      </p>
+      <Title>TRACKS</Title>
       <div className="flex w-4/5 flex-col justify-center gap-12 py-12 md:flex-row md:flex-wrap">
         {tracks.map(
           (

@@ -24,7 +24,7 @@ const Track = ({
   const [flipped, setFlipped] = useState(false);
 
   return (
-    <div className="cursor-pointer">
+    <div className="cursor-pointer" style={{ perspective: "1500px" }}>
       <motion.div
         className="z-1 relative flex items-center justify-center"
         transition={{ duration: 0.5 }}
@@ -51,12 +51,14 @@ const Track = ({
             transform: "rotateY(180deg)",
           }}
         >
-          <p
-            className={`absolute top-52 z-10 w-48 break-words text-center font-inter text-base font-semibold ${descColor}`}
-          >
-            {description}
-          </p>
           <Image src={back} alt={title} />
+          <div className="absolute bottom-[15%] top-[45%] flex w-full items-center justify-center p-6">
+            <p
+              className={`w-3/4 text-center font-inter text-base font-semibold ${descColor}`}
+            >
+              {description}
+            </p>
+          </div>
         </div>
       </motion.div>
     </div>
