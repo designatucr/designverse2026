@@ -1,81 +1,82 @@
 import { StaticImageData } from "next/image";
-import Sponsor1 from "@/public/landing/sponsor1.svg";
-import Sponsor2 from "@/public/landing/sponsor2.svg";
-// import Sponsor3 from "@/public/landing/sponsor3.svg";
-// import Sponsor4 from "@/public/landing/sponsor4.svg";
-import Sponsor5 from "@/public/landing/sponsor5.svg";
-import Sponsor6 from "@/public/landing/sponsor6.svg";
-import Sponsor7 from "@/public/landing/sponsor7.svg";
-import Sponsor8 from "@/public/landing/sponsor8.svg";
-import Sponsor9 from "@/public/landing/sponsor9.svg";
-import Sponsor10 from "@/public/landing/sponsor10.svg";
+import Snapchat from "@/public/landing/sponsors/Snapchat.svg";
+import CreatRLab from "@/public/landing/sponsors/CreatRLab.svg";
+// import PG from "@/public/landing/sponsors/PG.svg";
+import ASUCR from "@/public/landing/sponsors/ASUCR.svg";
+import SoB from "@/public/landing/sponsors/SoB.svg";
+import Notion from "@/public/landing/sponsors/Notion.svg";
+import Framer from "@/public/landing/sponsors/Framer.svg";
+import Axure from "@/public/landing/sponsors/Axure.svg";
+import Balsamiq from "@/public/landing/sponsors/Balsamiq.svg";
+import Pure from "@/public/landing/sponsors/Pure.svg";
+import Monster from "@/public/landing/sponsors/Monster.svg";
+import Canes from "@/public/landing/sponsors/Canes.svg";
 
 export interface Sponsor {
   image: StaticImageData;
   name: string;
-  translateY: boolean;
   link: string;
 }
 
 export const sponsors: Sponsor[] = [
   {
-    image: Sponsor1,
+    image: Snapchat,
     name: "Snapchat",
-    translateY: false,
     link: "https://www.snapchat.com/",
   },
   {
-    image: Sponsor2,
+    image: CreatRLab,
     name: "Creat'R Lab",
-    translateY: true,
     link: "https://library.ucr.edu/research-support/making-and-innovation/creatr-lab-makerspace",
   },
   // {
-  //   image: Sponsor3,
+  //   image: PG,
   //   name: "Progressive Graphics",
-  //   translateY: false,
   //   link: "https://progressive-graphics.com/Progressive_Graphics/shop/home",
   // },
-  // {
-  //   image: Sponsor4,
-  //   name: "Associated Students of UCR",
-  //   translateY: false,
-  //   link: "https://asucr.ucr.edu/",
-  // },
   {
-    image: Sponsor5,
+    image: ASUCR,
+    name: "Associated Students of UCR",
+    link: "https://asucr.ucr.edu/",
+  },
+  {
+    image: SoB,
+    name: "UCR School of Business",
+    link: "https://business.ucr.edu/",
+  },
+  {
+    image: Notion,
     name: "Notion",
-    translateY: false,
     link: "https://www.notion.com/",
   },
   {
-    image: Sponsor6,
-    name: "Monster Energy",
-    translateY: true,
-    link: "https://www.monsterenergy.com/en-us/",
-  },
-  {
-    image: Sponsor8,
+    image: Framer,
     name: "Framer",
-    translateY: false,
     link: "https://www.framer.com/",
   },
   {
-    image: Sponsor9,
-    name: "Azure RP",
-    translateY: false,
+    image: Axure,
+    name: "Axure RP",
     link: "https://www.axure.com/",
   },
   {
-    image: Sponsor7,
+    image: Balsamiq,
     name: "Balsamiq",
-    translateY: false,
     link: "https://balsamiq.com/",
   },
   {
-    image: Sponsor10,
+    image: Pure,
     name: "Pure Buttons",
-    translateY: false,
     link: "https://www.purebuttons.com/",
+  },
+  {
+    image: Monster,
+    name: "Monster Energy",
+    link: "https://www.monsterenergy.com/en-us/",
+  },
+  {
+    image: Canes,
+    name: "Raising Cane's",
+    link: "https://raisingcanes.com/home/",
   },
 ];
