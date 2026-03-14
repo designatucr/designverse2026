@@ -59,6 +59,7 @@ const Landing = () => {
           src={logo}
           alt="dv logo sign"
           className="relative w-1/2 md:w-1/4"
+          unoptimized
         />
 
         <div className="flex w-3/4 flex-col items-center">

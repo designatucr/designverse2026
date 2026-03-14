@@ -13,12 +13,12 @@ const Sponsors = () => {
             key={index}
             href={link}
             target="_blank"
-            className="group flex w-2/5 items-center justify-center sm:w-1/3 md:w-1/4"
+            className="flex w-2/5 items-center justify-center sm:w-1/3 md:w-1/4"
           >
             <Image
               src={image}
               alt={name}
-              className="hover:scale-107 h-[25vh] w-auto object-contain transition-transform"
+              className="h-[25vh] w-auto object-contain transition hover:scale-105"
             />
           </Link>
         ))}
