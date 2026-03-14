@@ -104,7 +104,7 @@ const About = () => {
               {support.map(({ title, description, form, link }, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center justify-between gap-7 text-white lg:gap-12"
+                  className={`flex flex-col items-center justify-between gap-7 text-white lg:gap-12 ${index !== 0 ? "pt-4 lg:pt-0" : ""}`}
                 >
                   <p className="text-center text-2xl font-bold lg:text-3xl">
                     {title}
