@@ -8,14 +8,18 @@ const Sponsors = () => {
     <div className="flex flex-col items-center justify-center gap-8 pt-6 md:pt-12">
       <Title>SPONSORS</Title>
       <div className="w-9/10 flex flex-wrap justify-center gap-4 p-6 sm:gap-1 md:w-9/12 md:gap-8">
-        {sponsors.map(({ name, image, translateY, link }, index) => (
+        {sponsors.map(({ name, image, link }, index) => (
           <Link
             key={index}
             href={link}
             target="_blank"
-            className={`flex w-2/5 items-center justify-center transition-transform hover:scale-110 sm:w-1/3 md:w-1/4 ${translateY ? "-translate-y-[6%]" : ""}`}
+            className="flex w-2/5 items-center justify-center sm:w-1/3 md:w-1/4"
           >
-            <Image src={image} alt={name} className="w-2/3 sm:w-3/4" />
+            <Image
+              src={image}
+              alt={name}
+              className="h-[25vh] w-auto object-contain transition hover:scale-105"
+            />
           </Link>
         ))}
       </div>
