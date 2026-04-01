@@ -55,11 +55,10 @@ const Landing = () => {
         />
       </div>
       <div className="w-9/10 top-6 z-20 mt-8 flex flex-col items-center justify-center">
-        <Image
-          src={logo}
+        <img
+          src={logo.src}
           alt="dv logo sign"
           className="relative w-1/2 md:w-1/4"
-          unoptimized
         />
 
         <div className="flex w-3/4 flex-col items-center">
