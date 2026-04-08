@@ -6,7 +6,7 @@ import Resources from "./resources";
 import Sponsors from "./sponsors";
 import Team from "./team";
 // import Committees from "./committees";
-// import Judges from "./judges";
+import Judges from "./judges";
 import FAQ from "./faq";
 import Footer from "./footer";
 // import StripeWall from "@/components/live/stripewall";
@@ -22,9 +22,9 @@ const Live = () => {
       {/* 
       <StripeWall /> */}
       {/* <Schedule /> */}
+      <Judges />
       <Team />
-      {/* <Committees />
-      <Judges /> */}
+      {/* <Committees /> */}
       <FAQ />
       <Footer />
     </>
