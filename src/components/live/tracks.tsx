@@ -38,7 +38,7 @@ const tracks = [
     title: "Pudding Success On",
     customStyles: "text-landing-brown-50",
     description:
-      "Design a solution that prioritizes sustainability, ethics, and long-term social impact.",
+      "Turn your concept into a pitch that feels polished, persuasive, and investment-ready.",
     descColor: "text-black",
   },
   {
