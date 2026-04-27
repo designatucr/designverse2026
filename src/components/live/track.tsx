@@ -51,7 +51,7 @@ const Track = ({
             transform: "rotateY(180deg)",
           }}
         >
-          <Image src={back} alt={title} />
+          <Image src={back} alt={title} className="-scale-x-100" />
           <div className="absolute bottom-[15%] top-[45%] flex w-full items-center justify-center p-6">
             <p
               className={`w-3/4 text-center font-inter text-base font-semibold ${descColor}`}

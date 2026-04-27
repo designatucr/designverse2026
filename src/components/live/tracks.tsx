@@ -10,6 +10,7 @@ import Framer from "@/public/landing/track4.svg";
 import FramerBack from "@/public/landing/track4back.svg";
 import Coffee from "@/public/landing/track5.svg";
 import CoffeeBack from "@/public/landing/track5back.svg";
+
 import Track from "@/components/live/track";
 
 const tracks = [
@@ -34,10 +35,10 @@ const tracks = [
   {
     front: StrawberryCake,
     back: StrawberryBack,
-    title: "Sustainable Sweets",
+    title: "Pudding Success On",
     customStyles: "text-landing-brown-50",
     description:
-      "Design a solution that prioritizes sustainability, ethics, and long-term social impact.",
+      "Turn your concept into a pitch that feels polished, persuasive, and investment-ready.",
     descColor: "text-black",
   },
   {
@@ -62,7 +63,7 @@ const tracks = [
 
 const Tracks = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-10">
+    <div className="mt-4 flex flex-col items-center justify-center py-10">
       <Title>TRACKS</Title>
       <div className="flex w-4/5 flex-col justify-center gap-12 py-12 md:flex-row md:flex-wrap">
         {tracks.map(
