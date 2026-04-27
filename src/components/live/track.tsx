@@ -33,7 +33,7 @@ const Track = ({
         style={{ transformStyle: "preserve-3d" }}
       >
         <div
-          className="absolute flex items-center justify-center"
+          className="absolute flex items-center justify-center transition hover:scale-105"
           style={{ backfaceVisibility: "hidden", zIndex: flipped ? 1 : 2 }}
         >
           <p
@@ -51,13 +51,15 @@ const Track = ({
             transform: "rotateY(180deg)",
           }}
         >
-          <Image src={back} alt={title} className="-scale-x-100" />
-          <div className="absolute bottom-[15%] top-[45%] flex w-full items-center justify-center p-6">
-            <p
-              className={`w-3/4 text-center font-inter text-base font-semibold ${descColor}`}
-            >
-              {description}
-            </p>
+          <div className="transition hover:scale-105">
+            <Image src={back} alt={title} className="-scale-x-100" />
+            <div className="absolute bottom-[15%] top-[45%] flex w-full items-center justify-center p-6">
+              <p
+                className={`w-3/4 text-center font-inter text-base font-semibold ${descColor}`}
+              >
+                {description}
+              </p>
+            </div>
           </div>
         </div>
       </motion.div>
