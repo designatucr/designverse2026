@@ -102,7 +102,7 @@ const LowerSchedule: React.FC<LowerScheduleProps> = ({
             className={`w-2/3 rounded-lg px-6 py-2 font-inter font-bold text-landing-brown-500 transition-colors md:w-1/6 ${
               day === selectedDay
                 ? "bg-white"
-                : "bg-landing-brown-600 hover:text-landing-brown-700"
+                : "bg-landing-brown-600 hover:scale-105 hover:text-landing-brown-700"
             }`}
           >
             {day}
@@ -112,7 +112,7 @@ const LowerSchedule: React.FC<LowerScheduleProps> = ({
 
       <div className="mt-5 space-y-6">
         {events.length === 0 ? (
-          <p className="italic text-landing-brown-500">No events scheduled.</p>
+          <p className="italic text-white">No events scheduled.</p>
         ) : (
           events.map((event, index) => (
             <div
