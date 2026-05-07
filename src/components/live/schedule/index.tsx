@@ -1,66 +1,146 @@
+"use client";
 // import { api } from "@/utils/api";
-// import Image from "next/image";
-// import Events from "./events";
-import Title from "@/components/ui/title";
-// import coffeeBeans from "@/public/schedule/coffeeBeans.svg";
-// import coffeeCup from "@/public/schedule/coffeeCup.svg";
-// import mokaPot from "@/public/schedule/mokaPot.svg";
+import Image from "next/image";
+import { useState } from "react";
+import coffeeBeans from "@/public/schedule/coffeeBeans.svg";
+import coffeeCup from "@/public/schedule/coffeeCup.svg";
+import mokaPot from "@/public/schedule/mokaPot.svg";
 
-const Schedule = async () => {
-  // const { items } = await api({
-  //   url: `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
-  //   method: "GET",
-  // });
+type Event = {
+  name: string;
+  time: string;
+  location: string;
+};
 
-  // const totalDays = [
-  //   "Monday",
-  //   "Tuesday",
-  //   "Wednesday",
-  //   "Thursday",
-  //   "Friday",
-  //   "Saturday",
-  //   "Sunday",
-  // ];
+const SCHEDULE: Record<string, Event[]> = {
+  Monday: [
+    {
+      name: "Data Driven Design Workshop",
+      time: "06:00 PM",
+      location: "SSC MPR 3",
+    },
+    {
+      name: "Figma Basics with Design @ UCR",
+      time: "06:00 PM",
+      location: "HUB 265",
+    },
+  ],
+  Tuesday: [
+    { name: "UX Research Methods", time: "05:00 PM", location: "SSC 122" },
+  ],
+  Wednesday: [
+    { name: "Dev Sync", time: "04:00 PM", location: "WCH 110" },
+    { name: "Open Studio Hours", time: "07:00 PM", location: "HUB 355" },
+  ],
+  Thursday: [
+    {
+      name: "Portfolio Review Night",
+      time: "06:30 PM",
+      location: "WCH 205/206",
+    },
+  ],
+  Friday: [],
+};
 
+const totalDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
+const UpperSchedule = () => {
   return (
-    <>
-      <Title>Schedule</Title>
-      {/* <div className="mx-auto w-5/6 space-y-4 py-6 lg:space-y-10 lg:py-20">
-      <div className="rounded-xl bg-landing-brown-700 p-4">
-        <div className="mx-auto flex flex-row items-center justify-center gap-2 bg-landing-grey-100 p-4 text-center text-white lg:p-10 xl:gap-10">
-          <Image
-            src={coffeeCup}
-            alt="coffee"
-            className="h-auto w-8 md:w-14 lg:w-auto"
-          />
-          <Image
-            src={coffeeBeans}
-            alt="coffee"
-            className="h-auto w-8 pt-16 md:w-14 lg:w-auto"
-          />
-          <div className="space-y-2 md:px-10 lg:space-y-9 lg:px-20">
-            <p className="text-xl font-bold md:text-3xl lg:text-6xl">
-              SCHEDULE
-            </p>
-            <p className="text-sm md:text-lg lg:text-2xl">
-              Pacific Standard Time (PST)
-            </p>
-          </div>
-          <Image
-            src={coffeeBeans}
-            alt="coffee"
-            className="h-auto w-8 scale-x-[-1] pb-20 md:w-14 lg:w-auto"
-          />
-          <Image
-            src={mokaPot}
-            alt="coffee"
-            className="h-auto w-8 md:w-14 lg:w-auto"
-          />
+    <div className="mx-auto mb-5 flex w-2/3 flex-col items-center justify-center gap-4 rounded-lg border-8 border-landing-brown-700 bg-landing-grey-100 px-5 py-8 text-white">
+      <div className="flex flex-row items-center justify-center gap-2 lg:gap-10">
+        <Image
+          src={coffeeCup}
+          alt="coffee cup"
+          className="h-auto w-8 md:w-14 lg:w-auto"
+        />
+        <Image
+          src={coffeeBeans}
+          alt="coffee beans"
+          className="h-auto w-8 pt-16 md:w-14 lg:w-auto"
+        />
+        <div className="space-y-2 md:px-10 lg:space-y-4">
+          <p className="text-center font-inter text-4xl font-bold md:text-6xl">
+            SCHEDULE
+          </p>
+          <p className="text-center text-sm md:text-lg">
+            Pacific Standard Time (PST)
+          </p>
         </div>
+        <Image
+          src={coffeeBeans}
+          alt="coffee beans"
+          className="h-auto w-8 scale-x-[-1] pb-20 md:w-14 lg:w-auto"
+        />
+        <Image
+          src={mokaPot}
+          alt="moka pot"
+          className="h-auto w-8 md:w-14 lg:w-auto"
+        />
       </div>
     </div>
-    */}
-    </>
+  );
+};
+
+interface LowerScheduleProps {
+  selectedDay: string;
+  onSelectDay: (day: string) => void;
+}
+
+const LowerSchedule: React.FC<LowerScheduleProps> = ({
+  selectedDay,
+  onSelectDay,
+}) => {
+  const events = SCHEDULE[selectedDay] ?? [];
+
+  return (
+    <div className="mx-auto flex w-2/3 flex-col rounded-lg border-8 border-landing-brown-700 bg-landing-grey-100 px-5 py-8 text-white">
+      <div className="mb-6 flex items-center justify-center gap-2">
+        {totalDays.map((day) => (
+          <button
+            key={day}
+            onClick={() => onSelectDay(day)}
+            className={`w-1/6 rounded-lg px-6 py-2 font-inter font-bold text-landing-brown-500 transition-colors ${
+              day === selectedDay
+                ? "bg-white"
+                : "bg-landing-brown-600 hover:text-landing-brown-700"
+            }`}
+          >
+            {day}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-5 space-y-6">
+        {events.length === 0 ? (
+          <p className="italic text-landing-brown-500">No events scheduled.</p>
+        ) : (
+          events.map((event, index) => (
+            <div key={index} className="flex justify-between">
+              <span className="ml-16 font-semibold text-white">
+                {event.name}
+              </span>
+              <span className="mr-14 whitespace-nowrap font-semibold text-white">
+                {event.time} {event.location}
+              </span>
+            </div>
+          ))
+        )}
+      </div>
+    </div>
+  );
+};
+
+const Schedule = () => {
+  const date = new Date();
+  const [selectedDay, setSelectedDay] = useState<string>(
+    totalDays[date.getDay() - 1],
+  );
+
+  return (
+    <div className="space-y-5">
+      <UpperSchedule />
+      <LowerSchedule selectedDay={selectedDay} onSelectDay={setSelectedDay} />
+    </div>
   );
 };
 
