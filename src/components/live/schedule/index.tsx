@@ -27,7 +27,7 @@ const UpperSchedule = () => {
           className="hidden h-auto w-8 pt-16 md:flex md:w-14 lg:w-auto"
         />
         <div className="space-y-2 md:px-10 lg:space-y-4">
-          <p className="text-center font-inter text-4xl font-bold md:text-6xl">
+          <p className="text-center font-inter text-4xl font-bold md:text-7xl">
             SCHEDULE
           </p>
           <p className="text-center text-sm md:text-lg">
