@@ -1,9 +1,8 @@
-import Karthik from "@/public/landing/judges/Karthik.png";
-import Sua from "@/public/landing/judges/Sua.png";
-import Vijaya from "@/public/landing/judges/Vijaya.png";
+import Karthik from "@/public/landing/judges/Karthik.webp";
+import Sua from "@/public/landing/judges/Sua.webp";
+import Vijaya from "@/public/landing/judges/Vijaya.webp";
 import BearBread from "@/public/landing/bearbread.svg";
 import Croissant from "@/public/landing/croissant.svg";
-import TurtleBread from "@/public/landing/turtlebread.svg";
 import { StaticImageData } from "next/image";
 
 interface JudgeProps {
