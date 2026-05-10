@@ -64,7 +64,7 @@ const About = () => {
                   <b>networking events</b>.
                   <br />
                   <br />
-                  We welcome all undergraduate, graduate and high school
+                  We welcome all undergraduate, graduate, and high school
                   students for a lively weekend filled with creativity,
                   networking, mentorship, and more!
                 </p>

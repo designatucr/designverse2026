@@ -1,46 +1,87 @@
+import Title from "@/components/ui/title";
+
 import Cake from "@/public/landing/track1.svg";
+import CakeBack from "@/public/landing/track1back.svg";
 import Bear from "@/public/landing/track2.svg";
+import BearBack from "@/public/landing/track2back.svg";
 import StrawberryCake from "@/public/landing/track3.svg";
-import Image from "next/image";
+import StrawberryBack from "@/public/landing/track3back.svg";
+import Framer from "@/public/landing/track4.svg";
+import FramerBack from "@/public/landing/track4back.svg";
+import Coffee from "@/public/landing/track5.svg";
+import CoffeeBack from "@/public/landing/track5back.svg";
+
+import Track from "@/components/live/track";
 
 const tracks = [
   {
-    image: Cake,
+    front: Cake,
+    back: CakeBack,
     title: "Slice of Insight",
     customStyles: "text-landing-brown-50",
+    description:
+      "Uncover real user needs and translate insights into a clear, evidence-driven problem statement.",
+    descColor: "text-black",
   },
   {
-    image: Bear,
+    front: Bear,
+    back: BearBack,
     title: "Cookie Cutter Challenge",
     customStyles: "text-white",
+    description:
+      "Bring concepts to life through rapid, testable, and iterative prototypes.",
+    descColor: "text-black",
   },
   {
-    image: StrawberryCake,
-    title: "Sustainable Sweets",
+    front: StrawberryCake,
+    back: StrawberryBack,
+    title: "Pudding Success On",
     customStyles: "text-landing-brown-50",
+    description:
+      "Turn your concept into a pitch that feels polished, persuasive, and investment-ready.",
+    descColor: "text-black",
+  },
+  {
+    front: Framer,
+    back: FramerBack,
+    title: "Framaccino",
+    customStyles: "text-white",
+    description:
+      "Create polished, high-fidelity interactive experiences using Framer.",
+    descColor: "text-black",
+  },
+  {
+    front: Coffee,
+    back: CoffeeBack,
+    title: "The Perfect Blend",
+    customStyles: "text-landing-brown-50",
+    description:
+      "Design visually refined, accessible, and consistent interfaces alongside cafe theme.",
+    descColor: "text-black",
   },
 ];
 
 const Tracks = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-10">
-      <p className="py-8 text-center font-inter text-4xl font-bold text-landing-brown-300 md:text-7xl">
-        TRACKS
-      </p>
-      <div className="flex flex-col gap-12 py-12 md:flex-row">
-        {tracks.map(({ image, title, customStyles }, index) => (
-          <div
-            key={index}
-            className="relative z-20 flex items-center justify-center"
-          >
-            <p
-              className={`absolute top-28 z-10 w-48 break-words text-center font-inter text-2xl font-semibold ${customStyles}`}
-            >
-              {title}
-            </p>
-            <Image key={index} src={image} alt={title} />
-          </div>
-        ))}
+    <div className="mt-4 flex flex-col items-center justify-center py-10">
+      <Title>TRACKS</Title>
+      <div className="flex w-4/5 flex-col justify-center gap-12 py-12 md:flex-row md:flex-wrap">
+        {tracks.map(
+          (
+            { front, back, title, customStyles, description, descColor },
+            index,
+          ) => (
+            <Track
+              key={index}
+              front={front}
+              back={back}
+              title={title}
+              customStyles={customStyles}
+              description={description}
+              descColor={descColor}
+            />
+          ),
+        )}
       </div>
     </div>
   );

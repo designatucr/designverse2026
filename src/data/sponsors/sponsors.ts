@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import Snapchat from "@/public/landing/sponsors/Snapchat.svg";
 import CreatRLab from "@/public/landing/sponsors/CreatRLab.svg";
-// import PG from "@/public/landing/sponsors/PG.svg";
+import PG from "@/public/landing/sponsors/PG.svg";
 import ASUCR from "@/public/landing/sponsors/ASUCR.svg";
 import SoB from "@/public/landing/sponsors/SoB.svg";
 import Notion from "@/public/landing/sponsors/Notion.svg";
@@ -11,6 +11,7 @@ import Balsamiq from "@/public/landing/sponsors/Balsamiq.svg";
 import Pure from "@/public/landing/sponsors/Pure.svg";
 import Monster from "@/public/landing/sponsors/Monster.svg";
 import Canes from "@/public/landing/sponsors/Canes.svg";
+import HHKB from "@/public/landing/sponsors/hhkb.svg";
 
 export interface Sponsor {
   image: StaticImageData;
@@ -29,11 +30,11 @@ export const sponsors: Sponsor[] = [
     name: "Creat'R Lab",
     link: "https://library.ucr.edu/research-support/making-and-innovation/creatr-lab-makerspace",
   },
-  // {
-  //   image: PG,
-  //   name: "Progressive Graphics",
-  //   link: "https://progressive-graphics.com/Progressive_Graphics/shop/home",
-  // },
+  {
+    image: PG,
+    name: "Progressive Graphics",
+    link: "https://progressive-graphics.com/Progressive_Graphics/shop/home",
+  },
   {
     image: ASUCR,
     name: "Associated Students of UCR",
@@ -78,5 +79,10 @@ export const sponsors: Sponsor[] = [
     image: Canes,
     name: "Raising Cane's",
     link: "https://raisingcanes.com/home/",
+  },
+  {
+    image: HHKB,
+    name: "Happy Hacking Keyboards",
+    link: "https://hhkeyboard.us/",
   },
 ];
