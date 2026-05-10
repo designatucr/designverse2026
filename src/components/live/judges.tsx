@@ -6,7 +6,7 @@ import Link from "next/link";
 const Judges = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-5">
-      <Title>Judges</Title>
+      <Title>JUDGES</Title>
       <div className="z-20 mx-8 flex flex-row flex-wrap justify-center pt-8 md:place-items-center md:items-center">
         {judges.map(
           (
