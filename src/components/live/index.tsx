@@ -17,11 +17,11 @@ const Live = () => {
       <Landing />
       <About />
       <Tracks />
+      <Schedule />
       <Sponsors />
       <Resources />
       {/* 
       <StripeWall /> */}
-      <Schedule />
       <Team />
       {/* <Committees />
       <Judges /> */}
