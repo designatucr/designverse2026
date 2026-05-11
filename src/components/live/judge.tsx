@@ -32,10 +32,10 @@ const Judge = ({
           className={`absolute bottom-0 right-0 ${iconStyles}`}
         />
       </div>
-      <p className="text-center text-xl font-bold text-landing-brown-300 md:text-2xl xl:text-3xl">
+      <p className="text-center text-xl font-bold text-landing-brown-300 md:text-2xl">
         {name}
       </p>
-      <p className="text-md text-center text-landing-brown-300 md:text-lg xl:text-2xl">
+      <p className="text-md text-center text-landing-brown-300 md:text-lg">
         {position} @ {company}
       </p>
     </div>
