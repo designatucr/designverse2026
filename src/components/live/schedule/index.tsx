@@ -19,12 +19,12 @@ const UpperSchedule = () => {
         <Image
           src={coffeeCup}
           alt="coffee cup"
-          className="hidden h-auto w-8 md:w-14 xl:flex xl:w-10"
+          className="hidden h-auto w-8 md:w-14 xl:flex xl:w-10 2xl:w-14"
         />
         <Image
           src={coffeeBeans}
           alt="coffee beans"
-          className="hidden h-auto w-8 pt-16 md:w-14 xl:flex xl:w-10"
+          className="hidden h-auto w-8 pt-16 md:w-14 xl:flex xl:w-10 2xl:w-14"
         />
         <div className="space-y-2 md:px-10 lg:space-y-4">
           <p className="text-center font-inter text-4xl font-bold md:text-7xl">
@@ -37,12 +37,12 @@ const UpperSchedule = () => {
         <Image
           src={coffeeBeans}
           alt="coffee beans"
-          className="hidden h-auto w-8 scale-x-[-1] pb-20 md:w-14 xl:flex xl:w-10"
+          className="hidden h-auto w-8 scale-x-[-1] pb-20 md:w-14 xl:flex xl:w-10 2xl:w-14"
         />
         <Image
           src={mokaPot}
           alt="moka pot"
-          className="hidden h-auto w-8 md:w-14 xl:flex xl:w-10"
+          className="hidden h-auto w-8 md:w-14 xl:flex xl:w-10 2xl:w-14"
         />
       </div>
     </div>
