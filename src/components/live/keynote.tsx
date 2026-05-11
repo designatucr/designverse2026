@@ -1,14 +1,18 @@
 import Title from "@/components/ui/title";
-import judges from "@/data/judges";
+import keynotes from "@/data/keynotes";
 import Judge from "./judge";
 import Link from "next/link";
+import Image from "next/image";
+import flags from "@/public/landing/flags.svg";
 
-const Judges = () => {
+const Keynotes = () => {
+  const repeats = 7;
   return (
-    <div className="flex flex-col items-center justify-center gap-5 pt-6">
-      <Title>JUDGES</Title>
+    <div className="flex flex-col items-center justify-center gap-5 pt-8">
+      <Title>KEYNOTE SPEAKERS</Title>
+
       <div className="z-20 mx-auto flex max-w-7xl flex-wrap justify-center gap-6 pt-8">
-        {judges.map(
+        {keynotes.map(
           (
             { name, position, company, photo, icon, link, iconStyles },
             index,
@@ -31,8 +35,27 @@ const Judges = () => {
           ),
         )}
       </div>
+      <div className="w-full overflow-hidden">
+        <div className="flex w-max">
+          {Array.from({ length: repeats }).map((_, i) => (
+            <div
+              key={i}
+              className={`relative w-[250px] md:h-36 md:w-[600px] ${
+                i % 2 === 1 ? "scale-x-[-1]" : ""
+              }`}
+            >
+              <Image
+                src={flags}
+                alt="Team divider"
+                className="object-contain"
+                priority
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Judges;
+export default Keynotes;
