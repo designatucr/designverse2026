@@ -14,7 +14,7 @@ type Schedule = Record<string, Event[]>;
 
 const UpperSchedule = () => {
   return (
-    <div className="mx-auto mb-5 flex w-2/3 flex-col items-center justify-center gap-4 rounded-lg border-8 border-landing-brown-700 bg-landing-grey-100 px-5 py-8 text-white">
+    <div className="mx-auto mb-5 flex w-3/4 flex-col items-center justify-center gap-4 rounded-lg border-8 border-landing-brown-700 bg-landing-grey-100 px-5 py-8 text-white md:w-2/3">
       <div className="flex flex-row items-center justify-center gap-2 lg:gap-10">
         <Image
           src={coffeeCup}
