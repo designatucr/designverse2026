@@ -59,7 +59,7 @@ const LowerSchedule: React.FC<LowerScheduleProps> = ({ schedule }) => {
               key={index}
               className="flex justify-between border-b-2 border-landing-brown-600 pb-6 text-sm md:text-lg"
             >
-              <p className="landing-text-white ml-2 min-w-0 max-w-[50%] flex-1 font-semibold md:ml-8 lg:max-w-sm xl:max-w-full">
+              <p className="landing-text-white ml-2 min-w-0 max-w-[50%] flex-1 font-semibold md:ml-8 lg:max-w-sm xl:max-w-xl">
                 {event.name}
               </p>
               <div className="ml-5 mr-0 flex shrink-0 flex-col items-end md:ml-0 md:mr-6">
