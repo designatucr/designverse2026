@@ -32,17 +32,17 @@ const LowerSchedule: React.FC<LowerScheduleProps> = ({ schedule }) => {
 
   return (
     <div className="mx-auto flex w-3/4 flex-col rounded-lg border-8 border-landing-brown-700 bg-landing-grey-100 px-5 py-8 text-white md:w-2/3">
-      <div className="mb-6 grid grid-cols-1 flex-wrap items-center justify-items-center gap-2 lg:grid-cols-3 lg:flex-row">
+      <div className="mb-6 grid grid-cols-1 flex-wrap items-center justify-items-center gap-3 lg:grid-cols-3 lg:flex-row lg:gap-4">
         {totalDays.map((day) => (
           <button
             key={day}
             onClick={() => setSelectedDay(day)}
-            className={`w-2/3 rounded-lg px-6 py-2 font-inter font-bold text-landing-brown-500 transition-colors lg:w-full ${
+            className={`w-2/3 rounded-lg px-6 py-2 font-inter font-bold text-landing-brown-500 transition hover:scale-105 hover:cursor-pointer lg:w-full ${
               day === "Sunday" ? "lg:col-start-2" : ""
             } ${
               day === selectedDay
-                ? "bg-white"
-                : "bg-landing-brown-600 transition hover:scale-105 hover:cursor-pointer hover:text-landing-brown-700"
+                ? "bg-white hover:scale-100"
+                : "bg-landing-brown-600 hover:text-landing-brown-700"
             }`}
           >
             {day}
@@ -59,10 +59,10 @@ const LowerSchedule: React.FC<LowerScheduleProps> = ({ schedule }) => {
               key={index}
               className="flex justify-between border-b-2 border-landing-brown-600 pb-6 text-sm md:text-lg"
             >
-              <p className="landing-text-white ml-2 min-w-0 max-w-[50%] flex-1 font-semibold md:ml-8 lg:max-w-sm xl:max-w-xl">
+              <p className="landing-text-white ml-2 min-w-0 max-w-[50%] flex-1 font-semibold lg:max-w-sm xl:max-w-xl">
                 {event.name}
               </p>
-              <div className="ml-5 mr-0 flex shrink-0 flex-col items-end md:ml-0 md:mr-6">
+              <div className="ml-5 mr-0 flex shrink-0 flex-col items-end md:ml-0">
                 <p className="whitespace-nowrap text-right font-semibold text-white">
                   {event.time}&nbsp;
                 </p>
