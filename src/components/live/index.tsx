@@ -1,6 +1,6 @@
 import Landing from "./landing";
 import About from "./about";
-// import Schedule from "./schedule";
+import Schedule from "./schedule";
 import Tracks from "./tracks";
 import Resources from "./resources";
 import Sponsors from "./sponsors";
@@ -18,7 +18,7 @@ const Live = () => {
     <>
       <Landing />
       <About />
-      {/* <Schedule /> */}
+      <Schedule />
       <Keynote />
       <Judges />
       <Panelists />
@@ -27,7 +27,6 @@ const Live = () => {
       <Resources />
       {/* 
       <StripeWall /> */}
-
       <Team />
       {/* <Committees /> */}
       <FAQ />

@@ -7,7 +7,7 @@ const Judges = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-5 pt-6">
       <Title>JUDGES</Title>
-      <div className="z-20 mx-8 flex flex-row flex-wrap justify-center pt-8 md:place-items-center md:items-center">
+      <div className="z-20 mx-auto flex max-w-7xl flex-wrap justify-center gap-6 pt-8">
         {judges.map(
           (
             { name, position, company, photo, icon, link, iconStyles },
@@ -15,7 +15,7 @@ const Judges = () => {
           ) => (
             <div
               key={index}
-              className="z-20 m-2 flex w-5/12 flex-col md:justify-center lg:w-1/4"
+              className="z-20 flex w-full justify-center sm:w-[45%] lg:w-[30%] xl:w-[24%]"
             >
               <Link href={link} target="_blank" rel="noopener noreferrer">
                 <Judge

@@ -95,7 +95,7 @@ const About = () => {
 
         <div className="relative z-20 h-40 w-full bg-landing-orange-200 md:h-48" />
 
-        <div className="relative z-30 overflow-hidden">
+        <div className="relative z-30 mb-10 overflow-hidden">
           <div className="z-40 mx-auto bg-landing-orange-300 py-8">
             <p className="py-8 text-center text-4xl font-bold text-white md:text-5xl lg:text-7xl">
               SUPPORT US{" "}
