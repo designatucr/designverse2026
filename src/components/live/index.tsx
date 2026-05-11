@@ -9,6 +9,8 @@ import Team from "./team";
 import Judges from "./judges";
 import FAQ from "./faq";
 import Footer from "./footer";
+import Keynote from "./keynote";
+import Panelists from "./panelists";
 // import StripeWall from "@/components/live/stripewall";
 
 const Live = () => {
@@ -16,13 +18,16 @@ const Live = () => {
     <>
       <Landing />
       <About />
+      {/* <Schedule /> */}
+      <Keynote />
+      <Judges />
+      <Panelists />
       <Tracks />
       <Sponsors />
       <Resources />
       {/* 
       <StripeWall /> */}
-      {/* <Schedule /> */}
-      <Judges />
+
       <Team />
       {/* <Committees /> */}
       <FAQ />

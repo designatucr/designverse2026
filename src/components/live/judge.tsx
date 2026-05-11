@@ -19,22 +19,23 @@ const Judge = ({
 }: JudgeProps) => {
   return (
     <div className="flex flex-col items-center md:mx-6 md:justify-center md:p-6">
-      <div className="relative mb-4 w-full">
+      <div className="relative mx-auto mb-4 h-28 w-28 self-center md:h-48 md:w-40 xl:h-48 xl:w-48">
         <Image
           src={photo}
           alt={name}
-          className="h-full w-full object-cover transition hover:scale-105"
+          fill
+          className="rounded-full object-cover transition hover:scale-105"
         />
         <Image
           src={icon}
           alt=""
-          className={`absolute bottom-0 right-0 ${iconStyles ? iconStyles : ""}`}
+          className={`absolute bottom-0 right-0 ${iconStyles}`}
         />
       </div>
-      <p className="text-center text-xl font-bold text-landing-brown-300 md:text-2xl">
+      <p className="text-center text-xl font-bold text-landing-brown-300 md:text-2xl xl:text-3xl">
         {name}
       </p>
-      <p className="text-md text-center text-landing-brown-300 md:text-lg">
+      <p className="text-md text-center text-landing-brown-300 md:text-lg xl:text-2xl">
         {position} @ {company}
       </p>
     </div>
