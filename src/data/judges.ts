@@ -5,6 +5,7 @@ import Priyanka from "@/public/landing/judges/Priyanka.webp";
 import BearBread from "@/public/landing/bearbread.svg";
 import Croissant from "@/public/landing/croissant.svg";
 import TurtleBread from "@/public/landing/turtlebread.svg";
+import BearPanel from "@/public/landing/BearKeynote.svg";
 import { StaticImageData } from "next/image";
 
 interface JudgeProps {
@@ -53,7 +54,7 @@ const judges: JudgeProps[] = [
     position: "IT Project Manager",
     company: "Foundation Building Materials",
     photo: Priyanka,
-    icon: BearBread,
+    icon: BearPanel,
     link: "https://www.linkedin.com/in/mpriyanka08/",
     iconStyles:
       "w-1/2 sm:w-1/2 md:w-1/2 lg:w-2/3 xl:w-1/2 xl:translate-x-6 xl:translate-y-4 lg:translate-x-8 lg:translate-y-4 translate-x-2 translate-y-2 sm:translate-x-6 sm:translate-y-5",
