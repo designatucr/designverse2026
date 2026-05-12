@@ -42,7 +42,7 @@ const LowerSchedule: React.FC<LowerScheduleProps> = ({ schedule }) => {
             } ${
               day === selectedDay
                 ? "bg-white hover:scale-100"
-                : "bg-landing-brown-600 hover:text-landing-brown-700"
+                : "bg-landing-brown-600 hover:text-landing-brown-100"
             }`}
           >
             {day}
