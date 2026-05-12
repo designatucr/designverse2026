@@ -53,7 +53,7 @@ const judges: JudgeProps[] = [
     position: "IT Project Manager",
     company: "Foundation Building Materials",
     photo: Priyanka,
-    icon: Croissant,
+    icon: BearBread,
     link: "https://www.linkedin.com/in/mpriyanka08/",
     iconStyles:
       "w-1/2 sm:w-1/2 md:w-1/2 lg:w-2/3 xl:w-1/2 xl:translate-x-6 xl:translate-y-4 lg:translate-x-8 lg:translate-y-4 translate-x-2 translate-y-2 sm:translate-x-6 sm:translate-y-5",
