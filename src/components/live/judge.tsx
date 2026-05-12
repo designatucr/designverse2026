@@ -19,7 +19,7 @@ const Judge = ({
 }: JudgeProps) => {
   return (
     <div className="flex flex-col items-center md:mx-6 md:justify-center md:p-6">
-      <div className="relative mx-auto mb-4 h-28 w-28 self-center md:h-48 md:w-40 xl:h-48 xl:w-48">
+      <div className="relative mx-auto mb-4 h-28 w-28 self-center md:h-56 md:w-56">
         <Image
           src={photo}
           alt={name}
