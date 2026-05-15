@@ -2,10 +2,12 @@ import Karthik from "@/public/landing/judges/Karthik.webp";
 import Sua from "@/public/landing/judges/Sua.webp";
 import Vijaya from "@/public/landing/judges/Vijaya.webp";
 import Priyanka from "@/public/landing/judges/Priyanka.webp";
+import Chi from "@/public/landing/judges/Chi.webp";
 import BearBread from "@/public/landing/bearbread.svg";
 import Croissant from "@/public/landing/croissant.svg";
 import TurtleBread from "@/public/landing/turtlebread.svg";
 import BearPanel from "@/public/landing/BearKeynote.svg";
+import BunnyPanel from "@/public/landing/BunnyKeynote.svg";
 import { StaticImageData } from "next/image";
 
 interface JudgeProps {
@@ -58,6 +60,16 @@ const judges: JudgeProps[] = [
     link: "https://www.linkedin.com/in/mpriyanka08/",
     iconStyles:
       "w-1/2 sm:w-1/2 md:w-1/2 lg:w-2/3 xl:w-1/2 xl:translate-x-6 xl:translate-y-4 lg:translate-x-8 lg:translate-y-4 translate-x-2 translate-y-2 sm:translate-x-6 sm:translate-y-5",
+  },
+  {
+    name: "Chi Esmabe",
+    position: "Senior UI/UX Designer",
+    company: "Tinuiti",
+    photo: Chi,
+    icon: BunnyPanel,
+    link: "https://www.linkedin.com/in/chiesmabe/",
+    iconStyles:
+      "w-1/2 sm:w-1/2 md:w-1/2 lg:w-2/3 xl:w-[45%] xl:translate-x-6 xl:translate-y-4 lg:translate-x-8 lg:translate-y-4 translate-x-2 translate-y-2 sm:translate-x-6 sm:translate-y-5",
   },
 ];
 
