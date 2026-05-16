@@ -84,7 +84,7 @@ const Landing = () => {
                   rel="noopener noreferrer"
                   className="sm:text-md mx-auto my-1 flex w-2/3 items-center justify-center rounded-2xl bg-landing-brown-100 px-1 py-2 text-center text-sm font-semibold text-white transition hover:scale-105 md:px-6 md:py-4 md:text-lg lg:w-1/3 lg:text-xl"
                 >
-                  Check-in{" "}
+                  Check-In!
                   <PiArrowUpRightBold className="text-md md:text-2xl xl:text-2xl" />
                 </Link>
                 <Link
