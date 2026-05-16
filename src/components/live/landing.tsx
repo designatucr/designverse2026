@@ -16,14 +16,14 @@ import lampWithLight from "@/public/landing/lightwithlight.svg";
 
 import Link from "next/link";
 import { PiArrowUpRightBold } from "react-icons/pi";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogHeader,
+//   DialogTitle,
+//   DialogDescription,
+//   DialogTrigger,
+// } from "@/components/ui/dialog";
 
 const Landing = () => {
   return (
